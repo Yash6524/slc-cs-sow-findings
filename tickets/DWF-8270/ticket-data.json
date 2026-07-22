@@ -1,0 +1,44 @@
+{
+  "key": "DWF-8270",
+  "dwtask": "843",
+  "sp": "1/2",
+  "type": "bug",
+  "status": "pending-client",
+  "summary": "Waiting for prem approval vs BGIS Internal tasks — FieldSet not saved; task later Cancelled",
+  "checklistSummary": "Waiting for prem approval vs BGIS Internal tasks — FieldSet not saved; task later Cancelled",
+  "page": "tickets/DWF-8270/ticket.html",
+  "prodTaskId": "mmnnn1uduj25",
+  "jiraSummary": "SLC is in Waiting for prem approval stage but when you click in, it says BGIS Internal tasks",
+  "jiraStatus": "In Progress",
+  "ourStatusText": "Debugged — awaiting client confirmation whether further work is needed",
+  "whatWasDone": [
+    "Debugged prod task JSON (<code>mmnnn1uduj25</code>)",
+    "Compared route <code>submit_slc_attachment</code> in <code>01-NewRequest.lua</code> against audit trail",
+    "Confirmed mails did send; workflow/status updates left audit entries"
+  ],
+  "findings": [
+    "FieldSet values not persisted in DB for: <code>reminder_mail_sent_by</code>, <code>expired_mail_sent_by</code>, and <code>prem_approvers[...]</code> from LogPremApprovers (missing in DOC)",
+    "Later lines ran successfully: TaskUpdateWorkflow(service_details) and TaskUpdateStatus(InProgress) — user kaiser.kraft@bgis.com",
+    "Mails were sent properly (despite FieldSet persistence concern)",
+    "Open debug question: How did later workflow/status lines execute while earlier FormBegin/FieldSet/FormEnd appear skipped / not saved?",
+    "Task later Cancelled by lisa.weller@bgis.com on 2026-04-22 — task_status 6000"
+  ],
+  "clientConfirm": "Task was cancelled by lisa.weller@bgis.com. Do we still need to: (1) Manually fix this SLC, and/or (2) Continue root-cause fix for FieldSet / prem_approvers not saving? Or close/defer because Cancelled?",
+  "suggestedNext": [
+    "Trace FormBegin(\"slc_io\") + FieldSet persistence vs TaskUpdate*",
+    "Confirm whether LogPremApprovers FormBegin failed the same way",
+    "Reproduce on a non-cancelled test task if permanent fix is still required"
+  ],
+  "imgCaption": "Red: FieldSet blocks that did not persist. Green: TaskUpdateWorkflow / TaskUpdateStatus that appear in audit JSON. Light green: mails sent successfully.",
+  "evidenceNames": [
+    "mmnnn1uduj25digitalworkflow_prod-dw3-v0.tasks.json",
+    "mmnnn1uduj25digitalworkflow_prod-dw3-v0.notes.json",
+    "debug-annotation.png"
+  ],
+  "auditExcerpt1Title": "Workflow + status updates after submit_slc_attachment (Mar 12)",
+  "auditExcerpt1": "{\n  \"aid\": \"mmnnn1uduj25_mmno4vyg_9ncx\",\n  \"message\": \"Workflow State changed from NewRequest to service_details: Request has been moved to Add Services workflowstate\",\n  \"atype\": 97,\n  \"user_id\": \"kaiser.kraft@bgis.com\",\n  \"audit_dt\": \"2026-03-12T12:14:42.376-04:00\"\n},\n{\n  \"aid\": \"mmnnn1uduj25_mmno4w07_o066\",\n  \"message\": \"Task status changed from 100 (Created) to 1 (InProgress): Task is in progress\",\n  \"atype\": 0,\n  \"user_id\": \"kaiser.kraft@bgis.com\",\n  \"audit_dt\": \"2026-03-12T12:14:42.439-04:00\"\n}",
+  "auditExcerpt2Title": "Moved to waiting_for_prem_approval, then Cancelled (Apr 8 / Apr 22)",
+  "auditExcerpt2": "{\n  \"aid\": \"mmnnn1uduj25_mnqln2wr_1dmg\",\n  \"message\": \"Workflow State changed from finance_approval to waiting_for_prem_approval: Task has been approved by Finance and waiting for PREM\",\n  \"atype\": 97,\n  \"user_id\": \"abigail.buenaobra@bgis.com\",\n  \"audit_dt\": \"2026-04-08T18:07:53.211-04:00\"\n},\n{\n  \"aid\": \"mmnnn1uduj25_moah8k3d_rma6\",\n  \"message\": \"Task status changed from 5000 (Reviewed) to 6000 (Cancelled): Task Cancelled\",\n  \"atype\": 0,\n  \"user_id\": \"lisa.weller@bgis.com\",\n  \"audit_dt\": \"2026-04-22T16:00:00.697-04:00\"\n}",
+  "footnote": "Full JSON files are in evidence/. Reminder: prem_approvers, reminder_mail_sent_by, and expired_mail_sent_by were not found in the task DOC array.",
+  "generatedAt": "2026-07-22T00:00:00.000Z"
+}

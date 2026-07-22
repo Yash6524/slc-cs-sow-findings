@@ -1,0 +1,11 @@
+# Static HTML site — no build step
+[build]
+  publish = "."
+  command = ""
+
+# Optional: friendly headers for static assets
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"

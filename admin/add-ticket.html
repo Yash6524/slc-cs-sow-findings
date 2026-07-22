@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Add / Edit ticket findings</title>
+  <link rel="stylesheet" href="../assets/styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <p class="crumb no-print"><a href="../index.html">← All tickets</a></p>
+
+    <header class="site">
+      <h1>Add / Edit ticket findings</h1>
+      <div class="meta">
+        Create a new ticket page or load an existing one, edit fields, then download
+        updated <code>ticket.html</code> + <code>ticket-data.json</code>.
+      </div>
+    </header>
+
+    <div class="callout no-print">
+      <strong>How this works</strong>
+      Netlify is static — this form cannot write to GitHub by itself. On generate, it
+      downloads files. Put them under <code>tickets/&lt;KEY&gt;/</code>, add evidence files,
+      push to GitHub, and the live site updates. Or paste <code>ticket-data.json</code> in chat.
+    </div>
+
+    <div class="card form-grid no-print" id="edit-panel">
+      <h2>Edit existing</h2>
+      <div class="form-row two">
+        <div>
+          <label for="editSelect">Load from site</label>
+          <span class="hint">Tickets that already have a findings page + <code>ticket-data.json</code></span>
+          <select id="editSelect">
+            <option value="">— Select ticket —</option>
+          </select>
+        </div>
+        <div>
+          <label for="editFile">Or upload ticket-data.json</label>
+          <span class="hint">Works offline / if fetch is blocked</span>
+          <input id="editFile" type="file" accept="application/json,.json" />
+        </div>
+      </div>
+      <div class="form-actions">
+        <button class="btn btn-primary" type="button" id="btn-load-existing">Load into form</button>
+        <button class="btn" type="button" id="btn-new">Start blank (new)</button>
+        <span id="editModeLabel" class="hint" style="align-self:center"></span>
+      </div>
+    </div>
+
+    <form id="ticket-form" class="card form-grid" autocomplete="off">
+      <h2>Basics</h2>
+
+      <div class="form-row two">
+        <div>
+          <label for="key">Ticket key *</label>
+          <input id="key" name="key" required placeholder="DWF-9475" pattern="DWF-\d+" />
+        </div>
+        <div>
+          <label for="dwtask">DWTASK *</label>
+          <input id="dwtask" name="dwtask" required placeholder="676" />
+        </div>
+      </div>
+
+      <div class="form-row two">
+        <div>
+          <label for="type">Type *</label>
+          <select id="type" name="type" required>
+            <option value="bug">Bug</option>
+            <option value="enhancement">Enhancement</option>
+          </select>
+        </div>
+        <div>
+          <label for="sp">SPs</label>
+          <input id="sp" name="sp" placeholder="1/2" />
+        </div>
+      </div>
+
+      <div class="form-row two">
+        <div>
+          <label for="status">Our status *</label>
+          <select id="status" name="status" required>
+            <option value="in-progress">In progress</option>
+            <option value="pending-client">Pending client</option>
+            <option value="done">Done</option>
+            <option value="pending">Pending</option>
+            <option value="skipped">Skipped</option>
+          </select>
+        </div>
+        <div>
+          <label for="prodTaskId">Prod task ID</label>
+          <input id="prodTaskId" name="prodTaskId" placeholder="mmnnn1uduj25" />
+        </div>
+      </div>
+
+      <div class="form-row">
+        <label for="checklistSummary">Checklist short summary</label>
+        <span class="hint">Shown on the index table</span>
+        <input id="checklistSummary" name="checklistSummary" placeholder="Short one-line summary for the checklist" />
+      </div>
+
+      <div class="form-row">
+        <label for="jiraSummary">Jira summary *</label>
+        <input id="jiraSummary" name="jiraSummary" required placeholder="Full Jira ticket title" />
+      </div>
+
+      <div class="form-row two">
+        <div>
+          <label for="jiraStatus">Jira status</label>
+          <input id="jiraStatus" name="jiraStatus" placeholder="In Progress" value="In Progress" />
+        </div>
+        <div>
+          <label for="ourStatusText">Our status (detail text)</label>
+          <input id="ourStatusText" name="ourStatusText" placeholder="Debugged — awaiting client confirmation..." />
+        </div>
+      </div>
+
+      <h2 class="section-title" style="margin-top:8px">Content</h2>
+
+      <div class="form-row">
+        <label for="whatWasDone">What was done *</label>
+        <span class="hint">One bullet per line</span>
+        <textarea id="whatWasDone" name="whatWasDone" required placeholder="Debugged prod task JSON&#10;Compared route against audit trail&#10;Confirmed mails were sent"></textarea>
+      </div>
+
+      <div class="form-row">
+        <label for="findings">Findings *</label>
+        <span class="hint">One numbered finding per line (HTML allowed lightly, e.g. &lt;code&gt;)</span>
+        <textarea id="findings" name="findings" required placeholder="FieldSet values not persisted for reminder_mail_sent_by&#10;TaskUpdateWorkflow ran successfully in audit&#10;Task later Cancelled by lisa.weller@bgis.com"></textarea>
+      </div>
+
+      <div class="form-row">
+        <label for="clientConfirm">Client confirmation needed</label>
+        <span class="hint">Leave blank if none</span>
+        <textarea id="clientConfirm" name="clientConfirm" placeholder="Do we still need to manually fix this SLC, or close because Cancelled?"></textarea>
+      </div>
+
+      <div class="form-row">
+        <label for="suggestedNext">Suggested next steps</label>
+        <span class="hint">One bullet per line</span>
+        <textarea id="suggestedNext" name="suggestedNext" placeholder="Trace FormBegin persistence&#10;Reproduce on a test task"></textarea>
+      </div>
+
+      <div class="form-row">
+        <label for="imgCaption">Debug image caption</label>
+        <input id="imgCaption" name="imgCaption" placeholder="Red: FieldSet not persisted. Green: TaskUpdate* audit entries." />
+      </div>
+
+      <div class="form-row">
+        <label for="debugImage">Debug annotation image</label>
+        <span class="hint">Optional — embedded into ticket.html as evidence/debug-annotation.png reference; also downloaded separately</span>
+        <input id="debugImage" name="debugImage" type="file" accept="image/*" />
+      </div>
+
+      <div class="form-row">
+        <label for="evidenceNames">Evidence file names</label>
+        <span class="hint">One filename per line (you still copy the real files into evidence/)</span>
+        <textarea id="evidenceNames" name="evidenceNames" placeholder="mmnnn1uduj25...tasks.json&#10;mmnnn1uduj25...notes.json&#10;debug-annotation.png"></textarea>
+      </div>
+
+      <div class="form-row">
+        <label for="auditExcerpt1Title">Audit excerpt 1 — title</label>
+        <input id="auditExcerpt1Title" name="auditExcerpt1Title" placeholder="Workflow + status updates after submit..." />
+      </div>
+      <div class="form-row">
+        <label for="auditExcerpt1">Audit excerpt 1 — JSON / text</label>
+        <textarea id="auditExcerpt1" name="auditExcerpt1" placeholder='{ "message": "..." }'></textarea>
+      </div>
+
+      <div class="form-row">
+        <label for="auditExcerpt2Title">Audit excerpt 2 — title</label>
+        <input id="auditExcerpt2Title" name="auditExcerpt2Title" placeholder="Cancelled audit..." />
+      </div>
+      <div class="form-row">
+        <label for="auditExcerpt2">Audit excerpt 2 — JSON / text</label>
+        <textarea id="auditExcerpt2" name="auditExcerpt2"></textarea>
+      </div>
+
+      <div class="form-row">
+        <label for="footnote">Footnote</label>
+        <input id="footnote" name="footnote" placeholder="Full JSON files are in evidence/. Reminder: ..." />
+      </div>
+
+      <div class="form-actions no-print">
+        <button class="btn btn-primary" type="submit" id="btn-generate">Generate &amp; download</button>
+        <button class="btn" type="button" id="btn-preview">Preview only</button>
+        <button class="btn" type="button" id="btn-save-draft">Save draft (browser)</button>
+        <button class="btn" type="button" id="btn-load-draft">Load draft</button>
+        <button class="btn" type="reset">Clear</button>
+      </div>
+    </form>
+
+    <div id="result" class="result-box" hidden></div>
+
+    <h2 class="section-title">Preview</h2>
+    <div class="preview-frame" id="preview"></div>
+  </div>
+
+  <script>
+    const STATUS_LABEL = {
+      pending: "Pending",
+      skipped: "Skipped",
+      "pending-client": "Pending client",
+      "in-progress": "In progress",
+      done: "Done"
+    };
+
+    const DRAFT_KEY = "slc-sow-ticket-draft";
+    let editMode = false;
+    let editableTickets = [];
+
+    function esc(s) {
+      return String(s ?? "")
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;");
+    }
+
+    function formatInline(s) {
+      return esc(s).replace(/&lt;code&gt;([\s\S]*?)&lt;\/code&gt;/gi, "<code>$1</code>");
+    }
+
+    function lines(text) {
+      return String(text || "")
+        .split(/\r?\n/)
+        .map((l) => l.trim())
+        .filter(Boolean);
+    }
+
+    function asLines(value) {
+      if (Array.isArray(value)) return value.join("\n");
+      return String(value || "");
+    }
+
+    function setEditMode(on, key) {
+      editMode = on;
+      const label = document.getElementById("editModeLabel");
+      const btn = document.getElementById("btn-generate");
+      if (on) {
+        label.textContent = `Editing ${key} — generate will overwrite that ticket’s files when you push.`;
+        btn.textContent = "Update & download";
+        document.title = `Edit ${key} findings`;
+      } else {
+        label.textContent = "Mode: New ticket";
+        btn.textContent = "Generate & download";
+        document.title = "Add / Edit ticket findings";
+      }
+    }
+
+    function fillFormFromPayload(payload) {
+      const form = document.getElementById("ticket-form");
+      const map = {
+        key: payload.key || "",
+        dwtask: payload.dwtask || "",
+        type: payload.type || "bug",
+        sp: payload.sp || "",
+        status: payload.status || "in-progress",
+        prodTaskId: payload.prodTaskId || "",
+        checklistSummary: payload.checklistSummary || payload.summary || "",
+        jiraSummary: payload.jiraSummary || "",
+        jiraStatus: payload.jiraStatus || "In Progress",
+        ourStatusText: payload.ourStatusText || "",
+        whatWasDone: asLines(payload.whatWasDone),
+        findings: asLines(payload.findings),
+        clientConfirm: payload.clientConfirm || "",
+        suggestedNext: asLines(payload.suggestedNext),
+        imgCaption: payload.imgCaption || "",
+        evidenceNames: asLines(payload.evidenceNames),
+        auditExcerpt1Title: payload.auditExcerpt1Title || "",
+        auditExcerpt1: payload.auditExcerpt1 || "",
+        auditExcerpt2Title: payload.auditExcerpt2Title || "",
+        auditExcerpt2: payload.auditExcerpt2 || "",
+        footnote: payload.footnote || ""
+      };
+      Object.keys(map).forEach((k) => {
+        const el = form.elements.namedItem(k);
+        if (el && el.type !== "file") el.value = map[k];
+      });
+      setEditMode(true, map.key);
+    }
+
+    async function loadTicketData(key) {
+      const url = `../tickets/${key}/ticket-data.json?t=${Date.now()}`;
+      const res = await fetch(url);
+      if (!res.ok) throw new Error(`No ticket-data.json for ${key} (${res.status})`);
+      return res.json();
+    }
+
+    async function populateEditList() {
+      const select = document.getElementById("editSelect");
+      try {
+        const res = await fetch(`../data/tracker.json?t=${Date.now()}`);
+        if (!res.ok) throw new Error("tracker fetch failed");
+        const tracker = await res.json();
+        editableTickets = (tracker.tickets || []).filter((t) => t.page);
+        select.innerHTML =
+          '<option value="">— Select ticket —</option>' +
+          editableTickets
+            .map(
+              (t) =>
+                `<option value="${esc(t.key)}">${esc(t.key)} / DWTASK-${esc(t.dwtask)} (${esc(t.status)})</option>`
+            )
+            .join("");
+      } catch (err) {
+        select.innerHTML =
+          '<option value="">Could not load tracker — use upload below</option>';
+        console.warn(err);
+      }
+    }
+
+    function formData() {
+      const f = document.getElementById("ticket-form");
+      const fd = new FormData(f);
+      const data = Object.fromEntries(fd.entries());
+      data.key = (data.key || "").trim().toUpperCase();
+      data.dwtask = String(data.dwtask || "").trim();
+      return data;
+    }
+
+    function readImageAsDataUrl(file) {
+      return new Promise((resolve) => {
+        if (!file) return resolve(null);
+        const reader = new FileReader();
+        reader.onload = () => resolve(reader.result);
+        reader.onerror = () => resolve(null);
+        reader.readAsDataURL(file);
+      });
+    }
+
+    function buildTicketHtml(data, imageDataUrl) {
+      const key = data.key;
+      const statusLabel = STATUS_LABEL[data.status] || data.status;
+      const doneLis = lines(data.whatWasDone).map((l) => `<li>${formatInline(l)}</li>`).join("\n        ");
+      const findingLis = lines(data.findings).map((l) => `<li>${formatInline(l)}</li>`).join("\n        ");
+      const nextLis = lines(data.suggestedNext).map((l) => `<li>${formatInline(l)}</li>`).join("\n        ");
+      const evidence = lines(data.evidenceNames);
+      if (imageDataUrl && !evidence.includes("debug-annotation.png")) {
+        evidence.push("debug-annotation.png");
+      }
+
+      const evidenceLis = evidence
+        .map(
+          (name) => `<li>
+        <span class="name">${esc(name)}</span>
+        <a href="evidence/${esc(name)}" download>Download</a>
+      </li>`
+        )
+        .join("\n      ");
+
+      const clientBlock = data.clientConfirm
+        ? `<div class="callout">
+        <strong>Client confirmation needed</strong>
+        ${formatInline(data.clientConfirm)}
+      </div>`
+        : "";
+
+      const nextBlock = nextLis
+        ? `<h3>Suggested next (if client says continue)</h3>
+      <ul class="tight">
+        ${nextLis}
+      </ul>`
+        : "";
+
+      const imgBlock =
+        imageDataUrl || data.imgCaption
+          ? `<h2 class="section-title">Debug annotation (Lua vs audit)</h2>
+    <figure class="evidence-img">
+      <img src="${imageDataUrl || "evidence/debug-annotation.png"}" alt="Debug annotation for ${esc(key)}" />
+      <figcaption>${esc(data.imgCaption || "Debug annotation screenshot.")}</figcaption>
+    </figure>`
+          : "";
+
+      const audit1 =
+        data.auditExcerpt1Title || data.auditExcerpt1
+          ? `<details class="json-block" open>
+      <summary>${esc(data.auditExcerpt1Title || "Audit excerpt 1")}</summary>
+      <pre class="json">${esc(data.auditExcerpt1 || "")}</pre>
+    </details>`
+          : "";
+
+      const audit2 =
+        data.auditExcerpt2Title || data.auditExcerpt2
+          ? `<details class="json-block" open>
+      <summary>${esc(data.auditExcerpt2Title || "Audit excerpt 2")}</summary>
+      <pre class="json">${esc(data.auditExcerpt2 || "")}</pre>
+    </details>`
+          : "";
+
+      const downloadBtns = evidence
+        .filter((n) => n.endsWith(".json"))
+        .slice(0, 2)
+        .map((n) => `<a class="btn" href="evidence/${esc(n)}" download>Download ${esc(n)}</a>`)
+        .join("\n      ");
+
+      const ourStatus =
+        data.ourStatusText || STATUS_LABEL[data.status] || data.status;
+      const prod = data.prodTaskId
+        ? `· Prod task <code>${esc(data.prodTaskId)}</code>`
+        : "";
+
+      return `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>${esc(key)} / DWTASK-${esc(data.dwtask)} Findings</title>
+  <link rel="stylesheet" href="../../assets/styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <p class="crumb no-print">
+      <a href="../../index.html">← All tickets</a>
+    </p>
+
+    <header class="site">
+      <h1>${esc(key)} / DWTASK-${esc(data.dwtask)}</h1>
+      <div class="meta">
+        <span class="badge badge-${esc(data.type)}">${esc(data.type)}</span>
+        <span class="badge badge-${esc(data.status)}">${esc(statusLabel)}</span>
+        · <a href="https://brians.atlassian.net/browse/${esc(key)}" target="_blank" rel="noopener">Jira</a>
+        ${prod}
+      </div>
+    </header>
+
+    <div class="toolbar no-print">
+      <button class="btn btn-primary" type="button" onclick="window.print()">Print / Save as PDF</button>
+      <a class="btn" href="../../admin/add-ticket.html?edit=${esc(key)}">Edit findings</a>
+      ${downloadBtns}
+    </div>
+
+    <div class="card">
+      <h2>Ticket summary</h2>
+      <dl class="kv">
+        <dt>Jira summary</dt>
+        <dd>${esc(data.jiraSummary)}</dd>
+        <dt>Prod task</dt>
+        <dd>${data.prodTaskId ? `<code>${esc(data.prodTaskId)}</code>` : "—"}</dd>
+        <dt>Jira status</dt>
+        <dd>${esc(data.jiraStatus || "—")}</dd>
+        <dt>Our status</dt>
+        <dd>${esc(ourStatus)}</dd>
+      </dl>
+
+      <h3>What was done</h3>
+      <ul class="tight">
+        ${doneLis}
+      </ul>
+
+      <h3>Findings</h3>
+      <ol>
+        ${findingLis}
+      </ol>
+
+      ${clientBlock}
+      ${nextBlock}
+    </div>
+
+    ${imgBlock}
+
+    <h2 class="section-title">Evidence files</h2>
+    <ul class="file-list">
+      ${evidenceLis || "<li>No evidence files listed</li>"}
+    </ul>
+
+    <h2 class="section-title">Key audit excerpts</h2>
+    ${audit1}
+    ${audit2}
+
+    <p class="footnote">
+      ${esc(data.footnote || "Full evidence files belong in the evidence/ folder for this ticket.")}
+    </p>
+  </div>
+</body>
+</html>`;
+    }
+
+    function buildPayload(data) {
+      return {
+        key: data.key,
+        dwtask: data.dwtask,
+        sp: data.sp || "",
+        type: data.type,
+        status: data.status,
+        summary: data.checklistSummary || data.jiraSummary,
+        checklistSummary: data.checklistSummary || data.jiraSummary,
+        page: `tickets/${data.key}/ticket.html`,
+        prodTaskId: data.prodTaskId || null,
+        jiraSummary: data.jiraSummary,
+        jiraStatus: data.jiraStatus,
+        ourStatusText: data.ourStatusText,
+        whatWasDone: lines(data.whatWasDone),
+        findings: lines(data.findings),
+        clientConfirm: data.clientConfirm || "",
+        suggestedNext: lines(data.suggestedNext),
+        imgCaption: data.imgCaption || "",
+        evidenceNames: lines(data.evidenceNames),
+        auditExcerpt1Title: data.auditExcerpt1Title || "",
+        auditExcerpt1: data.auditExcerpt1 || "",
+        auditExcerpt2Title: data.auditExcerpt2Title || "",
+        auditExcerpt2: data.auditExcerpt2 || "",
+        footnote: data.footnote || "",
+        generatedAt: new Date().toISOString()
+      };
+    }
+
+    function downloadText(filename, text, mime) {
+      const blob = new Blob([text], { type: mime || "text/plain" });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = filename;
+      a.click();
+      URL.revokeObjectURL(url);
+    }
+
+    function downloadDataUrl(filename, dataUrl) {
+      const a = document.createElement("a");
+      a.href = dataUrl;
+      a.download = filename;
+      a.click();
+    }
+
+    async function generate(download) {
+      const data = formData();
+      if (!data.key || !data.dwtask || !data.jiraSummary) {
+        alert("Ticket key, DWTASK, and Jira summary are required.");
+        return;
+      }
+      const fileInput = document.getElementById("debugImage");
+      const imageDataUrl = await readImageAsDataUrl(fileInput.files[0]);
+      const hasImage = Boolean(imageDataUrl || data.imgCaption);
+      const htmlPreview = buildTicketHtml(data, imageDataUrl || (hasImage ? "evidence/debug-annotation.png" : null));
+      const htmlDownload = buildTicketHtml(
+        data,
+        hasImage || imageDataUrl ? "evidence/debug-annotation.png" : null
+      );
+      const payload = buildPayload(data);
+
+      const preview = document.getElementById("preview");
+      preview.innerHTML = "";
+      const iframe = document.createElement("iframe");
+      iframe.title = "Ticket preview";
+      preview.appendChild(iframe);
+      iframe.srcdoc = htmlPreview;
+
+      if (download) {
+        downloadText("ticket.html", htmlDownload, "text/html");
+        downloadText("ticket-data.json", JSON.stringify(payload, null, 2), "application/json");
+        if (imageDataUrl) downloadDataUrl("debug-annotation.png", imageDataUrl);
+
+        const result = document.getElementById("result");
+        result.hidden = false;
+        const action = editMode ? "Replace existing files" : "Create folder";
+        result.innerHTML = `
+          <strong>Downloaded ${editMode ? "(edit)" : "(new)"}</strong>
+          <ul class="tight">
+            <li><code>ticket.html</code></li>
+            <li><code>ticket-data.json</code> <em>(needed for future Edit)</em></li>
+            ${imageDataUrl ? "<li><code>debug-annotation.png</code></li>" : ""}
+          </ul>
+          <p style="margin:8px 0 0">Next:</p>
+          <ol>
+            <li>${action} under <code>tickets/${esc(data.key)}/</code></li>
+            <li>Overwrite/place <code>ticket.html</code> + <code>ticket-data.json</code> there</li>
+            <li>Put evidence under <code>tickets/${esc(data.key)}/evidence/</code></li>
+            <li>Update <code>index.html</code> checklist if status/summary changed (or paste JSON in chat)</li>
+            <li><code>git add</code> → <code>commit</code> → <code>push</code> → Netlify redeploys</li>
+          </ol>`;
+      }
+    }
+
+    document.getElementById("ticket-form").addEventListener("submit", (e) => {
+      e.preventDefault();
+      generate(true);
+    });
+    document.getElementById("btn-preview").addEventListener("click", () => generate(false));
+    document.getElementById("btn-save-draft").addEventListener("click", () => {
+      const data = formData();
+      localStorage.setItem(DRAFT_KEY, JSON.stringify(data));
+      alert("Draft saved in this browser.");
+    });
+    document.getElementById("btn-load-draft").addEventListener("click", () => {
+      const raw = localStorage.getItem(DRAFT_KEY);
+      if (!raw) return alert("No draft found.");
+      fillFormFromPayload(JSON.parse(raw));
+      alert("Draft loaded.");
+    });
+    document.getElementById("btn-new").addEventListener("click", () => {
+      document.getElementById("ticket-form").reset();
+      document.getElementById("editSelect").value = "";
+      document.getElementById("editFile").value = "";
+      setEditMode(false);
+      document.getElementById("result").hidden = true;
+      document.getElementById("preview").innerHTML = "";
+    });
+    document.getElementById("btn-load-existing").addEventListener("click", async () => {
+      const key = document.getElementById("editSelect").value;
+      const file = document.getElementById("editFile").files[0];
+      try {
+        if (file) {
+          const text = await file.text();
+          fillFormFromPayload(JSON.parse(text));
+          return;
+        }
+        if (!key) return alert("Select a ticket or upload ticket-data.json.");
+        const payload = await loadTicketData(key);
+        fillFormFromPayload(payload);
+      } catch (err) {
+        alert("Could not load ticket data.\n" + err.message);
+      }
+    });
+
+    populateEditList().then(() => {
+      const params = new URLSearchParams(location.search);
+      const editKey = (params.get("edit") || "").toUpperCase();
+      if (editKey) {
+        document.getElementById("editSelect").value = editKey;
+        loadTicketData(editKey)
+          .then(fillFormFromPayload)
+          .catch((err) => alert("Could not auto-load " + editKey + ".\n" + err.message));
+      } else {
+        setEditMode(false);
+      }
+    });
+  </script>
+</body>
+</html>
