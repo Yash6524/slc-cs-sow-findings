@@ -1,0 +1,246 @@
+[{
+  "_id": {
+    "$oid": "69b2e6927c9e69ba50946392"
+  },
+  "id": "mmno5kpm11jcj",
+  "_deleted": false,
+  "create_by": "kaiser.kraft@bgis.com",
+  "create_dt": "2026-03-12T12:15:14.458-04:00",
+  "create_ip": "162.10.22.27:5730",
+  "env": "prod",
+  "is_busy": "",
+  "note_text": "Email Attachment contains quote",
+  "project_id": "slc_cs",
+  "ref_id": "mmnnn1uduj25",
+  "ref_type": "related_object",
+  "updated_by": "kaiser.kraft@bgis.com",
+  "updated_dt": "2026-03-12T12:15:14.458-04:00",
+  "updated_dt_r": 1773332114458,
+  "user_id": "kaiser.kraft@bgis.com"
+},
+{
+  "_id": {
+    "$oid": "69b2e7697c9e69ba50946395"
+  },
+  "id": "mmnoa577oa21",
+  "_deleted": false,
+  "create_by": "kaiser.kraft@bgis.com",
+  "create_dt": "2026-03-12T12:18:47.635-04:00",
+  "create_ip": "162.10.22.27:43000",
+  "env": "prod",
+  "is_busy": "",
+  "note_text": "SPOC has submitted initial details for SLC request.",
+  "note_type": "system",
+  "project_id": "slc_cs",
+  "ref_id": "mmnnn1uduj25",
+  "ref_type": "task",
+  "updated_by": "kaiser.kraft@bgis.com",
+  "updated_dt": "2026-03-12T12:18:47.635-04:00",
+  "updated_dt_r": 1773332327635,
+  "user_id": "kaiser.kraft@bgis.com"
+},
+{
+  "_id": {
+    "$oid": "69b2e8a67c9e69ba5094639e"
+  },
+  "id": "mmnogymp10emw",
+  "_deleted": false,
+  "create_by": "natalie.kelloway@bgis.com",
+  "create_dt": "2026-03-12T12:24:05.713-04:00",
+  "create_ip": "162.10.22.28:44002",
+  "env": "prod",
+  "is_busy": "",
+  "note_text": "Task has been assigned to lori.bedford@bgis.com",
+  "note_type": "System",
+  "project_id": "slc_cs",
+  "ref_id": "mmnnn1uduj25",
+  "ref_type": "task",
+  "updated_by": "natalie.kelloway@bgis.com",
+  "updated_dt": "2026-03-12T12:24:05.713-04:00",
+  "updated_dt_r": 1773332645713,
+  "user_id": "natalie.kelloway@bgis.com"
+},
+{
+  "_id": {
+    "$oid": "69c14fc16247e37885358d20"
+  },
+  "id": "mn3afztk13y0a",
+  "_deleted": false,
+  "create_by": "lori.bedford@bgis.com",
+  "create_dt": "2026-03-23T10:35:44.792-04:00",
+  "create_ip": "163.116.145.33:39292",
+  "env": "prod",
+  "is_busy": "",
+  "note_text": "Requested quote/renewal docs with correct address",
+  "project_id": "slc_cs",
+  "ref_id": "mmnnn1uduj25",
+  "ref_type": "related_object",
+  "updated_by": "lori.bedford@bgis.com",
+  "updated_dt": "2026-03-23T10:35:44.792-04:00",
+  "updated_dt_r": 1774276544792,
+  "user_id": "lori.bedford@bgis.com"
+},
+{
+  "_id": {
+    "$oid": "69ca6d0a6247e3788535ffc2"
+  },
+  "id": "mnd62o1tqnzc",
+  "_deleted": false,
+  "create_by": "lori.bedford@bgis.com",
+  "create_dt": "2026-03-30T08:31:06.305-04:00",
+  "create_ip": "163.116.254.46:22164",
+  "env": "prod",
+  "is_busy": "",
+  "note_text": "Current PO is under 444 Yonge, There is a door on College, proceeded with renewal",
+  "project_id": "slc_cs",
+  "ref_id": "mmnnn1uduj25",
+  "ref_type": "related_object",
+  "updated_by": "lori.bedford@bgis.com",
+  "updated_dt": "2026-03-30T08:31:06.305-04:00",
+  "updated_dt_r": 1774873866305,
+  "user_id": "lori.bedford@bgis.com"
+},
+{
+  "_id": {
+    "$oid": "69ca6d9e6247e3788535ffda"
+  },
+  "id": "mnd65u6r100tn",
+  "_deleted": false,
+  "create_by": "lori.bedford@bgis.com",
+  "create_dt": "2026-03-30T08:33:34.227-04:00",
+  "create_ip": "163.116.254.46:48612",
+  "env": "prod",
+  "is_busy": "",
+  "note_text": "Request has been submitted.",
+  "note_type": "system",
+  "project_id": "slc_cs",
+  "ref_id": "mmnnn1uduj25",
+  "ref_type": "task",
+  "updated_by": "lori.bedford@bgis.com",
+  "updated_dt": "2026-03-30T08:33:34.228-04:00",
+  "updated_dt_r": 1774874014228,
+  "user_id": "lori.bedford@bgis.com"
+},
+{
+  "_id": {
+    "$oid": "69ca74696247e37885360025"
+  },
+  "id": "mnd773a8niy9",
+  "_deleted": false,
+  "create_by": "kaiser.kraft@bgis.com",
+  "create_dt": "2026-03-30T09:02:32.288-04:00",
+  "create_ip": "162.10.22.30:2512",
+  "env": "prod",
+  "is_busy": "",
+  "note_text": "FM has approved the SLC request.",
+  "note_type": "system",
+  "project_id": "slc_cs",
+  "ref_id": "mmnnn1uduj25",
+  "ref_type": "task",
+  "updated_by": "kaiser.kraft@bgis.com",
+  "updated_dt": "2026-03-30T09:02:32.288-04:00",
+  "updated_dt_r": 1774875752288,
+  "user_id": "kaiser.kraft@bgis.com"
+},
+{
+  "_id": {
+    "$oid": "69ca9e666247e378853603ff"
+  },
+  "id": "mnddlhgrw1mq",
+  "_deleted": false,
+  "create_by": "lisa.weller@bgis.com",
+  "create_dt": "2026-03-30T12:01:41.547-04:00",
+  "create_ip": "163.116.130.116:32352",
+  "env": "prod",
+  "is_busy": "",
+  "note_text": "Task has been assigned to abigail.buenaobra@bgis.com",
+  "note_type": "System",
+  "project_id": "slc_cs",
+  "ref_id": "mmnnn1uduj25",
+  "ref_type": "task",
+  "updated_by": "lisa.weller@bgis.com",
+  "updated_dt": "2026-03-30T12:01:41.547-04:00",
+  "updated_dt_r": 1774886501547,
+  "user_id": "lisa.weller@bgis.com"
+},
+{
+  "_id": {
+    "$oid": "69d6d1b5af543e12537d7074"
+  },
+  "id": "mnqlmzvbxgkv",
+  "_deleted": false,
+  "create_by": "abigail.buenaobra@bgis.com",
+  "create_dt": "2026-04-08T18:07:49.271-04:00",
+  "create_ip": "163.116.130.96:38420",
+  "env": "prod",
+  "is_busy": "",
+  "note_text": "Finance has approved the SLC request.",
+  "note_type": "system",
+  "project_id": "slc_cs",
+  "ref_id": "mmnnn1uduj25",
+  "ref_type": "task",
+  "updated_by": "abigail.buenaobra@bgis.com",
+  "updated_dt": "2026-04-08T18:07:49.271-04:00",
+  "updated_dt_r": 1775686069271,
+  "user_id": "abigail.buenaobra@bgis.com"
+},
+{
+  "_id": {
+    "$oid": "69e928b7af543e12537e3e16"
+  },
+  "id": "moah8cdzq0ie",
+  "_deleted": false,
+  "create_by": "lisa.weller@bgis.com",
+  "create_dt": "2026-04-22T15:59:50.711-04:00",
+  "create_ip": "163.116.130.120:23144",
+  "env": "prod",
+  "is_busy": "",
+  "note_text": "To be cancelled due to system bug. FM will recreate SLC",
+  "project_id": "slc_cs",
+  "ref_id": "mmnnn1uduj25",
+  "ref_type": "related_object",
+  "updated_by": "lisa.weller@bgis.com",
+  "updated_dt": "2026-04-22T15:59:50.711-04:00",
+  "updated_dt_r": 1776887990711,
+  "user_id": "lisa.weller@bgis.com"
+},
+{
+  "_id": {
+    "$oid": "69e928c1af543e12537e3e17"
+  },
+  "id": "moah8k4a12bmq",
+  "_deleted": false,
+  "create_by": "lisa.weller@bgis.com",
+  "create_dt": "2026-04-22T16:00:00.730-04:00",
+  "create_ip": "163.116.130.120:61394",
+  "env": "prod",
+  "is_busy": "",
+  "note_text": "Task status has been updated to Cancelled",
+  "project_id": "slc_cs",
+  "ref_id": "mmnnn1uduj25",
+  "ref_type": "task",
+  "updated_by": "lisa.weller@bgis.com",
+  "updated_dt": "2026-04-22T16:00:00.731-04:00",
+  "updated_dt_r": 1776888000731,
+  "user_id": "lisa.weller@bgis.com"
+},
+{
+  "_id": {
+    "$oid": "69ea5de085585cace850d2aa"
+  },
+  "id": "mobscpogly3f",
+  "_deleted": false,
+  "create_by": "lisa.weller@bgis.com",
+  "create_dt": "2026-04-23T13:58:56.512-04:00",
+  "create_ip": "163.116.130.110:7636",
+  "env": "prod",
+  "is_busy": "",
+  "note_text": "Resubmitted SLC: mobm0hw6xma5",
+  "project_id": "slc_cs",
+  "ref_id": "mmnnn1uduj25",
+  "ref_type": "related_object",
+  "updated_by": "lisa.weller@bgis.com",
+  "updated_dt": "2026-04-23T13:58:56.512-04:00",
+  "updated_dt_r": 1776967136512,
+  "user_id": "lisa.weller@bgis.com"
+}]

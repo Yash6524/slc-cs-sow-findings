@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DWF-8270 / DWTASK-843 Findings</title>
+  <link rel="stylesheet" href="../../assets/styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <p class="crumb no-print">
+      <a href="../../index.html">← All tickets</a>
+    </p>
+
+    <header class="site">
+      <h1>DWF-8270 / DWTASK-843</h1>
+      <div class="meta">
+        <span class="badge badge-bug">bug</span>
+        <span class="badge badge-pending-client">Pending client</span>
+        · <a href="https://brians.atlassian.net/browse/DWF-8270" target="_blank" rel="noopener">Jira</a>
+        · Prod task <code>mmnnn1uduj25</code>
+      </div>
+    </header>
+
+    <div class="toolbar no-print">
+      <button class="btn btn-primary" type="button" onclick="window.print()">Print / Save as PDF</button>
+      <a class="btn" href="evidence/mmnnn1uduj25digitalworkflow_prod-dw3-v0.tasks.json" download>Download tasks.json</a>
+      <a class="btn" href="evidence/mmnnn1uduj25digitalworkflow_prod-dw3-v0.notes.json" download>Download notes.json</a>
+    </div>
+
+    <div class="card">
+      <h2>Ticket summary</h2>
+      <dl class="kv">
+        <dt>Jira summary</dt>
+        <dd>SLC is in Waiting for prem approval stage but when you click in, it says BGIS Internal tasks</dd>
+        <dt>Prod task</dt>
+        <dd><code>mmnnn1uduj25</code></dd>
+        <dt>Jira status</dt>
+        <dd>In Progress</dd>
+        <dt>Our status</dt>
+        <dd>Debugged — awaiting client confirmation whether further work is needed</dd>
+      </dl>
+
+      <h3>What was done</h3>
+      <ul class="tight">
+        <li>Debugged prod task JSON (<code>mmnnn1uduj25</code>)</li>
+        <li>Compared route <code>submit_slc_attachment</code> in <code>01-NewRequest.lua</code> against audit trail</li>
+        <li>Confirmed mails did send; workflow/status updates left audit entries</li>
+      </ul>
+
+      <h3>Findings</h3>
+      <ol>
+        <li>
+          <strong>FieldSet values not persisted in DB</strong> for:
+          <ul class="tight">
+            <li><code>reminder_mail_sent_by</code></li>
+            <li><code>expired_mail_sent_by</code></li>
+            <li><code>prem_approvers[...]</code> from <code>LogPremApprovers</code> also missing in DOC (matches Jira: “Prem approver’s details are missing in DOC array”)</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Later lines in the same route ran successfully</strong> (audit present):
+          <ul class="tight">
+            <li><code>TaskUpdateWorkflow("service_details", ...)</code> — <code>2026-03-12T12:14:42.376</code></li>
+            <li><code>TaskUpdateStatus("InProgress", ...)</code> — <code>2026-03-12T12:14:42.439</code></li>
+            <li>User: <code>kaiser.kraft@bgis.com</code></li>
+          </ul>
+        </li>
+        <li><strong>Mails were sent properly</strong> (despite FieldSet persistence concern).</li>
+        <li>
+          <strong>Open debug question:</strong> How did later workflow/status lines execute while earlier
+          <code>FormBegin</code> / <code>FieldSet</code> / <code>FormEnd</code> appear skipped / not saved?
+        </li>
+        <li>
+          <strong>Task later Cancelled by client user:</strong>
+          <ul class="tight">
+            <li>Audit: Task status changed from 5000 (Reviewed) to 6000 (Cancelled)</li>
+            <li>By: <code>lisa.weller@bgis.com</code></li>
+            <li>At: <code>2026-04-22T16:00:00.697-04:00</code></li>
+            <li>Current <code>task_status</code>: <code>6000</code> (Cancelled)</li>
+          </ul>
+        </li>
+      </ol>
+
+      <div class="callout">
+        <strong>Client confirmation needed</strong>
+        Task was cancelled by <code>lisa.weller@bgis.com</code>. Do we still need to:
+        <ol>
+          <li>Manually fix this SLC (per ticket expected result), and/or</li>
+          <li>Continue root-cause fix for FieldSet / prem_approvers not saving?</li>
+        </ol>
+        Or can this ticket be closed / deferred because the task is Cancelled?
+      </div>
+
+      <h3>Suggested next (if client says continue)</h3>
+      <ul class="tight">
+        <li>Trace <code>FormBegin("slc_io")</code> + <code>FieldSet</code> persistence vs <code>TaskUpdate*</code></li>
+        <li>Confirm whether <code>LogPremApprovers</code> FormBegin failed the same way</li>
+        <li>Reproduce on a non-cancelled test task if permanent fix is still required</li>
+      </ul>
+    </div>
+
+    <h2 class="section-title">Debug annotation (Lua vs audit)</h2>
+    <figure class="evidence-img">
+      <img src="evidence/debug-annotation.png" alt="Debug annotation: FieldSet blocks vs TaskUpdateWorkflow/Status audit trail" />
+      <figcaption>
+        Red: FieldSet blocks that did not persist. Green: TaskUpdateWorkflow / TaskUpdateStatus that appear in audit JSON.
+        Light green: mails sent successfully.
+      </figcaption>
+    </figure>
+
+    <h2 class="section-title">Evidence files</h2>
+    <ul class="file-list">
+      <li>
+        <span class="name">mmnnn1uduj25digitalworkflow_prod-dw3-v0.tasks.json</span>
+        <a href="evidence/mmnnn1uduj25digitalworkflow_prod-dw3-v0.tasks.json" download>Download</a>
+      </li>
+      <li>
+        <span class="name">mmnnn1uduj25digitalworkflow_prod-dw3-v0.notes.json</span>
+        <a href="evidence/mmnnn1uduj25digitalworkflow_prod-dw3-v0.notes.json" download>Download</a>
+      </li>
+      <li>
+        <span class="name">debug-annotation.png</span>
+        <a href="evidence/debug-annotation.png" download>Download</a>
+      </li>
+    </ul>
+
+    <h2 class="section-title">Key audit excerpts (from tasks.json)</h2>
+    <details class="json-block" open>
+      <summary>Workflow + status updates after submit_slc_attachment (Mar 12)</summary>
+      <pre class="json">{
+  "aid": "mmnnn1uduj25_mmno4vyg_9ncx",
+  "message": "Workflow State changed from NewRequest to service_details: Request has been moved to Add Services workflowstate",
+  "atype": 97,
+  "user_id": "kaiser.kraft@bgis.com",
+  "audit_dt": "2026-03-12T12:14:42.376-04:00"
+},
+{
+  "aid": "mmnnn1uduj25_mmno4w07_o066",
+  "message": "Task status changed from 100 (Created) to 1 (InProgress): Task is in progress",
+  "atype": 0,
+  "user_id": "kaiser.kraft@bgis.com",
+  "audit_dt": "2026-03-12T12:14:42.439-04:00"
+}</pre>
+    </details>
+
+    <details class="json-block" open>
+      <summary>Moved to waiting_for_prem_approval, then Cancelled (Apr 8 / Apr 22)</summary>
+      <pre class="json">{
+  "aid": "mmnnn1uduj25_mnqln2wr_1dmg",
+  "message": "Workflow State changed from finance_approval to waiting_for_prem_approval: Task has been approved by Finance and waiting for PREM",
+  "atype": 97,
+  "user_id": "abigail.buenaobra@bgis.com",
+  "audit_dt": "2026-04-08T18:07:53.211-04:00"
+},
+{
+  "aid": "mmnnn1uduj25_moah8k3d_rma6",
+  "message": "Task status changed from 5000 (Reviewed) to 6000 (Cancelled): Task Cancelled",
+  "atype": 0,
+  "user_id": "lisa.weller@bgis.com",
+  "audit_dt": "2026-04-22T16:00:00.697-04:00"
+}</pre>
+    </details>
+
+    <p class="footnote">
+      Full JSON files are in <code>evidence/</code>. Reminder: <code>prem_approvers</code>, <code>reminder_mail_sent_by</code>, and
+      <code>expired_mail_sent_by</code> were not found in the task DOC array.
+    </p>
+  </div>
+</body>
+</html>
