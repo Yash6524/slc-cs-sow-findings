@@ -41,9 +41,10 @@
       "dwtask": "676",
       "sp": "1/2",
       "type": "bug",
-      "status": "pending",
-      "summary": "",
-      "page": null
+      "status": "done",
+      "summary": "FM note ran; remaining fm_approve_complete flow interrupted; later recovered; task complete — no further work",
+      "page": "tickets/DWF-9475/ticket.html",
+      "prodTaskId": "mi60ms3pybhz"
     },
     {
       "key": "DWF-9476",

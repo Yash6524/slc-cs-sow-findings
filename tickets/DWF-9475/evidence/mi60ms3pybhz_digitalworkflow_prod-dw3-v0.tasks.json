@@ -1,0 +1,1392 @@
+[{
+  "_id": {
+    "$oid": "691dc0b0b45f481cf15a078c"
+  },
+  "updated_dt": "2026-01-12T11:30:19.229-04:00",
+  "updated_by": "lori.bedford@bgis.com",
+  "auser": "thomas.mercer@bgis.com",
+  "awg": "BGIS :: SLC",
+  "create_by": "thomas.mercer@bgis.com",
+  "create_dt": "2025-11-19T08:05:52.069-05:00",
+  "create_ip": "163.116.130.97:52936",
+  "doc": [
+    {
+      "fid": "details.type",
+      "val": "Change in Service",
+      "tid": 1
+    },
+    {
+      "fid": "details.request_id",
+      "val": "Request - 2025 Change in Service",
+      "tid": 1
+    },
+    {
+      "fid": "details.client_name",
+      "val": 151,
+      "tid": 4
+    },
+    {
+      "fid": "details.start_date",
+      "val": "2025-11-19T00:00:00.000-05:00",
+      "tid": 5
+    },
+    {
+      "fid": "details.description",
+      "val": "<p>Approved SLC required to quarterly augering of problem drain line at Robarts School until such time as permanent repairs can be made</p>\n",
+      "tid": 1
+    },
+    {
+      "fid": "details.requested_part_of_asset",
+      "val": 0,
+      "tid": 4
+    },
+    {
+      "fid": "details.change_in_service_for",
+      "val": "Single Location",
+      "tid": 1
+    },
+    {
+      "fid": "details.tier_change",
+      "val": 0,
+      "tid": 4
+    },
+    {
+      "fid": "details.ministry_impact",
+      "val": "Single Tenant: single tenant benefit (CFA adjustment)",
+      "tid": 1
+    },
+    {
+      "fid": "details.rcc_in_scope_for_new_location",
+      "val": 0,
+      "tid": 4
+    },
+    {
+      "fid": "details.janitorial_services_in_scope",
+      "val": 0,
+      "tid": 4
+    },
+    {
+      "fid": "details.clearsite_app_in_scope",
+      "val": 0,
+      "tid": 4
+    },
+    {
+      "fid": "details.building_have_bsrm",
+      "val": 1,
+      "tid": 4
+    },
+    {
+      "fid": "details.bsrm_updated",
+      "val": 0,
+      "tid": 4
+    },
+    {
+      "fid": "details.new_bsrm_require",
+      "val": 0,
+      "tid": 4
+    },
+    {
+      "fid": "details.adhoc_notification_recipients",
+      "val": "greg.mulholland@bgis.com",
+      "tid": 1
+    },
+    {
+      "fid": "details.sub_type",
+      "val": "Initiated by Client - additional recurring services",
+      "tid": 1
+    },
+    {
+      "fid": "details.ministry_approval_required",
+      "val": 0,
+      "tid": 4
+    },
+    {
+      "fid": "details.change_in_service_for_original",
+      "val": "Single Location",
+      "tid": 1
+    },
+    {
+      "fid": "real_property.building_id",
+      "val": "INO01475",
+      "tid": 1
+    },
+    {
+      "fid": "client_code",
+      "val": "B18344",
+      "tid": 1
+    },
+    {
+      "fid": "address",
+      "val": "1515 CHEAPSIDE ST",
+      "tid": 1
+    },
+    {
+      "fid": "city",
+      "val": "LONDON",
+      "tid": 1
+    },
+    {
+      "fid": "state",
+      "val": "ON",
+      "tid": 1
+    },
+    {
+      "fid": "postal",
+      "val": "N5Y 5J9",
+      "tid": 1
+    },
+    {
+      "fid": "installation_number",
+      "val": "N00101",
+      "tid": 1
+    },
+    {
+      "fid": "fmz",
+      "val": "SW 2",
+      "tid": 1
+    },
+    {
+      "fid": "country",
+      "val": "CAN",
+      "tid": 1
+    },
+    {
+      "fid": "region",
+      "val": "SOUTHWEST",
+      "tid": 1
+    },
+    {
+      "fid": "prem_name",
+      "val": "JEFF DAVIS",
+      "tid": 1
+    },
+    {
+      "fid": "facility_manager",
+      "val": "GREGORY MULHOLLAND",
+      "tid": 1
+    },
+    {
+      "fid": "facility_manager_email",
+      "val": "Greg.Mulholland@bgis.com",
+      "tid": 1
+    },
+    {
+      "fid": "ownership",
+      "val": "Owned",
+      "tid": 1
+    },
+    {
+      "fid": "tier",
+      "val": "T2",
+      "tid": 1
+    },
+    {
+      "fid": "labor_code",
+      "val": "GREGORY MULHOLLAND",
+      "tid": 1
+    },
+    {
+      "fid": "real_property.additional_details",
+      "val": "<p>Working with service providers to supply costing for permanent repair. In the interm dollars need to be available to ensure continuious operation of affected accessible washrooms&nbsp;</p>\n",
+      "tid": 1
+    },
+    {
+      "fid": "real_maintenance.schedule_update_require",
+      "val": 0,
+      "tid": 4
+    },
+    {
+      "fid": "attachments",
+      "val": "mi62bmg2n5wh",
+      "tid": 1
+    },
+    {
+      "fid": "attachments_url",
+      "val": "https://dw-translate.bgis.com/api/file-management/tmp/static/file/slc_cs/mi62bmg2n5wh.pdf",
+      "tid": 1
+    },
+    {
+      "fid": "reminder_mail_sent_by",
+      "val": "",
+      "tid": 1
+    },
+    {
+      "fid": "expired_mail_sent_by",
+      "val": "",
+      "tid": 1
+    },
+    {
+      "fid": "prem_approvers.0.name",
+      "val": "JEFF DAVIS",
+      "tid": 1
+    },
+    {
+      "fid": "prem_approvers.0.email",
+      "val": "JEFF.DAVIS@infrastructureontario.ca",
+      "tid": 1
+    },
+    {
+      "fid": "prem_approvers.0.building_ids",
+      "val": "INO01475",
+      "tid": 1
+    },
+    {
+      "fid": "temp_services.0.temp_site_action",
+      "val": "Add",
+      "tid": 1
+    },
+    {
+      "fid": "services.0.current_year_budget",
+      "val": 659,
+      "tid": 4
+    },
+    {
+      "fid": "temp_services.0.temp_wbs_code_single",
+      "val": "M46 - PLUMBING REPAIRS",
+      "tid": 1
+    },
+    {
+      "fid": "services.0.service_category",
+      "val": "PLUMBING - REPAIR",
+      "tid": 1
+    },
+    {
+      "fid": "services.0.scope",
+      "val": "Accessible washrooms main lobby sewer drain maintenance, snaking and camera inspection",
+      "tid": 1
+    },
+    {
+      "fid": "services.0.site_action",
+      "val": "Add",
+      "tid": 1
+    },
+    {
+      "fid": "services.0.wbs_code_single",
+      "val": "M46 - PLUMBING REPAIRS",
+      "tid": 1
+    },
+    {
+      "fid": "sum_cost",
+      "val": 7005,
+      "tid": 4
+    },
+    {
+      "fid": "services.0.price",
+      "val": 1586.5,
+      "tid": 4
+    },
+    {
+      "fid": "services.0.vendor_name",
+      "val": "CURNEY MECHANICAL LTD.",
+      "tid": 1
+    },
+    {
+      "fid": "services.0.billing_frequency",
+      "val": "Quarterly",
+      "tid": 1
+    },
+    {
+      "fid": "services.0.current_slc_cost",
+      "val": 3173,
+      "tid": 4
+    },
+    {
+      "fid": "services.0.annual_slc_cost",
+      "val": 6346,
+      "tid": 4
+    },
+    {
+      "fid": "services.0.total_new_annual_slc_cost",
+      "val": 7005,
+      "tid": 4
+    },
+    {
+      "fid": "logs.0.email_sent_date",
+      "val": "2025-11-24T11:02:08.417-05:00",
+      "tid": 5
+    },
+    {
+      "fid": "logs.0.approver_type",
+      "val": "FM Approver",
+      "tid": 1
+    },
+    {
+      "fid": "logs.0.approver_name",
+      "val": "Greg Mulholland",
+      "tid": 1
+    },
+    {
+      "fid": "logs.0.approver_email",
+      "val": "greg.mulholland@bgis.com",
+      "tid": 1
+    },
+    {
+      "fid": "logs.0.status_change_date",
+      "val": "2025-11-28T15:01:48.492-05:00",
+      "tid": 5
+    },
+    {
+      "fid": "logs.0.approver_status",
+      "val": "Approved",
+      "tid": 1
+    },
+    {
+      "fid": "logs.1.email_sent_date",
+      "val": "2025-11-28T15:01:48.727-05:00",
+      "tid": 5
+    },
+    {
+      "fid": "logs.1.approver_type",
+      "val": "Finance Approver",
+      "tid": 1
+    },
+    {
+      "fid": "logs.1.approver_name",
+      "val": "Abigail Buenaobra",
+      "tid": 1
+    },
+    {
+      "fid": "logs.1.approver_email",
+      "val": "abigail.buenaobra@bgis.com",
+      "tid": 1
+    },
+    {
+      "fid": "logs.1.status_change_date",
+      "val": "2025-12-15T20:42:57.788-05:00",
+      "tid": 5
+    },
+    {
+      "fid": "logs.1.approver_status",
+      "val": "Approved",
+      "tid": 1
+    },
+    {
+      "fid": "logs.2.email_sent_date",
+      "val": "2025-12-15T20:42:57.866-05:00",
+      "tid": 5
+    },
+    {
+      "fid": "logs.2.approver_type",
+      "val": "Prem Approver",
+      "tid": 1
+    },
+    {
+      "fid": "logs.2.approver_name",
+      "val": "JEFF DAVIS",
+      "tid": 1
+    },
+    {
+      "fid": "logs.2.approver_email",
+      "val": "jeff.davis@infrastructureontario.ca",
+      "tid": 1
+    },
+    {
+      "fid": "logs.2.status_change_date",
+      "val": "2025-12-17T15:42:48.827-05:00",
+      "tid": 5
+    },
+    {
+      "fid": "logs.2.approver_status",
+      "val": "Approved",
+      "tid": 1
+    },
+    {
+      "fid": "logs.3.email_sent_date",
+      "val": "2025-12-17T15:42:48.920-05:00",
+      "tid": 5
+    },
+    {
+      "fid": "logs.3.approver_type",
+      "val": "North-SouthWest Approver",
+      "tid": 1
+    },
+    {
+      "fid": "logs.3.approver_name",
+      "val": "Fid Leonard",
+      "tid": 1
+    },
+    {
+      "fid": "logs.3.approver_email",
+      "val": "fid.leonard@infrastructureontario.ca",
+      "tid": 1
+    },
+    {
+      "fid": "logs.3.status_change_date",
+      "val": "2025-12-18T11:21:58.894-05:00",
+      "tid": 5
+    },
+    {
+      "fid": "logs.3.approver_status",
+      "val": "Approved",
+      "tid": 1
+    },
+    {
+      "fid": "total_subtask",
+      "val": 8,
+      "tid": 4
+    },
+    {
+      "fid": "completed_subtask",
+      "val": 8,
+      "tid": 4
+    }
+  ],
+  "project_id": "slc_cs",
+  "type_id": "m0aiw0l0wbwc",
+  "title": "Change in Service - B18344 - INO01475 - SOUTH WEST - 2025 - mi60ms3pybhz",
+  "workflow_id": "complete_final",
+  "is_locked": false,
+  "is_closed": true,
+  "priority": 50,
+  "task_status": 900,
+  "module_id": "m0aivihgxfez",
+  "eff_perm": [
+    {
+      "id": "BGIS :: SLC :: Users",
+      "perm": 200
+    },
+    {
+      "id": "BGIS :: SLC :: Users :: SPOC",
+      "perm": 200
+    },
+    {
+      "id": "BGIS",
+      "perm": 300
+    },
+    {
+      "id": "BGIS :: SLC",
+      "perm": 300
+    },
+    {
+      "id": "BGIS :: SLC :: Manager",
+      "perm": 300
+    }
+  ],
+  "id": "mi60ms3pybhz",
+  "user_id": "thomas.mercer@bgis.com",
+  "_deleted": false,
+  "is_busy": "",
+  "env": "prod",
+  "queries": [
+    {
+      "qid": "mi60ms3pybhz_xk9u0aei",
+      "fid": "services.0.current_year_budget",
+      "message": "Please update FY25-26 Forecast $659. thanks.",
+      "user_id": "abigail.buenaobra@bgis.com",
+      "query_status": 1,
+      "query_dt": "2025-12-01T14:01:04.022-05:00"
+    },
+    {
+      "qid": "mi60ms3pybhz_xkqrh0vo",
+      "fid": "services.0.current_year_budget",
+      "message": "Budget updated",
+      "user_id": "thomas.mercer@bgis.com",
+      "query_status": 2,
+      "query_dt": "2025-12-10T11:38:34.414-05:00"
+    },
+    {
+      "qid": "mi60ms3pybhz_xl7kn6ow",
+      "fid": "services.0.price",
+      "message": "I think I already approved a SLC for this under SLC melfkjrhyt2k. Please confirm and let me know if this SLC should be rejected. Thank you.",
+      "user_id": "fid.leonard@infrastructureontario.ca",
+      "query_status": 1,
+      "query_dt": "2025-12-18T06:25:33.952-05:00"
+    },
+    {
+      "qid": "mi60ms3pybhz_xl7tj94m",
+      "fid": "services.0.price",
+      "message": "Hello Fid, you are correct this was previously approved however mi60ms3pybhz was cancelled at the ministry stage. I have to take responsibility for that as I had the SLC structured incorrectly.",
+      "user_id": "thomas.mercer@bgis.com",
+      "query_status": 2,
+      "query_dt": "2025-12-18T09:43:26.538-05:00"
+    },
+    {
+      "qid": "mi60ms3pybhz_xl7tl2l6",
+      "fid": "services.0.price",
+      "message": "correction melfkjrhyt2k",
+      "user_id": "thomas.mercer@bgis.com",
+      "query_status": 2,
+      "query_dt": "2025-12-18T09:44:37.616-05:00"
+    }
+  ],
+  "audit": [
+    {
+      "aid": "mi60ms3pybhz_xjkmc11r",
+      "message": "Task status changed from 100 (Created) to 1 (InProgress) : Task is in progress",
+      "atype": 0,
+      "user_id": "thomas.mercer@bgis.com",
+      "audit_dt": "2025-11-19T08:53:39.393-05:00"
+    },
+    {
+      "aid": "mi60ms3pybhz_xjkmhax7",
+      "message": "Task assigned from thomas.mercer@bgis.com to  Submit Form for Attachment workflowstate updated with nobody yet assigned",
+      "atype": 0,
+      "user_id": "thomas.mercer@bgis.com",
+      "audit_dt": "2025-11-19T08:57:07.385-05:00"
+    },
+    {
+      "aid": "mi60ms3pybhz_xjn2xhs1",
+      "message": "Task assigned from none to lori.bedford@bgis.com Acknowledged Task",
+      "atype": 0,
+      "user_id": "lori.bedford@bgis.com",
+      "audit_dt": "2025-11-20T15:34:03.717-05:00"
+    },
+    {
+      "aid": "mi60ms3pybhz_xjubdeic",
+      "message": "Task assigned from lori.bedford@bgis.com to Greg.Mulholland@bgis.com Submitted for FM review with default assigned",
+      "atype": 0,
+      "user_id": "lori.bedford@bgis.com",
+      "audit_dt": "2025-11-24T11:02:08.832-05:00"
+    },
+    {
+      "aid": "mi60ms3pybhz_xk48qben",
+      "message": "Task assigned from greg.mulholland@bgis.com to  Submitted for finance review with nobody yet assigned",
+      "atype": 0,
+      "user_id": "greg.mulholland@bgis.com",
+      "audit_dt": "2025-11-28T15:01:50.575-05:00"
+    },
+    {
+      "aid": "mi60ms3pybhz_xk9oq0mt",
+      "message": "Task assigned from none to abigail.buenaobra@bgis.com Acknowledged Task",
+      "atype": 0,
+      "user_id": "abigail.buenaobra@bgis.com",
+      "audit_dt": "2025-12-01T12:04:16.633-05:00"
+    },
+    {
+      "aid": "mi60ms3pybhz_xk9u0aei",
+      "message": "Query mi60ms3pybhz_xk9u0aei created: Please update FY25-26 Forecast $659. thanks.",
+      "atype": 850,
+      "user_id": "abigail.buenaobra@bgis.com",
+      "audit_dt": "2025-12-01T14:01:04.022-05:00"
+    },
+    {
+      "aid": "mi60ms3pybhz_xl317b8o",
+      "message": "Task assigned from abigail.buenaobra@bgis.com to JEFF.DAVIS@infrastructureontario.ca Submitted for prem review with nobody yet assigned",
+      "atype": 0,
+      "user_id": "abigail.buenaobra@bgis.com",
+      "audit_dt": "2025-12-15T20:42:58.236-05:00"
+    },
+    {
+      "aid": "mi60ms3pybhz_xl6f1lmh",
+      "message": "Task assigned from jeff.davis@infrastructureontario.ca to  Submitted for IO director review with nobody yet assigned",
+      "atype": 0,
+      "user_id": "jeff.davis@infrastructureontario.ca",
+      "audit_dt": "2025-12-17T15:42:49.417-05:00"
+    },
+    {
+      "aid": "mi60ms3pybhz_xl7kgadv",
+      "message": "Task assigned from none to fid.leonard@infrastructureontario.ca Acknowledged Task",
+      "atype": 0,
+      "user_id": "fid.leonard@infrastructureontario.ca",
+      "audit_dt": "2025-12-18T06:21:03.073-05:00"
+    },
+    {
+      "aid": "mi60ms3pybhz_xl7tj958",
+      "message": "Question mi60ms3pybhz_xl7tj94m answered by thomas.mercer@bgis.com: Hello Fid, you are correct this was previously approved however mi60ms3pybhz was cancelled at the ministry stage. I have to take responsibility for that as I had the SLC structured incorrectly.",
+      "atype": 850,
+      "user_id": "thomas.mercer@bgis.com",
+      "audit_dt": "2025-12-18T09:43:26.558-05:00"
+    },
+    {
+      "aid": "mi60ms3pybhz_xl7xxoa4",
+      "message": "Task status changed from 1 (InProgress) to 5000 (Reviewed) : Task is approved",
+      "atype": 0,
+      "user_id": "fid.leonard@infrastructureontario.ca",
+      "audit_dt": "2025-12-18T11:21:59.664-05:00"
+    },
+    {
+      "aid": "mi60ms3pybhz_xl7xxob9",
+      "message": "Task assigned from fid.leonard@infrastructureontario.ca to thomas.mercer@bgis.com Task is assigned to the requester",
+      "atype": 0,
+      "user_id": "fid.leonard@infrastructureontario.ca",
+      "audit_dt": "2025-12-18T11:21:59.703-05:00"
+    },
+    {
+      "aid": "mi60ms3pybhz_xmlg11ut",
+      "message": "Task status changed from 5000 (Reviewed) to 900 (Closed) : Task is completed",
+      "atype": 0,
+      "user_id": "lori.bedford@bgis.com",
+      "audit_dt": "2026-01-12T11:30:18.693-04:00"
+    }
+  ],
+  "open_query_count": 2,
+  "sla_time_total": 0,
+  "key": "slc_io",
+  "workflow_start_dt": "2026-01-12T11:30:18.610-04:00",
+  "__id": "691dc0b0b45f481cf15a078c",
+  "subtask_ids": [
+    "mjbnepg5rqsv",
+    "mjbnepvgqknl",
+    "mjwyajq6qmrw",
+    "mk2os4pgrhyq",
+    "mk2os5nzyk2o",
+    "mk2os6e3sv28",
+    "mk2os74gp5cs",
+    "mk2os7walx2s"
+  ],
+  "updated_dt_r": 1768231819229,
+  "close_dt": "2026-01-12T11:30:18.693-04:00",
+  "close_by": "lori.bedford@bgis.com",
+  "_meta": {
+    "lwt": 1768231820267.02
+  },
+  "_attachments": {},
+  "_rev": "177-kwiqfqyobj"
+},
+{
+  "_id": {
+    "$oid": "69442a2b29bc127d810c2e61"
+  },
+  "id": "mjbnepg5rqsv",
+  "_deleted": false,
+  "audit": [
+    {
+      "aid": "mjbnepg5rqsv_xl7xxoh3",
+      "message": "Task status changed from 100 (Created) to 1 (InProgress) : Task is in progress",
+      "atype": 0,
+      "user_id": "fid.leonard@infrastructureontario.ca",
+      "audit_dt": "2025-12-18T11:21:59.901-05:00"
+    },
+    {
+      "aid": "mjbnepg5rqsv_xl7xxohj",
+      "message": "Task assigned from fid.leonard@infrastructureontario.ca to  Task Assignee with No one assigned",
+      "atype": 0,
+      "user_id": "fid.leonard@infrastructureontario.ca",
+      "audit_dt": "2025-12-18T11:21:59.917-05:00"
+    },
+    {
+      "aid": "mjbnepg5rqsv_xm2bsabu",
+      "message": "Task assigned from none to abigail.buenaobra@bgis.com Acknowledged Task",
+      "atype": 0,
+      "user_id": "abigail.buenaobra@bgis.com",
+      "audit_dt": "2026-01-02T09:08:54.924-05:00"
+    },
+    {
+      "aid": "mjbnepg5rqsv_xm2btqkl",
+      "message": "Task status changed from 1 (InProgress) to 900 (Closed) : Task is completed",
+      "atype": 0,
+      "user_id": "abigail.buenaobra@bgis.com",
+      "audit_dt": "2026-01-02T09:09:53.021-05:00"
+    }
+  ],
+  "auser": "abigail.buenaobra@bgis.com",
+  "awg": "BGIS :: SLC :: Finance :: Approver",
+  "create_by": "thomas.mercer@bgis.com",
+  "create_dt": "2025-12-18T11:21:59.757-05:00",
+  "create_ip": "69.77.185.229:3636",
+  "doc": [],
+  "eff_perm": [
+    {
+      "id": "BGIS :: SLC :: Users",
+      "perm": 200
+    },
+    {
+      "id": "BGIS :: SLC :: Users :: SPOC",
+      "perm": 200
+    },
+    {
+      "id": "BGIS",
+      "perm": 300
+    },
+    {
+      "id": "BGIS :: SLC",
+      "perm": 300
+    },
+    {
+      "id": "BGIS :: SLC :: Manager",
+      "perm": 300
+    }
+  ],
+  "env": "prod",
+  "is_busy": "",
+  "is_closed": true,
+  "is_locked": false,
+  "module_id": "m0aivihgxfez",
+  "open_query_count": 0,
+  "parent_id": "mi60ms3pybhz",
+  "priority": 50,
+  "project_id": "slc_cs",
+  "queries": [],
+  "sla_time_total": 0,
+  "task_status": 900,
+  "title": "Real Property Accounting Review - mjbnepg5rqsv - (Parent ID : mi60ms3pybhz)",
+  "type_id": "m0aiw0lnlky5",
+  "updated_by": "abigail.buenaobra@bgis.com",
+  "updated_dt": "2026-01-02T09:09:53.021-05:00",
+  "updated_dt_r": 1767362993021,
+  "user_id": "fid.leonard@infrastructureontario.ca",
+  "workflow_id": "subtask_complete",
+  "__id": "69442a2b29bc127d810c2e61",
+  "workflow_start_dt": "2026-01-02T09:09:52.978-05:00",
+  "close_dt": "2026-01-02T09:09:53.021-05:00",
+  "close_by": "abigail.buenaobra@bgis.com",
+  "_meta": {
+    "lwt": 1767362992697.01
+  },
+  "_attachments": {},
+  "_rev": "4-kwiqfqyobj",
+  "all_tasks": []
+},
+{
+  "_id": {
+    "$oid": "69442a2b29bc127d810c2e62"
+  },
+  "id": "mjbnepvgqknl",
+  "_deleted": false,
+  "audit": [
+    {
+      "aid": "mjbnepvgqknl_xl7xxovi",
+      "message": "Task status changed from 100 (Created) to 1 (InProgress) : Task is in progress",
+      "atype": 0,
+      "user_id": "fid.leonard@infrastructureontario.ca",
+      "audit_dt": "2025-12-18T11:22:00.392-05:00"
+    },
+    {
+      "aid": "mjbnepvgqknl_xl7xxow0",
+      "message": "Task assigned from fid.leonard@infrastructureontario.ca to  Task Assignee with No one assigned",
+      "atype": 0,
+      "user_id": "fid.leonard@infrastructureontario.ca",
+      "audit_dt": "2025-12-18T11:22:00.408-05:00"
+    },
+    {
+      "aid": "mjbnepvgqknl_xluiapi1",
+      "message": "Task assigned from none to angela.farias@bgis.com Acknowledged Task",
+      "atype": 0,
+      "user_id": "angela.farias@bgis.com",
+      "audit_dt": "2025-12-30T07:49:46.809-05:00"
+    },
+    {
+      "aid": "mjbnepvgqknl_xluibf1v",
+      "message": "Task status changed from 1 (InProgress) to 900 (Closed) : Task is completed",
+      "atype": 0,
+      "user_id": "angela.farias@bgis.com",
+      "audit_dt": "2025-12-30T07:50:14.005-05:00"
+    }
+  ],
+  "auser": "angela.farias@bgis.com",
+  "awg": "BGIS :: SLC :: ITS :: Approver",
+  "create_by": "thomas.mercer@bgis.com",
+  "create_dt": "2025-12-18T11:22:00.310-05:00",
+  "create_ip": "69.77.185.229:3636",
+  "doc": [],
+  "eff_perm": [
+    {
+      "id": "BGIS :: SLC :: Users",
+      "perm": 200
+    },
+    {
+      "id": "BGIS :: SLC :: Users :: SPOC",
+      "perm": 200
+    },
+    {
+      "id": "BGIS",
+      "perm": 300
+    },
+    {
+      "id": "BGIS :: SLC",
+      "perm": 300
+    },
+    {
+      "id": "BGIS :: SLC :: Manager",
+      "perm": 300
+    }
+  ],
+  "env": "prod",
+  "is_busy": "",
+  "is_closed": true,
+  "is_locked": false,
+  "module_id": "m0aivihgxfez",
+  "open_query_count": 0,
+  "parent_id": "mi60ms3pybhz",
+  "priority": 50,
+  "project_id": "slc_cs",
+  "queries": [],
+  "sla_time_total": 0,
+  "task_status": 900,
+  "title": "Notification of BGIS ITS Responsibility - mjbnepvgqknl - (Parent ID : mi60ms3pybhz)",
+  "type_id": "m0aiw0mitfza",
+  "updated_by": "angela.farias@bgis.com",
+  "updated_dt": "2025-12-30T07:50:14.005-05:00",
+  "updated_dt_r": 1767099014005,
+  "user_id": "fid.leonard@infrastructureontario.ca",
+  "workflow_id": "subtask_complete",
+  "__id": "69442a2b29bc127d810c2e62",
+  "workflow_start_dt": "2025-12-30T07:50:13.986-05:00",
+  "close_dt": "2025-12-30T07:50:14.005-05:00",
+  "close_by": "angela.farias@bgis.com",
+  "_meta": {
+    "lwt": 1767099014904.02
+  },
+  "_attachments": {},
+  "_rev": "4-kwiqfqyobj",
+  "all_tasks": []
+},
+{
+  "_id": {
+    "$oid": "6957d1ae29bc127d810ccf7c"
+  },
+  "updated_dt": "2026-01-06T09:30:17.940-05:00",
+  "updated_by": "najibah.ibnat@bgis.com",
+  "auser": "najibah.ibnat@bgis.com",
+  "awg": "BGIS :: SLC :: P2P :: Approver",
+  "create_by": "thomas.mercer@bgis.com",
+  "create_dt": "2026-01-02T09:09:51.197-05:00",
+  "create_ip": "163.116.130.119:32204",
+  "doc": [
+    {
+      "fid": "sourcing_required",
+      "val": 0,
+      "tid": 4
+    }
+  ],
+  "project_id": "slc_cs",
+  "type_id": "m0aiw0nazehk",
+  "title": "Review/Update POs + Ehub - mjwyajq6qmrw - (Parent ID : mi60ms3pybhz)",
+  "workflow_id": "subtask_complete",
+  "is_locked": false,
+  "is_closed": true,
+  "priority": 50,
+  "task_status": 900,
+  "module_id": "m0aivihgxfez",
+  "parent_id": "mi60ms3pybhz",
+  "eff_perm": [
+    {
+      "id": "BGIS :: SLC :: Users",
+      "perm": 200
+    },
+    {
+      "id": "BGIS :: SLC :: Users :: SPOC",
+      "perm": 200
+    },
+    {
+      "id": "BGIS",
+      "perm": 300
+    },
+    {
+      "id": "BGIS :: SLC",
+      "perm": 300
+    },
+    {
+      "id": "BGIS :: SLC :: Manager",
+      "perm": 300
+    }
+  ],
+  "id": "mjwyajq6qmrw",
+  "user_id": "abigail.buenaobra@bgis.com",
+  "_deleted": false,
+  "is_busy": "",
+  "env": "prod",
+  "queries": [],
+  "audit": [
+    {
+      "aid": "mjwyajq6qmrw_xm2btp6u",
+      "message": "Task status changed from 100 (Created) to 1 (InProgress) : Task is in progress",
+      "atype": 0,
+      "user_id": "abigail.buenaobra@bgis.com",
+      "audit_dt": "2026-01-02T09:09:51.398-05:00"
+    },
+    {
+      "aid": "mjwyajq6qmrw_xm2btp9q",
+      "message": "Task assigned from abigail.buenaobra@bgis.com to  Task Assignee with No one assigned",
+      "atype": 0,
+      "user_id": "abigail.buenaobra@bgis.com",
+      "audit_dt": "2026-01-02T09:09:51.496-05:00"
+    },
+    {
+      "aid": "mjwyajq6qmrw_xm89np12",
+      "message": "Task assigned from none to najibah.ibnat@bgis.com Acknowledged Task",
+      "atype": 0,
+      "user_id": "najibah.ibnat@bgis.com",
+      "audit_dt": "2026-01-05T12:04:55.248-05:00"
+    },
+    {
+      "aid": "mjwyajq6qmrw_xm9xdw5i",
+      "message": "Task status changed from 1 (InProgress) to 900 (Closed) : Task is completed",
+      "atype": 0,
+      "user_id": "najibah.ibnat@bgis.com",
+      "audit_dt": "2026-01-06T09:30:17.940-05:00"
+    }
+  ],
+  "open_query_count": 0,
+  "sla_time_total": 0,
+  "updated_dt_r": 1767709817940,
+  "key": "slc_io",
+  "workflow_start_dt": "2026-01-06T09:30:17.915-05:00",
+  "close_dt": "2026-01-06T09:30:17.940-05:00",
+  "close_by": "najibah.ibnat@bgis.com",
+  "_meta": {
+    "lwt": 1767709821201.02
+  },
+  "_attachments": {},
+  "_rev": "6-kwiqfqyobj",
+  "__id": "6957d1ae29bc127d810ccf7c",
+  "all_tasks": []
+},
+{
+  "_id": {
+    "$oid": "695d1c7529bc127d810ce984"
+  },
+  "updated_dt": "2026-01-12T11:30:19.186-04:00",
+  "updated_by": "lori.bedford@bgis.com",
+  "auser": "lori.bedford@bgis.com",
+  "awg": "BGIS :: SLC :: Vendor Management :: Approver",
+  "create_by": "thomas.mercer@bgis.com",
+  "create_dt": "2026-01-06T09:30:12.426-05:00",
+  "create_ip": "163.116.250.169:26394",
+  "doc": [],
+  "project_id": "slc_cs",
+  "type_id": "m0aiw0oorcvx",
+  "title": "Notify/Update providers - mk2os4pgrhyq - (Parent ID : mi60ms3pybhz)",
+  "workflow_id": "subtask_complete",
+  "is_locked": false,
+  "is_closed": true,
+  "priority": 50,
+  "task_status": 900,
+  "module_id": "m0aivihgxfez",
+  "parent_id": "mi60ms3pybhz",
+  "eff_perm": [
+    {
+      "id": "BGIS :: SLC :: Users",
+      "perm": 200
+    },
+    {
+      "id": "BGIS :: SLC :: Users :: SPOC",
+      "perm": 200
+    },
+    {
+      "id": "BGIS",
+      "perm": 300
+    },
+    {
+      "id": "BGIS :: SLC",
+      "perm": 300
+    },
+    {
+      "id": "BGIS :: SLC :: Manager",
+      "perm": 300
+    }
+  ],
+  "id": "mk2os4pgrhyq",
+  "user_id": "najibah.ibnat@bgis.com",
+  "_deleted": false,
+  "is_busy": "",
+  "env": "prod",
+  "queries": [],
+  "audit": [
+    {
+      "aid": "mk2os4pgrhyq_xm9xdrhd",
+      "message": "Task status changed from 100 (Created) to 1 (InProgress) : Task is in progress",
+      "atype": 0,
+      "user_id": "najibah.ibnat@bgis.com",
+      "audit_dt": "2026-01-06T09:30:12.563-05:00"
+    },
+    {
+      "aid": "mk2os4pgrhyq_xm9xdrie",
+      "message": "Task assigned from najibah.ibnat@bgis.com to  Created for review with nobody yet assigned",
+      "atype": 0,
+      "user_id": "najibah.ibnat@bgis.com",
+      "audit_dt": "2026-01-06T09:30:12.598-05:00"
+    },
+    {
+      "aid": "mk2os4pgrhyq_xmagt5ro",
+      "message": "Task assigned from none to lori.bedford@bgis.com Acknowledged Task",
+      "atype": 0,
+      "user_id": "lori.bedford@bgis.com",
+      "audit_dt": "2026-01-06T16:58:54.058-04:00"
+    },
+    {
+      "aid": "mk2os4pgrhyq_xmlg1277",
+      "message": "Task status changed from 1 (InProgress) to 900 (Closed) : Closed by parent task",
+      "atype": 0,
+      "user_id": "lori.bedford@bgis.com",
+      "audit_dt": "2026-01-12T11:30:19.045-04:00"
+    }
+  ],
+  "open_query_count": 0,
+  "sla_time_total": 0,
+  "updated_dt_r": 1768231819186,
+  "close_dt": "2026-01-12T11:30:19.045-04:00",
+  "close_by": "lori.bedford@bgis.com",
+  "workflow_start_dt": "2026-01-12T11:30:19.186-04:00",
+  "_meta": {
+    "lwt": 1768231820261.02
+  },
+  "_attachments": {},
+  "_rev": "4-kwiqfqyobj",
+  "__id": "695d1c7529bc127d810ce984"
+},
+{
+  "_id": {
+    "$oid": "695d1c7629bc127d810ce986"
+  },
+  "updated_dt": "2026-01-07T09:17:00.581-05:00",
+  "updated_by": "gabriel.mendez@bgis.com",
+  "auser": "gabriel.mendez@bgis.com",
+  "awg": "BGIS :: SLC :: IO-RPS",
+  "create_by": "thomas.mercer@bgis.com",
+  "create_dt": "2026-01-06T09:30:13.669-05:00",
+  "create_ip": "163.116.130.30:2004",
+  "doc": [],
+  "project_id": "slc_cs",
+  "type_id": "m0aiw0phlmtw",
+  "title": "Review of contract/MSA - mk2os5nzyk2o - (Parent ID : mi60ms3pybhz)",
+  "workflow_id": "subtask_complete",
+  "is_locked": false,
+  "is_closed": true,
+  "priority": 50,
+  "task_status": 900,
+  "module_id": "m0aivihgxfez",
+  "parent_id": "mi60ms3pybhz",
+  "eff_perm": [
+    {
+      "id": "BGIS :: SLC :: Users",
+      "perm": 200
+    },
+    {
+      "id": "BGIS :: SLC :: Users :: SPOC",
+      "perm": 200
+    },
+    {
+      "id": "BGIS",
+      "perm": 300
+    },
+    {
+      "id": "BGIS :: SLC",
+      "perm": 300
+    },
+    {
+      "id": "BGIS :: SLC :: Manager",
+      "perm": 300
+    }
+  ],
+  "id": "mk2os5nzyk2o",
+  "user_id": "najibah.ibnat@bgis.com",
+  "_deleted": false,
+  "is_busy": "",
+  "env": "prod",
+  "queries": [],
+  "audit": [
+    {
+      "aid": "mk2os5nzyk2o_xm9xdskc",
+      "message": "Task status changed from 100 (Created) to 1 (InProgress) : Task is in progress",
+      "atype": 0,
+      "user_id": "najibah.ibnat@bgis.com",
+      "audit_dt": "2026-01-06T09:30:13.820-05:00"
+    },
+    {
+      "aid": "mk2os5nzyk2o_xm9xdsl4",
+      "message": "Task assigned from najibah.ibnat@bgis.com to  Created for review with nobody yet assigned",
+      "atype": 0,
+      "user_id": "najibah.ibnat@bgis.com",
+      "audit_dt": "2026-01-06T09:30:13.846-05:00"
+    },
+    {
+      "aid": "mk2os5nzyk2o_xmbtfae7",
+      "message": "Task assigned from none to gabriel.mendez@bgis.com Acknowledged Task",
+      "atype": 0,
+      "user_id": "gabriel.mendez@bgis.com",
+      "audit_dt": "2026-01-07T09:16:36.915-05:00"
+    },
+    {
+      "aid": "mk2os5nzyk2o_xmbtfuu9",
+      "message": "Task status changed from 1 (InProgress) to 900 (Closed) : Task is completed",
+      "atype": 0,
+      "user_id": "gabriel.mendez@bgis.com",
+      "audit_dt": "2026-01-07T09:17:00.581-05:00"
+    }
+  ],
+  "open_query_count": 0,
+  "sla_time_total": 0,
+  "updated_dt_r": 1767795420581,
+  "workflow_start_dt": "2026-01-07T09:17:00.516-05:00",
+  "close_dt": "2026-01-07T09:17:00.580-05:00",
+  "close_by": "gabriel.mendez@bgis.com",
+  "_meta": {
+    "lwt": 1767795421666.02
+  },
+  "_attachments": {},
+  "_rev": "4-kwiqfqyobj",
+  "__id": "695d1c7629bc127d810ce986",
+  "all_tasks": []
+},
+{
+  "_id": {
+    "$oid": "695d1c7a29bc127d810ce987"
+  },
+  "updated_dt": "2026-01-06T16:58:36.384-04:00",
+  "updated_by": "lori.bedford@bgis.com",
+  "auser": "lori.bedford@bgis.com",
+  "awg": "BGIS :: SLC :: Vendor Management :: Approver",
+  "create_by": "thomas.mercer@bgis.com",
+  "create_dt": "2026-01-06T09:30:14.611-05:00",
+  "create_ip": "163.116.130.29:53124",
+  "doc": [],
+  "project_id": "slc_cs",
+  "type_id": "m0aiw0pv11irx",
+  "title": "Update Building Services - Owned file for GEO Portal - mk2os6e3sv28 - (Parent ID : mi60ms3pybhz)",
+  "workflow_id": "subtask_complete",
+  "is_locked": false,
+  "is_closed": true,
+  "priority": 50,
+  "task_status": 900,
+  "module_id": "m0aivihgxfez",
+  "parent_id": "mi60ms3pybhz",
+  "eff_perm": [
+    {
+      "id": "BGIS :: SLC :: Users",
+      "perm": 200
+    },
+    {
+      "id": "BGIS :: SLC :: Users :: SPOC",
+      "perm": 200
+    },
+    {
+      "id": "BGIS",
+      "perm": 300
+    },
+    {
+      "id": "BGIS :: SLC",
+      "perm": 300
+    },
+    {
+      "id": "BGIS :: SLC :: Manager",
+      "perm": 300
+    }
+  ],
+  "id": "mk2os6e3sv28",
+  "user_id": "najibah.ibnat@bgis.com",
+  "_deleted": false,
+  "is_busy": "",
+  "env": "prod",
+  "queries": [],
+  "audit": [
+    {
+      "aid": "mk2os6e3sv28_xm9xdtdr",
+      "message": "Task status changed from 100 (Created) to 1 (InProgress) : Task is in progress",
+      "atype": 0,
+      "user_id": "najibah.ibnat@bgis.com",
+      "audit_dt": "2026-01-06T09:30:14.753-05:00"
+    },
+    {
+      "aid": "mk2os6e3sv28_xm9xdter",
+      "message": "Task assigned from najibah.ibnat@bgis.com to  Created for review with nobody yet assigned",
+      "atype": 0,
+      "user_id": "najibah.ibnat@bgis.com",
+      "audit_dt": "2026-01-06T09:30:14.787-05:00"
+    },
+    {
+      "aid": "mk2os6e3sv28_xmags4rd",
+      "message": "Task assigned from none to lori.bedford@bgis.com Acknowledged Task",
+      "atype": 0,
+      "user_id": "lori.bedford@bgis.com",
+      "audit_dt": "2026-01-06T16:58:13.587-04:00"
+    },
+    {
+      "aid": "mk2os6e3sv28_xmagsohu",
+      "message": "Task status changed from 1 (InProgress) to 900 (Closed) : Task is completed",
+      "atype": 0,
+      "user_id": "lori.bedford@bgis.com",
+      "audit_dt": "2026-01-06T16:58:36.384-04:00"
+    }
+  ],
+  "open_query_count": 0,
+  "sla_time_total": 0,
+  "updated_dt_r": 1767733116384,
+  "workflow_start_dt": "2026-01-06T16:58:36.316-04:00",
+  "close_dt": "2026-01-06T16:58:36.384-04:00",
+  "close_by": "lori.bedford@bgis.com",
+  "_meta": {
+    "lwt": 1767733117569.02
+  },
+  "_attachments": {},
+  "_rev": "4-kwiqfqyobj",
+  "all_tasks": []
+},
+{
+  "_id": {
+    "$oid": "695d1c7a29bc127d810ce988"
+  },
+  "id": "mk2os74gp5cs",
+  "_deleted": false,
+  "audit": [
+    {
+      "aid": "mk2os74gp5cs_xm9xdu7h",
+      "message": "Task status changed from 100 (Created) to 1 (InProgress) : Task is in progress",
+      "atype": 0,
+      "user_id": "najibah.ibnat@bgis.com",
+      "audit_dt": "2026-01-06T09:30:15.695-05:00"
+    },
+    {
+      "aid": "mk2os74gp5cs_xm9xdu8d",
+      "message": "Task assigned from najibah.ibnat@bgis.com to  Created for review with nobody yet assigned",
+      "atype": 0,
+      "user_id": "najibah.ibnat@bgis.com",
+      "audit_dt": "2026-01-06T09:30:15.725-05:00"
+    },
+    {
+      "aid": "mk2os74gp5cs_xmamf58w",
+      "message": "Task assigned from none to lisa.weller@bgis.com Acknowledged Task",
+      "atype": 0,
+      "user_id": "lisa.weller@bgis.com",
+      "audit_dt": "2026-01-06T18:03:21.180-05:00"
+    },
+    {
+      "aid": "mk2os74gp5cs_xmamfbmt",
+      "message": "Task status changed from 1 (InProgress) to 900 (Closed) : Task is completed",
+      "atype": 0,
+      "user_id": "lisa.weller@bgis.com",
+      "audit_dt": "2026-01-06T18:03:28.589-05:00"
+    }
+  ],
+  "auser": "lisa.weller@bgis.com",
+  "awg": "BGIS :: SLC :: IO-RPS",
+  "create_by": "thomas.mercer@bgis.com",
+  "create_dt": "2026-01-06T09:30:15.558-05:00",
+  "create_ip": "163.116.130.29:53124",
+  "doc": [],
+  "eff_perm": [
+    {
+      "id": "BGIS :: SLC :: Users",
+      "perm": 200
+    },
+    {
+      "id": "BGIS :: SLC :: Users :: SPOC",
+      "perm": 200
+    },
+    {
+      "id": "BGIS",
+      "perm": 300
+    },
+    {
+      "id": "BGIS :: SLC",
+      "perm": 300
+    },
+    {
+      "id": "BGIS :: SLC :: Manager",
+      "perm": 300
+    }
+  ],
+  "env": "prod",
+  "is_busy": "",
+  "is_closed": true,
+  "is_locked": false,
+  "module_id": "m0aivihgxfez",
+  "open_query_count": 0,
+  "parent_id": "mi60ms3pybhz",
+  "priority": 50,
+  "project_id": "slc_cs",
+  "queries": [],
+  "sla_time_total": 0,
+  "task_status": 900,
+  "title": "Update SLC File for GEO Portal - mk2os74gp5cs - (Parent ID : mi60ms3pybhz)",
+  "type_id": "m0aiw0qaz3qp",
+  "updated_by": "lisa.weller@bgis.com",
+  "updated_dt": "2026-01-06T18:03:28.589-05:00",
+  "updated_dt_r": 1767740608589,
+  "user_id": "najibah.ibnat@bgis.com",
+  "workflow_id": "subtask_complete",
+  "workflow_start_dt": "2026-01-06T18:03:28.122-05:00",
+  "close_dt": "2026-01-06T18:03:28.589-05:00",
+  "close_by": "lisa.weller@bgis.com",
+  "_meta": {
+    "lwt": 1767740610161.01
+  },
+  "_attachments": {},
+  "_rev": "4-kwiqfqyobj",
+  "__id": "695d1c7a29bc127d810ce988",
+  "all_tasks": []
+},
+{
+  "_id": {
+    "$oid": "695d1c7d29bc127d810ce991"
+  },
+  "id": "mk2os7walx2s",
+  "_deleted": false,
+  "audit": [
+    {
+      "aid": "mk2os7walx2s_xm9xdv2v",
+      "message": "Task status changed from 100 (Created) to 1 (InProgress) : Task is in progress",
+      "atype": 0,
+      "user_id": "najibah.ibnat@bgis.com",
+      "audit_dt": "2026-01-06T09:30:16.695-05:00"
+    },
+    {
+      "aid": "mk2os7walx2s_xm9xdv3s",
+      "message": "Task assigned from najibah.ibnat@bgis.com to  Created for review with nobody yet assigned",
+      "atype": 0,
+      "user_id": "najibah.ibnat@bgis.com",
+      "audit_dt": "2026-01-06T09:30:16.726-05:00"
+    },
+    {
+      "aid": "mk2os7walx2s_xmbtdlil",
+      "message": "Task assigned from none to gabriel.mendez@bgis.com Acknowledged Task",
+      "atype": 0,
+      "user_id": "gabriel.mendez@bgis.com",
+      "audit_dt": "2026-01-07T09:15:31.173-05:00"
+    },
+    {
+      "aid": "mk2os7walx2s_xmbtelv5",
+      "message": "Task status changed from 1 (InProgress) to 900 (Closed) : Task is completed",
+      "atype": 0,
+      "user_id": "gabriel.mendez@bgis.com",
+      "audit_dt": "2026-01-07T09:16:10.903-05:00"
+    }
+  ],
+  "auser": "gabriel.mendez@bgis.com",
+  "awg": "BGIS :: SLC :: IO-RPS",
+  "create_by": "thomas.mercer@bgis.com",
+  "create_dt": "2026-01-06T09:30:16.562-05:00",
+  "create_ip": "163.116.130.29:49714",
+  "doc": [],
+  "eff_perm": [
+    {
+      "id": "BGIS :: SLC :: Users",
+      "perm": 200
+    },
+    {
+      "id": "BGIS :: SLC :: Users :: SPOC",
+      "perm": 200
+    },
+    {
+      "id": "BGIS",
+      "perm": 300
+    },
+    {
+      "id": "BGIS :: SLC",
+      "perm": 300
+    },
+    {
+      "id": "BGIS :: SLC :: Manager",
+      "perm": 300
+    }
+  ],
+  "env": "prod",
+  "is_busy": "",
+  "is_closed": true,
+  "is_locked": false,
+  "module_id": "m0aivihgxfez",
+  "open_query_count": 0,
+  "parent_id": "mi60ms3pybhz",
+  "priority": 50,
+  "project_id": "slc_cs",
+  "queries": [],
+  "sla_time_total": 0,
+  "task_status": 900,
+  "title": "Review/Update Building services Leased file and Responsibilities matrix(Owned) - mk2os7walx2s - (Parent ID : mi60ms3pybhz)",
+  "type_id": "m3ygpdge1163j",
+  "updated_by": "gabriel.mendez@bgis.com",
+  "updated_dt": "2026-01-07T09:16:10.903-05:00",
+  "updated_dt_r": 1767795370903,
+  "user_id": "najibah.ibnat@bgis.com",
+  "workflow_id": "subtask_complete",
+  "workflow_start_dt": "2026-01-07T09:16:10.837-05:00",
+  "close_dt": "2026-01-07T09:16:10.903-05:00",
+  "close_by": "gabriel.mendez@bgis.com",
+  "_meta": {
+    "lwt": 1767795372088.02
+  },
+  "_attachments": {},
+  "_rev": "4-kwiqfqyobj",
+  "__id": "695d1c7d29bc127d810ce991",
+  "all_tasks": []
+}]

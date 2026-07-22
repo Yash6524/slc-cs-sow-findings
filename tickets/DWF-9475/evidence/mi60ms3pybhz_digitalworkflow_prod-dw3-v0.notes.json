@@ -1,0 +1,430 @@
+[{
+  "_id": {
+    "$oid": "691dccb4b45f481cf15a0807"
+  },
+  "id": "mi62gp0vtm92",
+  "_deleted": false,
+  "create_by": "thomas.mercer@bgis.com",
+  "create_dt": "2025-11-19T08:57:07.375-05:00",
+  "create_ip": "163.116.130.97:13442",
+  "env": "prod",
+  "is_busy": "",
+  "note_text": "SPOC has submitted initial details for SLC request.",
+  "note_type": "system",
+  "project_id": "slc_cs",
+  "ref_id": "mi60ms3pybhz",
+  "ref_type": "task",
+  "updated_by": "thomas.mercer@bgis.com",
+  "updated_dt": "2025-11-19T08:57:07.376-05:00",
+  "user_id": "thomas.mercer@bgis.com",
+  "__id": "691dccb4b45f481cf15a0807",
+  "updated_dt_r": 1763560627376,
+  "_meta": {
+    "lwt": 1771018527753.01
+  },
+  "_attachments": {},
+  "_rev": "6-hdlmurrxhr"
+},
+{
+  "_id": {
+    "$oid": "69248177b45f481cf15a2ae0"
+  },
+  "id": "midc4j3fufe9",
+  "_deleted": false,
+  "create_by": "lori.bedford@bgis.com",
+  "create_dt": "2025-11-24T11:01:59.211-05:00",
+  "create_ip": "163.116.130.119:57128",
+  "env": "prod",
+  "is_busy": "",
+  "note_text": "Adhoc PO required upon approval.",
+  "project_id": "slc_cs",
+  "ref_id": "mi60ms3pybhz",
+  "ref_type": "related_object",
+  "updated_by": "lori.bedford@bgis.com",
+  "updated_dt": "2025-11-24T11:01:59.211-05:00",
+  "user_id": "lori.bedford@bgis.com",
+  "__id": "69248177b45f481cf15a2ae0",
+  "updated_dt_r": 1764000119211,
+  "_meta": {
+    "lwt": 1771018527753.01
+  },
+  "_attachments": {},
+  "_rev": "6-hdlmurrxhr"
+},
+{
+  "_id": {
+    "$oid": "69248180b45f481cf15a2ae1"
+  },
+  "id": "midc4q5bx129",
+  "_deleted": false,
+  "create_by": "lori.bedford@bgis.com",
+  "create_dt": "2025-11-24T11:02:08.351-05:00",
+  "create_ip": "163.116.130.119:57096",
+  "env": "prod",
+  "is_busy": "",
+  "note_text": "Request has been submitted.",
+  "note_type": "system",
+  "project_id": "slc_cs",
+  "ref_id": "mi60ms3pybhz",
+  "ref_type": "task",
+  "updated_by": "lori.bedford@bgis.com",
+  "updated_dt": "2025-11-24T11:02:08.351-05:00",
+  "user_id": "lori.bedford@bgis.com",
+  "__id": "69248180b45f481cf15a2ae1",
+  "updated_dt_r": 1764000128351,
+  "_meta": {
+    "lwt": 1771018527753.01
+  },
+  "_attachments": {},
+  "_rev": "6-hdlmurrxhr"
+},
+{
+  "_id": {
+    "$oid": "6924879eb45f481cf15a2b44"
+  },
+  "id": "midd2a3bsg8r",
+  "_deleted": false,
+  "create_by": "greg.mulholland@bgis.com",
+  "create_dt": "2025-11-24T11:28:13.847-05:00",
+  "create_ip": "209.29.168.107:7164",
+  "env": "prod",
+  "is_busy": "",
+  "note_text": "FM has approved the SLC request.",
+  "note_type": "system",
+  "project_id": "slc_cs",
+  "ref_id": "mi60ms3pybhz",
+  "ref_type": "task",
+  "updated_by": "greg.mulholland@bgis.com",
+  "updated_dt": "2025-11-24T11:28:13.847-05:00",
+  "user_id": "greg.mulholland@bgis.com",
+  "__id": "6924879eb45f481cf15a2b44",
+  "updated_dt_r": 1764001693847,
+  "_meta": {
+    "lwt": 1771018527753.01
+  },
+  "_attachments": {},
+  "_rev": "6-hdlmurrxhr"
+},
+{
+  "_id": {
+    "$oid": "6940b9234a3b85d088c0ffea"
+  },
+  "id": "mj7x4jw2voxr",
+  "_deleted": false,
+  "create_by": "abigail.buenaobra@bgis.com",
+  "create_dt": "2025-12-15T20:42:57.458-05:00",
+  "create_ip": "174.95.58.39:59044",
+  "env": "prod",
+  "is_busy": "",
+  "note_text": "Finance has approved the SLC request.",
+  "note_type": "system",
+  "project_id": "slc_cs",
+  "ref_id": "mi60ms3pybhz",
+  "ref_type": "task",
+  "updated_by": "abigail.buenaobra@bgis.com",
+  "updated_dt": "2025-12-15T20:42:57.458-05:00",
+  "user_id": "abigail.buenaobra@bgis.com",
+  "__id": "6940b9234a3b85d088c0ffea",
+  "updated_dt_r": 1765849377458,
+  "_meta": {
+    "lwt": 1771425546573.01
+  },
+  "_attachments": {},
+  "_rev": "6-ieicywnket"
+},
+{
+  "_id": {
+    "$oid": "694315ca29bc127d810c221c"
+  },
+  "id": "mjaha9jlzydw",
+  "_deleted": false,
+  "create_by": "jeff.davis@infrastructureontario.ca",
+  "create_dt": "2025-12-17T15:42:48.657-05:00",
+  "create_ip": "99.236.47.138:59148",
+  "env": "prod",
+  "is_busy": "",
+  "note_text": "Prem has approved the SLC request.",
+  "note_type": "system",
+  "project_id": "slc_cs",
+  "ref_id": "mi60ms3pybhz",
+  "ref_type": "task",
+  "updated_by": "jeff.davis@infrastructureontario.ca",
+  "updated_dt": "2025-12-17T15:42:48.657-05:00",
+  "user_id": "jeff.davis@infrastructureontario.ca",
+  "__id": "694315ca29bc127d810c221c",
+  "updated_dt_r": 1766004168657,
+  "_meta": {
+    "lwt": 1771425546573.01
+  },
+  "_attachments": {},
+  "_rev": "5-ieicywnket"
+},
+{
+  "_id": {
+    "$oid": "69442a2729bc127d810c2e5f"
+  },
+  "id": "mjbneopgr743",
+  "_deleted": false,
+  "create_by": "fid.leonard@infrastructureontario.ca",
+  "create_dt": "2025-12-18T11:21:58.804-05:00",
+  "create_ip": "69.77.185.229:2334",
+  "env": "prod",
+  "is_busy": "",
+  "note_text": "IO Director has approved the SLC request.",
+  "note_type": "system",
+  "project_id": "slc_cs",
+  "ref_id": "mi60ms3pybhz",
+  "ref_type": "task",
+  "updated_by": "fid.leonard@infrastructureontario.ca",
+  "updated_dt": "2025-12-18T11:21:58.804-05:00",
+  "user_id": "fid.leonard@infrastructureontario.ca",
+  "__id": "69442a2729bc127d810c2e5f",
+  "updated_dt_r": 1766074918804,
+  "_meta": {
+    "lwt": 1771425546573.01
+  },
+  "_attachments": {},
+  "_rev": "5-ieicywnket"
+},
+{
+  "_id": {
+    "$oid": "6953ca8629bc127d810cb3a3"
+  },
+  "id": "mjsl4li9131ur",
+  "_deleted": false,
+  "create_by": "angela.farias@bgis.com",
+  "create_dt": "2025-12-30T07:50:13.857-05:00",
+  "create_ip": "162.10.22.19:36548",
+  "env": "prod",
+  "is_busy": "",
+  "note_text": "BGIS ITS Responsibility task has been Mark as Completed.",
+  "note_type": "system",
+  "project_id": "slc_cs",
+  "ref_id": "mi60ms3pybhz",
+  "ref_type": "task",
+  "updated_by": "angela.farias@bgis.com",
+  "updated_dt": "2025-12-30T07:50:13.857-05:00",
+  "user_id": "angela.farias@bgis.com",
+  "__id": "6953ca8629bc127d810cb3a3",
+  "updated_dt_r": 1767099013857,
+  "_meta": {
+    "lwt": 1771425546573.01
+  },
+  "_attachments": {},
+  "_rev": "4-ieicywnket"
+},
+{
+  "_id": {
+    "$oid": "6957d1ad29bc127d810ccf7b"
+  },
+  "id": "mjwyajlhtzzk",
+  "_deleted": false,
+  "create_by": "abigail.buenaobra@bgis.com",
+  "create_dt": "2026-01-02T09:09:51.029-05:00",
+  "create_ip": "174.95.58.39:51290",
+  "env": "prod",
+  "is_busy": "",
+  "note_text": "Real Property Accounting Review task has been Mark as Completed.",
+  "note_type": "system",
+  "project_id": "slc_cs",
+  "ref_id": "mi60ms3pybhz",
+  "ref_type": "task",
+  "updated_by": "abigail.buenaobra@bgis.com",
+  "updated_dt": "2026-01-02T09:09:51.030-05:00",
+  "user_id": "abigail.buenaobra@bgis.com",
+  "__id": "6957d1ad29bc127d810ccf7b",
+  "updated_dt_r": 1767362991030,
+  "_meta": {
+    "lwt": 1771425546573.01
+  },
+  "_attachments": {},
+  "_rev": "4-ieicywnket"
+},
+{
+  "_id": {
+    "$oid": "695d1c6e29bc127d810ce981"
+  },
+  "id": "mk2orzy3ovi6",
+  "_deleted": false,
+  "create_by": "najibah.ibnat@bgis.com",
+  "create_dt": "2026-01-06T09:30:06.267-05:00",
+  "create_ip": "163.116.130.29:52120",
+  "env": "prod",
+  "is_busy": "",
+  "note_text": "PO# 7302886 has been created for the period of Feb 01, 2026, to Jan 31, 2027 with a quarterly frequency and routed for approval.",
+  "project_id": "slc_cs",
+  "ref_id": "mi60ms3pybhz",
+  "ref_type": "related_object",
+  "updated_by": "najibah.ibnat@bgis.com",
+  "updated_dt": "2026-01-06T09:30:06.267-05:00",
+  "user_id": "najibah.ibnat@bgis.com",
+  "__id": "695d1c6e29bc127d810ce981",
+  "updated_dt_r": 1767709806267,
+  "_meta": {
+    "lwt": 1771425546573.01
+  },
+  "_attachments": {},
+  "_rev": "4-ieicywnket"
+},
+{
+  "_id": {
+    "$oid": "695d1c7429bc127d810ce983"
+  },
+  "id": "mk2os49zszj1",
+  "_deleted": false,
+  "create_by": "najibah.ibnat@bgis.com",
+  "create_dt": "2026-01-06T09:30:11.879-05:00",
+  "create_ip": "163.116.130.29:49714",
+  "env": "prod",
+  "is_busy": "",
+  "note_text": "Review/Update POs + Ehub task has been Mark as Completed.",
+  "note_type": "system",
+  "project_id": "slc_cs",
+  "ref_id": "mi60ms3pybhz",
+  "ref_type": "task",
+  "updated_by": "najibah.ibnat@bgis.com",
+  "updated_dt": "2026-01-06T09:30:11.879-05:00",
+  "user_id": "najibah.ibnat@bgis.com",
+  "__id": "695d1c7429bc127d810ce983",
+  "updated_dt_r": 1767709811879,
+  "_meta": {
+    "lwt": 1771425546573.01
+  },
+  "_attachments": {},
+  "_rev": "4-ieicywnket"
+},
+{
+  "_id": {
+    "$oid": "695d777c29bc127d810cf074"
+  },
+  "id": "mk32nlm3mnrc",
+  "_deleted": false,
+  "create_by": "lori.bedford@bgis.com",
+  "create_dt": "2026-01-06T16:58:35.691-04:00",
+  "create_ip": "163.116.250.169:21158",
+  "env": "prod",
+  "is_busy": "",
+  "note_text": "Update Building Services - Owned file for GEO Portal task has been Mark as Completed.",
+  "note_type": "system",
+  "project_id": "slc_cs",
+  "ref_id": "mi60ms3pybhz",
+  "ref_type": "task",
+  "updated_by": "lori.bedford@bgis.com",
+  "updated_dt": "2026-01-06T16:58:35.691-04:00",
+  "user_id": "lori.bedford@bgis.com",
+  "__id": "695d777c29bc127d810cf074",
+  "updated_dt_r": 1767733115691,
+  "_meta": {
+    "lwt": 1771425546573.01
+  },
+  "_attachments": {},
+  "_rev": "4-ieicywnket"
+},
+{
+  "_id": {
+    "$oid": "695d94bf29bc127d810cf19d"
+  },
+  "id": "mk3745crzeol",
+  "_deleted": false,
+  "create_by": "lisa.weller@bgis.com",
+  "create_dt": "2026-01-06T18:03:26.235-05:00",
+  "create_ip": "163.116.130.171:35414",
+  "env": "prod",
+  "is_busy": "",
+  "note_text": "Update SLC File for GEO Portal task has been Mark as Completed.",
+  "note_type": "system",
+  "project_id": "slc_cs",
+  "ref_id": "mi60ms3pybhz",
+  "ref_type": "task",
+  "updated_by": "lisa.weller@bgis.com",
+  "updated_dt": "2026-01-06T18:03:26.235-05:00",
+  "user_id": "lisa.weller@bgis.com",
+  "__id": "695d94bf29bc127d810cf19d",
+  "updated_dt_r": 1767740606235,
+  "_meta": {
+    "lwt": 1771425546573.01
+  },
+  "_attachments": {},
+  "_rev": "4-ieicywnket"
+},
+{
+  "_id": {
+    "$oid": "695e6aaa29bc127d810cf512"
+  },
+  "id": "mk43pxkuljhi",
+  "_deleted": false,
+  "create_by": "gabriel.mendez@bgis.com",
+  "create_dt": "2026-01-07T09:16:10.302-05:00",
+  "create_ip": "163.116.130.30:34698",
+  "env": "prod",
+  "is_busy": "",
+  "note_text": "Review/Update Building services Leased file and Responsibilities matrix task has been Mark as Completed.",
+  "note_type": "system",
+  "project_id": "slc_cs",
+  "ref_id": "mi60ms3pybhz",
+  "ref_type": "task",
+  "updated_by": "gabriel.mendez@bgis.com",
+  "updated_dt": "2026-01-07T09:16:10.302-05:00",
+  "user_id": "gabriel.mendez@bgis.com",
+  "__id": "695e6aaa29bc127d810cf512",
+  "updated_dt_r": 1767795370302,
+  "_meta": {
+    "lwt": 1771425546573.01
+  },
+  "_attachments": {},
+  "_rev": "4-ieicywnket"
+},
+{
+  "_id": {
+    "$oid": "695e6adc29bc127d810cf515"
+  },
+  "id": "mk43qzzsqfns",
+  "_deleted": false,
+  "create_by": "gabriel.mendez@bgis.com",
+  "create_dt": "2026-01-07T09:17:00.089-05:00",
+  "create_ip": "163.116.130.30:22036",
+  "env": "prod",
+  "is_busy": "",
+  "note_text": "Contract/MSA task has been Mark as Completed.",
+  "note_type": "system",
+  "project_id": "slc_cs",
+  "ref_id": "mi60ms3pybhz",
+  "ref_type": "task",
+  "updated_by": "gabriel.mendez@bgis.com",
+  "updated_dt": "2026-01-07T09:17:00.089-05:00",
+  "user_id": "gabriel.mendez@bgis.com",
+  "__id": "695e6adc29bc127d810cf515",
+  "updated_dt_r": 1767795420089,
+  "_meta": {
+    "lwt": 1771425546573.01
+  },
+  "_attachments": {},
+  "_rev": "4-ieicywnket"
+},
+{
+  "_id": {
+    "$oid": "6965138829bc127d810d1ac8"
+  },
+  "id": "mkbbkh9tsbs0",
+  "_deleted": false,
+  "create_by": "lori.bedford@bgis.com",
+  "create_dt": "2026-01-12T11:30:16.049-04:00",
+  "create_ip": "163.116.254.44:32226",
+  "env": "prod",
+  "is_busy": "",
+  "note_text": "Notify Provider task has been Mark as Completed.",
+  "note_type": "system",
+  "project_id": "slc_cs",
+  "ref_id": "mi60ms3pybhz",
+  "ref_type": "task",
+  "updated_by": "lori.bedford@bgis.com",
+  "updated_dt": "2026-01-12T11:30:16.049-04:00",
+  "user_id": "lori.bedford@bgis.com",
+  "__id": "6965138829bc127d810d1ac8",
+  "updated_dt_r": 1768231816049,
+  "_meta": {
+    "lwt": 1771425546573.01
+  },
+  "_attachments": {},
+  "_rev": "4-ieicywnket"
+}]

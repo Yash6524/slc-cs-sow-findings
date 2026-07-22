@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DWF-9475 / DWTASK-676 Findings</title>
+  <link rel="stylesheet" href="../../assets/styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <p class="crumb no-print">
+      <a href="../../index.html">← All tickets</a>
+    </p>
+
+    <header class="site">
+      <h1>DWF-9475 / DWTASK-676</h1>
+      <div class="meta">
+        <span class="badge badge-bug">bug</span>
+        <span class="badge badge-done">Done</span>
+        · <a href="https://brians.atlassian.net/browse/DWF-9475" target="_blank" rel="noopener">Jira</a>
+        · Prod task <code>mi60ms3pybhz</code>
+      </div>
+    </header>
+
+    <div class="toolbar no-print">
+      <button class="btn btn-primary" type="button" onclick="window.print()">Print / Save as PDF</button>
+      <a class="btn" href="../../admin/add-ticket.html?edit=DWF-9475">Edit findings</a>
+      <a class="btn" href="evidence/mi60ms3pybhz_digitalworkflow_prod-dw3-v0.tasks.json" download>Download tasks.json</a>
+      <a class="btn" href="evidence/mi60ms3pybhz_digitalworkflow_prod-dw3-v0.notes.json" download>Download notes.json</a>
+    </div>
+
+    <div class="card">
+      <h2>Ticket summary</h2>
+      <dl class="kv">
+        <dt>Jira summary</dt>
+        <dd>FM Approved but SLC was still in FM Approval step - mi60ms3pybhz</dd>
+        <dt>Prod task</dt>
+        <dd><code>mi60ms3pybhz</code></dd>
+        <dt>Jira status</dt>
+        <dd>In Progress</dd>
+        <dt>Our status</dt>
+        <dd>Done — no further work required; task already corrected and completed</dd>
+      </dl>
+
+      <h3>What was done</h3>
+      <ul class="tight">
+        <li>Debugged prod task <code>mi60ms3pybhz</code> (tasks.json + notes.json)</li>
+        <li>Compared <code>fm_approve_complete</code> / <code>fm_approve_complete_final</code> in <code>03-FmApproval.lua</code> against notes and approval logs</li>
+        <li>Confirmed current task state: <code>workflow_id = complete_final</code>, <code>task_status = 900</code> (closed/completed)</li>
+      </ul>
+
+      <h3>Findings</h3>
+      <ol>
+        <li>
+          When <code>greg.mulholland@bgis.com</code> approved FM the first time (Confirm Complete),
+          <code>TaskNote("FM has approved the SLC request.")</code> in route <code>fm_approve_complete</code>
+          ran successfully. Note created at <code>2025-11-24T11:28:13.847-05:00</code> — route execution had started.
+        </li>
+        <li>
+          None of the remaining lines in that flow completed as expected (log update / Finance insert / message /
+          redirect to <code>fm_approve_complete_final</code> where <code>TaskUpdateWorkflow("finance_approval")</code> runs).
+          Likely the user left/closed the page before the route finished.
+        </li>
+        <li>
+          Result: FM approval note existed, but the task did not move to Finance Approval on that first attempt.
+        </li>
+        <li>
+          Later, around <code>2025-11-28T15:01:48</code>–<code>15:01:50</code>, the task was corrected and moved into Finance Approval
+          (FM log <code>status_change_date</code> and Finance log <code>email_sent_date</code> align to this window).
+        </li>
+        <li>
+          Audit history does not show who fixed the task or how (no clear manual reassignment / recovery action recorded).
+        </li>
+        <li>
+          Root cause assessment: incomplete page/route execution after Confirm Complete — not a workflow/config defect
+          in the Lua design itself.
+        </li>
+      </ol>
+
+      <div class="callout" style="border-left-color: var(--ok); background: #ecfdf3;">
+        <strong>Conclusion</strong>
+        No further work is required on this ticket. The task was already corrected, progressed through later approvals,
+        and is currently complete (<code>complete_final</code> / status <code>900</code>).
+      </div>
+    </div>
+
+    <h2 class="section-title">Debug annotation</h2>
+    <figure class="evidence-img">
+      <img src="evidence/debug-annotation.png" alt="DWF-9475 debug: FM note ran, remaining route lines did not; later recovery; task complete" />
+      <figcaption>
+        Green: TaskNote executed (Nov 24) and later recovery / completed state.
+        Red: remaining <code>fm_approve_complete</code> workflow/log lines did not run on first attempt.
+      </figcaption>
+    </figure>
+
+    <h2 class="section-title">Evidence files</h2>
+    <ul class="file-list">
+      <li>
+        <span class="name">mi60ms3pybhz_digitalworkflow_prod-dw3-v0.tasks.json</span>
+        <a href="evidence/mi60ms3pybhz_digitalworkflow_prod-dw3-v0.tasks.json" download>Download</a>
+      </li>
+      <li>
+        <span class="name">mi60ms3pybhz_digitalworkflow_prod-dw3-v0.notes.json</span>
+        <a href="evidence/mi60ms3pybhz_digitalworkflow_prod-dw3-v0.notes.json" download>Download</a>
+      </li>
+      <li>
+        <span class="name">debug-annotation.png</span>
+        <a href="evidence/debug-annotation.png" download>Download</a>
+      </li>
+    </ul>
+
+    <h2 class="section-title">Key excerpts</h2>
+    <details class="json-block" open>
+      <summary>FM approval note (Nov 24) — route started</summary>
+      <pre class="json">{
+  "create_by": "greg.mulholland@bgis.com",
+  "create_dt": "2025-11-24T11:28:13.847-05:00",
+  "note_text": "FM has approved the SLC request.",
+  "ref_id": "mi60ms3pybhz"
+}</pre>
+    </details>
+
+    <details class="json-block" open>
+      <summary>FM log approved date vs Finance email (recovery ~Nov 28)</summary>
+      <pre class="json">{
+  "fid": "logs.0.approver_type", "val": "FM Approver",
+  "fid": "logs.0.approver_name", "val": "Greg Mulholland",
+  "fid": "logs.0.status_change_date", "val": "2025-11-28T15:01:48.492-05:00",
+  "fid": "logs.0.approver_status", "val": "Approved",
+
+  "fid": "logs.1.approver_type", "val": "Finance Approver",
+  "fid": "logs.1.email_sent_date", "val": "2025-11-28T15:01:48.727-05:00"
+}</pre>
+    </details>
+
+    <details class="json-block" open>
+      <summary>Current task state — already complete</summary>
+      <pre class="json">{
+  "workflow_id": "complete_final",
+  "is_closed": true,
+  "task_status": 900
+}</pre>
+    </details>
+
+    <p class="footnote">
+      Route reference: <code>03-FmApproval.lua</code> —
+      <code>fm_approve_complete</code> (TaskNote + logs + RedirectReload) →
+      <code>fm_approve_complete_final</code> (<code>TaskUpdateWorkflow("finance_approval")</code>).
+    </p>
+  </div>
+</body>
+</html>
