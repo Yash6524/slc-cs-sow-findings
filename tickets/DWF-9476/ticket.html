@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DWF-9476 / DWTASK-677 Findings</title>
+  <link rel="stylesheet" href="../../assets/styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <p class="crumb no-print">
+      <a href="../../index.html">← All tickets</a>
+    </p>
+
+    <header class="site">
+      <h1>DWF-9476 / DWTASK-677</h1>
+      <div class="meta">
+        <span class="badge badge-bug">bug</span>
+        <span class="badge badge-pending-client">Pending client</span>
+        · <a href="https://brians.atlassian.net/browse/DWF-9476" target="_blank" rel="noopener">Jira</a>
+        · 5 prod tasks investigated
+      </div>
+    </header>
+
+    <div class="toolbar no-print">
+      <button class="btn btn-primary" type="button" onclick="window.print()">Print / Save as PDF</button>
+      <a class="btn" href="../../admin/add-ticket.html?edit=DWF-9476">Edit findings</a>
+      <a class="btn" href="https://brians.atlassian.net/browse/DWF-9476" target="_blank" rel="noopener">Open Jira</a>
+    </div>
+
+    <div class="card">
+      <h2>Ticket summary</h2>
+      <dl class="kv">
+        <dt>Jira summary</dt>
+        <dd>Ministry approved for several SLCs but SLCs are still waiting for approval</dd>
+        <dt>Prod tasks</dt>
+        <dd>
+          <code>mddit41avpx9</code>, <code>md3gmfuu124jf</code>, <code>mcte9fg7r50q</code>,
+          <code>maybbm42oem2</code>, <code>m8yl4448yc3w</code>
+        </dd>
+        <dt>Jira status</dt>
+        <dd>In Progress</dd>
+        <dt>Our status</dt>
+        <dd>Debugged — root cause identified; recovery steps provided per task; <strong>tasks not yet corrected</strong></dd>
+      </dl>
+
+      <h3>What was done</h3>
+      <ul class="tight">
+        <li>Reviewed task logs and audit history for all 5 affected production tasks (JSON archived below)</li>
+        <li>Compared Ministry approval route execution vs expected workflow progression</li>
+        <li>Discussed with Jaival Wadhvana on DWLite / IndexedDB caching behaviour</li>
+        <li>Attempted reproduction on DEV (partial UI issues reproduced; exact prod corruption not reproduced)</li>
+        <li>Documented per-task findings and proposed recovery steps in <a href="https://brians.atlassian.net/browse/DWF-9476" target="_blank" rel="noopener">Jira comments</a></li>
+      </ul>
+
+      <h3>Known DWLite behaviour (Jaival Wadhvana)</h3>
+      <p>
+        DWLite has a known issue when multiple surveys/tasks are opened in the same browser.
+        DWLite can only sync one task at a time in IndexedDB; conflicts can cause inconsistent behaviour.
+      </p>
+
+      <h3>Per-task findings &amp; recovery steps</h3>
+      <p class="hint" style="margin-bottom:10px">
+        All 5 tasks are currently in <code>complete</code> / closed state in prod JSON — recovery steps below are <strong>pending client action</strong>.
+      </p>
+      <table class="checklist">
+        <thead>
+          <tr>
+            <th>Task ID</th>
+            <th>Current state (JSON)</th>
+            <th>Findings</th>
+            <th>Proposed recovery (pending)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="code">mddit41avpx9</td>
+            <td><code>workflow_id: complete</code>, <code>task_status: 900</code></td>
+            <td>Logs stop at IO approval. No Ministry route logs. Lisa manually moved workflow and closed task.</td>
+            <td>Restore <code>ministry_approver</code> / <code>InProgress</code>. Client to use original Approve/Reject URL.</td>
+          </tr>
+          <tr>
+            <td class="code">md3gmfuu124jf</td>
+            <td><code>workflow_id: complete</code>, <code>task_status: 900</code></td>
+            <td>Same as <code>mddit41avpx9</code>. No Ministry logs; manually completed.</td>
+            <td>Same recovery as above.</td>
+          </tr>
+          <tr>
+            <td class="code">mcte9fg7r50q</td>
+            <td><code>workflow_id: complete</code>, <code>task_status: 900</code></td>
+            <td>Corrupted <code>doc</code> — only <code>_unholdroute</code> + <code>logs.4.status_change_date</code> from Ministry route. Partial execution; multiple URLs at same time. Lisa manually completed.</td>
+            <td>Restore Ministry approval state. Fresh browser session; one Approve/Reject URL only.</td>
+          </tr>
+          <tr>
+            <td class="code">maybbm42oem2</td>
+            <td><code>workflow_id: complete</code>, <code>task_status: 900</code></td>
+            <td>Lisa reverted workflow but issue persisted. No Ministry logs; manually completed.</td>
+            <td>Restore Ministry state. Original Approve/Reject URL; fresh session.</td>
+          </tr>
+          <tr>
+            <td class="code">m8yl4448yc3w</td>
+            <td><code>workflow_id: complete</code>, <code>task_status: 900</code></td>
+            <td>Same as <code>maybbm42oem2</code>. Workflow revert did not fix.</td>
+            <td>Same recovery as <code>maybbm42oem2</code>.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>General root cause</h3>
+      <p>After analysing all 5 tasks and DEV testing, root cause is <strong>likely browser/session caching behaviour</strong> (DWLite IndexedDB). Exact prod corruption was <strong>not reproduced on DEV</strong>.</p>
+      <ul class="tight">
+        <li>Multiple Ministry approval URLs opened/executed simultaneously in same browser → route may not complete</li>
+        <li>Prod patterns: (a) route stopped at IO approval with no Ministry logs, or (b) partial route → incomplete <code>doc</code> data</li>
+        <li>DEV testing: <em>"Form Active in Another Tab"</em> and <em>"Invalid survey page"</em> — but not exact prod corruption</li>
+        <li>Fresh browser session + one URL at a time → Ministry route completed successfully in testing</li>
+      </ul>
+
+      <div class="callout">
+        <strong>Conclusion — investigation done; recovery pending</strong>
+        <ul class="tight">
+          <li>Root cause identified: likely DWLite multi-tab / IndexedDB conflict — not a Lua workflow/config defect</li>
+          <li><strong>None of the 5 tasks have been corrected yet</strong> — they remain manually completed in prod</li>
+          <li>Recovery steps documented per task above; awaiting client to execute</li>
+          <li><strong>Client guidance:</strong> Incognito/Private window; open and execute <strong>only one</strong> Ministry approval URL at a time</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2 class="section-title">Evidence files (prod JSON)</h2>
+    <ul class="file-list">
+      <li><span class="name">mddit41avpx9_digitalworkflow_prod-dw3-v0.tasks.json</span><a href="evidence/mddit41avpx9_digitalworkflow_prod-dw3-v0.tasks.json" download>Download</a></li>
+      <li><span class="name">mddit41avpx9_digitalworkflow_prod-dw3-v0.notes.json</span><a href="evidence/mddit41avpx9_digitalworkflow_prod-dw3-v0.notes.json" download>Download</a></li>
+      <li><span class="name">md3gmfuu124jf_digitalworkflow_prod-dw3-v0.tasks.json</span><a href="evidence/md3gmfuu124jf_digitalworkflow_prod-dw3-v0.tasks.json" download>Download</a></li>
+      <li><span class="name">md3gmfuu124jf_digitalworkflow_prod-dw3-v0.notes.json</span><a href="evidence/md3gmfuu124jf_digitalworkflow_prod-dw3-v0.notes.json" download>Download</a></li>
+      <li><span class="name">mcte9fg7r50q_digitalworkflow_prod-dw3-v0.tasks.json</span><a href="evidence/mcte9fg7r50q_digitalworkflow_prod-dw3-v0.tasks.json" download>Download</a></li>
+      <li><span class="name">mcte9fg7r50q_digitalworkflow_prod-dw3-v0.notes.json</span><a href="evidence/mcte9fg7r50q_digitalworkflow_prod-dw3-v0.notes.json" download>Download</a></li>
+      <li><span class="name">maybbm42oem2_digitalworkflow_prod-dw3-v0.tasks.json</span><a href="evidence/maybbm42oem2_digitalworkflow_prod-dw3-v0.tasks.json" download>Download</a></li>
+      <li><span class="name">maybbm42oem2_digitalworkflow_prod-dw3-v0.notes.json</span><a href="evidence/maybbm42oem2_digitalworkflow_prod-dw3-v0.notes.json" download>Download</a></li>
+      <li><span class="name">m8yl4448yc3w_digitalworkflow_prod-dw3-v0.tasks.json</span><a href="evidence/m8yl4448yc3w_digitalworkflow_prod-dw3-v0.tasks.json" download>Download</a></li>
+      <li><span class="name">m8yl4448yc3w_digitalworkflow_prod-dw3-v0.notes.json</span><a href="evidence/m8yl4448yc3w_digitalworkflow_prod-dw3-v0.notes.json" download>Download</a></li>
+    </ul>
+
+    <h2 class="section-title">Key excerpt — partial Ministry route (mcte9fg7r50q)</h2>
+    <details class="json-block" open>
+      <summary>Corrupted doc array — only partial fields from Ministry route</summary>
+      <pre class="json">{
+  "fid": "_unholdroute",
+  "fid": "logs.4.status_change_date",
+  "workflow_id": "complete",
+  "task_status": 900,
+  "note": "Other expected Ministry approval fields missing from doc array"
+}</pre>
+    </details>
+
+    <p class="footnote">
+      Findings from <a href="https://brians.atlassian.net/browse/DWF-9476">DWF-9476</a> Jira comments (Yash Panchal, 2026-07-24; Jaival Wadhvana, 2026-07-23).
+      Ticket remains open until client executes per-task recovery steps.
+    </p>
+  </div>
+</body>
+</html>

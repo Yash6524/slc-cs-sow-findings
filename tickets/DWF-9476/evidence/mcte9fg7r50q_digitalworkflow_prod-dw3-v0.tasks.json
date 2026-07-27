@@ -1,0 +1,729 @@
+[{
+  "_id": {
+    "$oid": "686c08477d27442337088429"
+  },
+  "updated_dt": "2026-02-03T14:09:17.540-05:00",
+  "updated_by": "lisa.weller@bgis.com",
+  "auser": "",
+  "awg": "BGIS :: SLC",
+  "create_by": "greg.mulholland@bgis.com",
+  "create_dt": "2025-07-07T13:47:51.798-04:00",
+  "create_ip": "163.116.130.23:63664",
+  "doc": [
+    {
+      "fid": "details.type",
+      "val": "Change in Service",
+      "tid": 1
+    },
+    {
+      "fid": "details.request_id",
+      "val": "Request - 2025 Change in Service",
+      "tid": 1
+    },
+    {
+      "fid": "details.client_name",
+      "val": 151,
+      "tid": 4
+    },
+    {
+      "fid": "details.start_date",
+      "val": "2025-08-01T00:00:00.000-04:00",
+      "tid": 5
+    },
+    {
+      "fid": "details.description",
+      "val": "<p style=\"margin-left:0in;\">&nbsp;&nbsp;<span style=\"font-size: 12pt;font-family: Arial, sans-serif;\">Mop floor, clean<br>     washroom and refill toilet paper and paper towels once a month.</span>&nbsp;&nbsp;</p>\n",
+      "tid": 1
+    },
+    {
+      "fid": "details.sub_type",
+      "val": "Initiated by Client - additional recurring services",
+      "tid": 1
+    },
+    {
+      "fid": "details.requested_part_of_asset",
+      "val": 0,
+      "tid": 4
+    },
+    {
+      "fid": "details.change_in_service_for",
+      "val": "Single Location",
+      "tid": 1
+    },
+    {
+      "fid": "details.tier_change",
+      "val": 0,
+      "tid": 4
+    },
+    {
+      "fid": "details.ministry_impact",
+      "val": "Single Tenant: single tenant benefit (CFA adjustment)",
+      "tid": 1
+    },
+    {
+      "fid": "details.ministry_approval_required",
+      "val": 1,
+      "tid": 4
+    },
+    {
+      "fid": "details.rcc_in_scope_for_new_location",
+      "val": 0,
+      "tid": 4
+    },
+    {
+      "fid": "details.janitorial_services_in_scope",
+      "val": 1,
+      "tid": 4
+    },
+    {
+      "fid": "details.clearsite_app_in_scope",
+      "val": 0,
+      "tid": 4
+    },
+    {
+      "fid": "details.building_have_bsrm",
+      "val": 0,
+      "tid": 4
+    },
+    {
+      "fid": "details.bsrm_updated",
+      "val": 1,
+      "tid": 4
+    },
+    {
+      "fid": "details.new_bsrm_require",
+      "val": 1,
+      "tid": 4
+    },
+    {
+      "fid": "details.ministry_approvers.0.approving_ministry",
+      "val": "MIN OF NATURAL RESOURCES",
+      "tid": 1
+    },
+    {
+      "fid": "details.ministry_approvers.0.approver_name",
+      "val": "Brad Glover ",
+      "tid": 1
+    },
+    {
+      "fid": "details.ministry_approvers.0.approver_email",
+      "val": "brad.glover@ontario.ca",
+      "tid": 1
+    },
+    {
+      "fid": "details.change_in_service_for_original",
+      "val": "Single Location",
+      "tid": 1
+    },
+    {
+      "fid": "real_property.building_id",
+      "val": "INO03079",
+      "tid": 1
+    },
+    {
+      "fid": "client_code",
+      "val": "B25043",
+      "tid": 1
+    },
+    {
+      "fid": "address",
+      "val": "870 RICHMOND ST",
+      "tid": 1
+    },
+    {
+      "fid": "city",
+      "val": "CHATHAM",
+      "tid": 1
+    },
+    {
+      "fid": "state",
+      "val": "ON",
+      "tid": 1
+    },
+    {
+      "fid": "postal",
+      "val": "N7M 5J5",
+      "tid": 1
+    },
+    {
+      "fid": "installation_number",
+      "val": "N06356",
+      "tid": 1
+    },
+    {
+      "fid": "fmz",
+      "val": "WINDSOR",
+      "tid": 1
+    },
+    {
+      "fid": "country",
+      "val": "CAN",
+      "tid": 1
+    },
+    {
+      "fid": "region",
+      "val": "SOUTHWEST",
+      "tid": 1
+    },
+    {
+      "fid": "prem_name",
+      "val": "JEFF DAVIS",
+      "tid": 1
+    },
+    {
+      "fid": "facility_manager",
+      "val": "GREGORY MULHOLLAND",
+      "tid": 1
+    },
+    {
+      "fid": "facility_manager_email",
+      "val": "Greg.Mulholland@bgis.com",
+      "tid": 1
+    },
+    {
+      "fid": "ownership",
+      "val": "Owned",
+      "tid": 1
+    },
+    {
+      "fid": "tier",
+      "val": "T1",
+      "tid": 1
+    },
+    {
+      "fid": "labor_code",
+      "val": "GREGORY MULHOLLAND",
+      "tid": 1
+    },
+    {
+      "fid": "real_maintenance.schedule_update_require",
+      "val": 0,
+      "tid": 4
+    },
+    {
+      "fid": "reminder_mail_sent_by",
+      "val": "",
+      "tid": 1
+    },
+    {
+      "fid": "expired_mail_sent_by",
+      "val": "",
+      "tid": 1
+    },
+    {
+      "fid": "prem_approvers.0.name",
+      "val": "JEFF DAVIS",
+      "tid": 1
+    },
+    {
+      "fid": "prem_approvers.0.email",
+      "val": "JEFF.DAVIS@infrastructureontario.ca",
+      "tid": 1
+    },
+    {
+      "fid": "prem_approvers.0.building_ids",
+      "val": "INO03079",
+      "tid": 1
+    },
+    {
+      "fid": "temp_services.0.temp_site_action",
+      "val": "Add",
+      "tid": 1
+    },
+    {
+      "fid": "services.0.current_year_budget",
+      "val": 0,
+      "tid": 4
+    },
+    {
+      "fid": "temp_services.0.temp_wbs_code_single",
+      "val": "C12 - CLEANING",
+      "tid": 1
+    },
+    {
+      "fid": "services.0.service_category",
+      "val": "JANITORIAL - OTHER",
+      "tid": 1
+    },
+    {
+      "fid": "services.0.scope",
+      "val": "•\tMop floor, clean washroom and refill toilet paper and paper towels once a month.",
+      "tid": 1
+    },
+    {
+      "fid": "services.0.site_action",
+      "val": "Add",
+      "tid": 1
+    },
+    {
+      "fid": "services.0.wbs_code_single",
+      "val": "C12 - CLEANING",
+      "tid": 1
+    },
+    {
+      "fid": "sum_cost",
+      "val": 4318.32,
+      "tid": 4
+    },
+    {
+      "fid": "attachments",
+      "val": "md3ilylsmyvb",
+      "tid": 1
+    },
+    {
+      "fid": "services.0.price",
+      "val": 359.86,
+      "tid": 4
+    },
+    {
+      "fid": "services.0.vendor_name",
+      "val": "BGIS SUSTAINABLE CLEANING SOLUTIONS",
+      "tid": 1
+    },
+    {
+      "fid": "services.0.billing_frequency",
+      "val": "Monthly",
+      "tid": 1
+    },
+    {
+      "fid": "services.0.current_slc_cost",
+      "val": 2878.88,
+      "tid": 4
+    },
+    {
+      "fid": "services.0.annual_slc_cost",
+      "val": 4318.32,
+      "tid": 4
+    },
+    {
+      "fid": "services.0.total_new_annual_slc_cost",
+      "val": 4318.32,
+      "tid": 4
+    },
+    {
+      "fid": "logs.0.email_sent_date",
+      "val": "2025-07-14T15:48:45.798-04:00",
+      "tid": 5
+    },
+    {
+      "fid": "logs.0.approver_type",
+      "val": "FM Approver",
+      "tid": 1
+    },
+    {
+      "fid": "logs.0.approver_name",
+      "val": "Greg Mulholland",
+      "tid": 1
+    },
+    {
+      "fid": "logs.0.approver_email",
+      "val": "greg.mulholland@bgis.com",
+      "tid": 1
+    },
+    {
+      "fid": "logs.0.status_change_date",
+      "val": "2025-07-15T16:04:24.030-04:00",
+      "tid": 5
+    },
+    {
+      "fid": "logs.0.approver_status",
+      "val": "Approved",
+      "tid": 1
+    },
+    {
+      "fid": "logs.1.email_sent_date",
+      "val": "2025-07-15T16:04:24.115-04:00",
+      "tid": 5
+    },
+    {
+      "fid": "logs.1.approver_type",
+      "val": "Finance Approver",
+      "tid": 1
+    },
+    {
+      "fid": "logs.1.approver_name",
+      "val": "Abigail Buenaobra",
+      "tid": 1
+    },
+    {
+      "fid": "logs.1.approver_email",
+      "val": "abigail.buenaobra@bgis.com",
+      "tid": 1
+    },
+    {
+      "fid": "logs.1.status_change_date",
+      "val": "2025-07-16T16:58:57.911-04:00",
+      "tid": 5
+    },
+    {
+      "fid": "logs.1.approver_status",
+      "val": "Approved",
+      "tid": 1
+    },
+    {
+      "fid": "logs.2.email_sent_date",
+      "val": "2025-07-16T16:58:58.726-04:00",
+      "tid": 5
+    },
+    {
+      "fid": "logs.2.approver_type",
+      "val": "Prem Approver",
+      "tid": 1
+    },
+    {
+      "fid": "logs.2.approver_name",
+      "val": "JEFF DAVIS",
+      "tid": 1
+    },
+    {
+      "fid": "logs.2.approver_email",
+      "val": "jeff.davis@infrastructureontario.ca",
+      "tid": 1
+    },
+    {
+      "fid": "logs.2.status_change_date",
+      "val": "2025-08-21T11:17:57.778-04:00",
+      "tid": 5
+    },
+    {
+      "fid": "logs.2.approver_status",
+      "val": "Approved",
+      "tid": 1
+    },
+    {
+      "fid": "logs.3.email_sent_date",
+      "val": "2025-08-21T11:17:57.858-04:00",
+      "tid": 5
+    },
+    {
+      "fid": "logs.3.approver_type",
+      "val": "North-SouthWest Approver",
+      "tid": 1
+    },
+    {
+      "fid": "logs.3.approver_name",
+      "val": "Fid Leonard",
+      "tid": 1
+    },
+    {
+      "fid": "logs.3.approver_email",
+      "val": "fid.leonard@infrastructureontario.ca",
+      "tid": 1
+    },
+    {
+      "fid": "logs.3.status_change_date",
+      "val": "2025-08-25T21:12:28.343-04:00",
+      "tid": 5
+    },
+    {
+      "fid": "logs.3.approver_status",
+      "val": "Approved",
+      "tid": 1
+    },
+    {
+      "fid": "logs.4.approving_ministry",
+      "val": "MIN OF NATURAL RESOURCES",
+      "tid": 1
+    },
+    {
+      "fid": "logs.4.approver_name",
+      "val": "Brad Glover",
+      "tid": 1
+    },
+    {
+      "fid": "logs.4.approver_email",
+      "val": "brad.glover@ontario.ca",
+      "tid": 1
+    },
+    {
+      "fid": "logs.4.email_sent_date",
+      "val": "2025-08-25T21:12:28.402-04:00",
+      "tid": 5
+    },
+    {
+      "fid": "logs.4.approver_type",
+      "val": "Ministry Approver",
+      "tid": 1
+    },
+    {
+      "fid": "details.ministry_approvers.0.email_sent_dt",
+      "val": "2025-08-25T21:12:28.411-04:00",
+      "tid": 5
+    },
+    {
+      "fid": "_unholdroute",
+      "val": "/XXEJABUXYC/_taskmcte9fg7r50q/step5",
+      "tid": 1
+    },
+    {
+      "fid": "logs.4.status_change_date",
+      "val": "2025-12-02T09:26:35.293-05:00",
+      "tid": 5
+    }
+  ],
+  "project_id": "slc_cs",
+  "type_id": "m0aiw0l0wbwc",
+  "title": "Change in Service - B25043 - INO03079 - SOUTH WEST - 2025 - mcte9fg7r50q",
+  "workflow_id": "complete",
+  "is_locked": false,
+  "is_closed": true,
+  "priority": 50,
+  "task_status": 900,
+  "module_id": "m0aivihgxfez",
+  "eff_perm": [
+    {
+      "id": "BGIS :: SLC :: Users",
+      "perm": 200
+    },
+    {
+      "id": "BGIS :: SLC :: Users :: SPOC",
+      "perm": 200
+    },
+    {
+      "id": "BGIS",
+      "perm": 300
+    },
+    {
+      "id": "BGIS :: SLC",
+      "perm": 300
+    },
+    {
+      "id": "BGIS :: SLC :: Manager",
+      "perm": 300
+    }
+  ],
+  "id": "mcte9fg7r50q",
+  "user_id": "greg.mulholland@bgis.com",
+  "_deleted": false,
+  "is_busy": "",
+  "env": "prod",
+  "queries": [
+    {
+      "qid": "mcte9fg7r50q_xc2ec0of",
+      "fid": "services.0.current_year_budget",
+      "message": "BGIS SCS is already at this site, there should be a current budget for cleaning?",
+      "user_id": "lori.bedford@bgis.com",
+      "query_status": 3,
+      "query_dt": "2025-07-07T15:57:39.775-04:00"
+    }
+  ],
+  "audit": [
+    {
+      "aid": "mcte9fg7r50q_xc28ti9v",
+      "message": "Workflow State Changed from m0aiwm6d14prn to service_details: Request has been moved to Add Services workflowstate",
+      "atype": 97,
+      "user_id": "greg.mulholland@bgis.com",
+      "audit_dt": "2025-07-07T13:55:30.241-04:00"
+    },
+    {
+      "aid": "mcte9fg7r50q_xc28tia2",
+      "message": "Task status changed from 100 to 1: Task is in progress",
+      "atype": 0,
+      "user_id": "greg.mulholland@bgis.com",
+      "audit_dt": "2025-07-07T13:55:30.246-04:00"
+    },
+    {
+      "aid": "mcte9fg7r50q_xc28w3ha",
+      "message": "Task assigned from greg.mulholland@bgis.com to  Submit Form for Attachment workflowstate updated with nobody yet assigned",
+      "atype": 0,
+      "user_id": "greg.mulholland@bgis.com",
+      "audit_dt": "2025-07-07T13:57:11.064-04:00"
+    },
+    {
+      "aid": "mcte9fg7r50q_xc28w3jd",
+      "message": "Workflow State Changed from service_details to obtain_quotes_sd: Request has been moved to Obtain Quotes SD workflowstate",
+      "atype": 97,
+      "user_id": "greg.mulholland@bgis.com",
+      "audit_dt": "2025-07-07T13:57:11.135-04:00"
+    },
+    {
+      "aid": "mcte9fg7r50q_xc2e4s4u",
+      "message": "Task assigned from  to lori.bedford@bgis.com Acknowledged Task",
+      "atype": 0,
+      "user_id": "lori.bedford@bgis.com",
+      "audit_dt": "2025-07-07T15:52:57.046-04:00"
+    },
+    {
+      "aid": "mcte9fg7r50q_xcfoi6ne",
+      "message": "Workflow State Changed from obtain_quotes_sd to fm_approval: Task has been submitted obtain quote",
+      "atype": 97,
+      "user_id": "lori.bedford@bgis.com",
+      "audit_dt": "2025-07-14T15:48:46.372-04:00"
+    },
+    {
+      "aid": "mcte9fg7r50q_xcfoi6nm",
+      "message": "Task assigned from lori.bedford@bgis.com to Greg.Mulholland@bgis.com Submitted for FM review with default assigned",
+      "atype": 0,
+      "user_id": "lori.bedford@bgis.com",
+      "audit_dt": "2025-07-14T15:48:46.380-04:00"
+    },
+    {
+      "aid": "mcte9fg7r50q_xchlube5",
+      "message": "Workflow State Changed from fm_approval to finance_approval: Task has been approved by FM",
+      "atype": 97,
+      "user_id": "greg.mulholland@bgis.com",
+      "audit_dt": "2025-07-15T16:04:25.325-04:00"
+    },
+    {
+      "aid": "mcte9fg7r50q_xchlubef",
+      "message": "Task assigned from greg.mulholland@bgis.com to  Submitted for finance review with nobody yet assigned",
+      "atype": 0,
+      "user_id": "greg.mulholland@bgis.com",
+      "audit_dt": "2025-07-15T16:04:25.335-04:00"
+    },
+    {
+      "aid": "mcte9fg7r50q_xcjkxcmn",
+      "message": "Task assigned from  to abigail.buenaobra@bgis.com Acknowledged Task",
+      "atype": 0,
+      "user_id": "abigail.buenaobra@bgis.com",
+      "audit_dt": "2025-07-16T16:58:39.195-04:00"
+    },
+    {
+      "aid": "mcte9fg7r50q_xcjkxu2l",
+      "message": "Workflow State Changed from finance_approval to prem_approval: Task has been approved by Finance",
+      "atype": 97,
+      "user_id": "abigail.buenaobra@bgis.com",
+      "audit_dt": "2025-07-16T16:58:59.321-04:00"
+    },
+    {
+      "aid": "mcte9fg7r50q_xcjkxu2x",
+      "message": "Task assigned from abigail.buenaobra@bgis.com to JEFF.DAVIS@infrastructureontario.ca Submitted for prem review with nobody yet assigned",
+      "atype": 0,
+      "user_id": "abigail.buenaobra@bgis.com",
+      "audit_dt": "2025-07-16T16:58:59.333-04:00"
+    },
+    {
+      "aid": "mcte9fg7r50q_xejl8a0n",
+      "message": "Task assigned from jeff.davis@infrastructureontario.ca to  Submitted for IO director review with nobody yet assigned",
+      "atype": 0,
+      "user_id": "jeff.davis@infrastructureontario.ca",
+      "audit_dt": "2025-08-21T11:17:58.703-04:00"
+    },
+    {
+      "aid": "mcte9fg7r50q_xen92a81",
+      "message": "Task assigned from none to fid.leonard@infrastructureontario.ca Acknowledged Task",
+      "atype": 0,
+      "user_id": "fid.leonard@infrastructureontario.ca",
+      "audit_dt": "2025-08-23T09:15:48.793-04:00"
+    },
+    {
+      "aid": "mcte9fg7r50q_xen9hmt7",
+      "message": "Task assigned from fid.leonard@infrastructureontario.ca to  Submitted for minitry review",
+      "atype": 0,
+      "user_id": "fid.leonard@infrastructureontario.ca",
+      "audit_dt": "2025-08-23T09:25:52.945-04:00"
+    },
+    {
+      "aid": "mcte9fg7r50q_xer63kwx",
+      "message": "Workflow State Changed from ministry_approver to NewRequest: Reassign task",
+      "atype": 97,
+      "user_id": "lisa.weller@bgis.com",
+      "audit_dt": "2025-08-25T10:38:53.193-04:00"
+    },
+    {
+      "aid": "mcte9fg7r50q_xer63l0r",
+      "message": "Task assigned from none to greg.mulholland@bgis.com Reassign task",
+      "atype": 0,
+      "user_id": "lisa.weller@bgis.com",
+      "audit_dt": "2025-08-25T10:38:53.255-04:00"
+    },
+    {
+      "aid": "mcte9fg7r50q_xeroicrj",
+      "message": "Task status changed from 1 to 7000: Placed on hold",
+      "atype": 0,
+      "user_id": "greg.mulholland@bgis.com",
+      "audit_dt": "2025-08-25T17:29:27.369-04:00"
+    },
+    {
+      "aid": "mcte9fg7r50q_xeroifmt",
+      "message": "Task status changed from 7000 to 1: Task Resumed",
+      "atype": 0,
+      "user_id": "greg.mulholland@bgis.com",
+      "audit_dt": "2025-08-25T17:29:30.677-04:00"
+    },
+    {
+      "aid": "mcte9fg7r50q_xeroq5nq",
+      "message": "Task assigned from greg.mulholland@bgis.com to  Submit Form for Attachment workflowstate updated with nobody yet assigned",
+      "atype": 0,
+      "user_id": "greg.mulholland@bgis.com",
+      "audit_dt": "2025-08-25T17:34:33.580-04:00"
+    },
+    {
+      "aid": "mcte9fg7r50q_xerwlp1x",
+      "message": "Workflow State Changed from obtain_quotes_sd to io_north_south_west_approval: Reassign task",
+      "atype": 97,
+      "user_id": "lisa.weller@bgis.com",
+      "audit_dt": "2025-08-25T20:29:50.127-04:00"
+    },
+    {
+      "aid": "mcte9fg7r50q_xerwlp3t",
+      "message": "Task assigned from none to fid.leonard@infrastructureontario.ca Reassign task",
+      "atype": 0,
+      "user_id": "lisa.weller@bgis.com",
+      "audit_dt": "2025-08-25T20:29:50.191-04:00"
+    },
+    {
+      "aid": "mcte9fg7r50q_xes0isbi",
+      "message": "Task assigned from fid.leonard@infrastructureontario.ca to  Submitted for minitry review",
+      "atype": 0,
+      "user_id": "fid.leonard@infrastructureontario.ca",
+      "audit_dt": "2025-08-25T21:12:28.680-04:00"
+    },
+    {
+      "aid": "mcte9fg7r50q_xl4amrc5",
+      "message": "Task status changed from 1 (InProgress) to 900 (Closed) : Reassign task",
+      "atype": 0,
+      "user_id": "lisa.weller@bgis.com",
+      "audit_dt": "2025-12-16T12:50:48.857-05:00"
+    },
+    {
+      "aid": "mcte9fg7r50q_xl4appn4",
+      "message": "Task status changed from 900 (Closed) to 5000 (Reviewed) : Reassign task",
+      "atype": 0,
+      "user_id": "lisa.weller@bgis.com",
+      "audit_dt": "2025-12-16T12:52:44.830-05:00"
+    },
+    {
+      "aid": "mcte9fg7r50q_xl4aq2lo",
+      "message": "Task assigned from none to lisa.weller@bgis.com Reassign task",
+      "atype": 0,
+      "user_id": "lisa.weller@bgis.com",
+      "audit_dt": "2025-12-16T12:52:57.498-05:00"
+    },
+    {
+      "aid": "mcte9fg7r50q_xntk8s8t",
+      "message": "Task status changed from 5000 (Reviewed) to 900 (Closed)",
+      "atype": 0,
+      "user_id": "lisa.weller@bgis.com",
+      "audit_dt": "2026-02-03T14:09:17.437-05:00"
+    },
+    {
+      "aid": "mcte9fg7r50q_xntk8sbt",
+      "message": "Workflow State Changed from bgis_internal_task to complete: Reassign task",
+      "atype": 97,
+      "user_id": "lisa.weller@bgis.com",
+      "audit_dt": "2026-02-03T14:09:17.539-05:00"
+    },
+    {
+      "aid": "mcte9fg7r50q_xntk8sbu",
+      "message": "Task reassigned from lisa.weller@bgis.com to ",
+      "atype": 0,
+      "user_id": "lisa.weller@bgis.com",
+      "audit_dt": "2026-02-03T14:09:17.540-05:00"
+    }
+  ],
+  "open_query_count": 0,
+  "sla_time_total": 0,
+  "key": "slc_io",
+  "workflow_start_dt": "2026-02-03T14:09:17.517-05:00",
+  "__id": "686c08477d27442337088429",
+  "close_dt": "2026-02-03T14:09:17.437-05:00",
+  "close_by": "lisa.weller@bgis.com",
+  "all_tasks": [],
+  "updated_dt_r": 1770145757540,
+  "_meta": {
+    "lwt": 1770145759483.01
+  },
+  "_attachments": {},
+  "_rev": "172-jwvhvbyddp"
+}]

@@ -1,0 +1,54 @@
+{
+  "key": "DWF-9476",
+  "dwtask": "677",
+  "sp": "3/4",
+  "type": "bug",
+  "status": "pending-client",
+  "summary": "Ministry route incomplete — 5 tasks debugged; recovery steps provided; tasks not yet corrected",
+  "checklistSummary": "Ministry route incomplete — 5 tasks debugged; recovery steps provided; tasks not yet corrected",
+  "page": "tickets/DWF-9476/ticket.html",
+  "prodTaskId": "mddit41avpx9, md3gmfuu124jf, mcte9fg7r50q, maybbm42oem2, m8yl4448yc3w",
+  "jiraSummary": "Ministry approved for several SLCs but SLCs are still waiting for approval",
+  "jiraStatus": "In Progress",
+  "ourStatusText": "Debugged — root cause identified; recovery steps provided per task; tasks not yet corrected",
+  "whatWasDone": [
+    "Reviewed task logs and audit history for all 5 affected production tasks (JSON archived)",
+    "Compared Ministry approval route execution vs expected workflow progression",
+    "Discussed with Jaival Wadhvana on DWLite / IndexedDB caching behaviour",
+    "Attempted reproduction on DEV (partial UI issues reproduced; exact prod corruption not reproduced)",
+    "Documented per-task findings and proposed recovery steps in Jira comments"
+  ],
+  "findings": [
+    "All 5 tasks currently workflow_id complete / task_status 900 — manually closed without proper Ministry approval",
+    "mddit41avpx9 & md3gmfuu124jf: Logs stop at IO approval; no Ministry route logs; Lisa manually completed",
+    "mcte9fg7r50q: Corrupted doc — only _unholdroute + logs.4.status_change_date from Ministry route",
+    "maybbm42oem2 & m8yl4448yc3w: Workflow revert did not fix; no Ministry logs; manually completed",
+    "Root cause likely DWLite IndexedDB conflict when multiple Ministry approval URLs open in same browser",
+    "Recovery steps provided per task — awaiting client action; ticket NOT complete"
+  ],
+  "clientConfirm": "Client to execute per-task recovery: restore Ministry approval state and re-use Approve/Reject URL in fresh browser session (one URL at a time).",
+  "suggestedNext": [
+    "Client executes recovery steps for each of the 5 tasks",
+    "Use Incognito/Private window; one Ministry approval URL at a time",
+    "Confirm each task progresses through Ministry approval correctly after recovery"
+  ],
+  "imgCaption": "",
+  "evidenceNames": [
+    "mddit41avpx9_digitalworkflow_prod-dw3-v0.tasks.json",
+    "mddit41avpx9_digitalworkflow_prod-dw3-v0.notes.json",
+    "md3gmfuu124jf_digitalworkflow_prod-dw3-v0.tasks.json",
+    "md3gmfuu124jf_digitalworkflow_prod-dw3-v0.notes.json",
+    "mcte9fg7r50q_digitalworkflow_prod-dw3-v0.tasks.json",
+    "mcte9fg7r50q_digitalworkflow_prod-dw3-v0.notes.json",
+    "maybbm42oem2_digitalworkflow_prod-dw3-v0.tasks.json",
+    "maybbm42oem2_digitalworkflow_prod-dw3-v0.notes.json",
+    "m8yl4448yc3w_digitalworkflow_prod-dw3-v0.tasks.json",
+    "m8yl4448yc3w_digitalworkflow_prod-dw3-v0.notes.json"
+  ],
+  "auditExcerpt1Title": "Partial Ministry route — mcte9fg7r50q doc corruption",
+  "auditExcerpt1": "{\n  \"fid\": \"_unholdroute\",\n  \"fid\": \"logs.4.status_change_date\",\n  \"workflow_id\": \"complete\",\n  \"task_status\": 900,\n  \"note\": \"Other expected Ministry approval fields missing from doc array\"\n}",
+  "auditExcerpt2Title": "",
+  "auditExcerpt2": "",
+  "footnote": "Investigation complete; recovery pending client action. Source: DWF-9476 Jira comments.",
+  "generatedAt": "2026-07-27T12:55:00.000Z"
+}

@@ -5,7 +5,7 @@
     "url": "https://brians.atlassian.net/browse/DWF-9481"
   },
   "started": "2026-07-22",
-  "updated": "2026-07-22",
+  "updated": "2026-07-27",
   "reviewOrder": "Bugs first (by SP), then Enhancements (by SP). Skip DWF-8273 & DWF-8251.",
   "tickets": [
     {
@@ -51,9 +51,10 @@
       "dwtask": "677",
       "sp": "3/4",
       "type": "bug",
-      "status": "pending",
-      "summary": "",
-      "page": null
+      "status": "pending-client",
+      "summary": "Ministry route incomplete — 5 tasks debugged; recovery steps provided; tasks not yet corrected",
+      "page": "tickets/DWF-9476/ticket.html",
+      "prodTaskId": "mddit41avpx9, md3gmfuu124jf, mcte9fg7r50q, maybbm42oem2, m8yl4448yc3w"
     },
     {
       "key": "DWF-9479",
