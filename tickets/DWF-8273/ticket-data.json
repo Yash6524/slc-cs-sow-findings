@@ -1,0 +1,26 @@
+{
+  "key": "DWF-8273",
+  "dwtask": "839",
+  "sp": "1/2",
+  "type": "bug",
+  "status": "dev-dependent",
+  "summary": "Dev dependent — framework change required to resolve open questions at subtask level",
+  "checklistSummary": "Dev dependent — framework change required (not config)",
+  "page": "tickets/DWF-8273/ticket.html",
+  "jiraSummary": "Resolve all open questions for the following SLCs",
+  "jiraStatus": "To Do",
+  "ourStatusText": "Dev dependent — not handled in SLC_CS config",
+  "whatWasDone": [
+    "Reviewed scope — ticket requires framework/platform changes, not Lua config"
+  ],
+  "findings": [
+    "Out of scope for config-only SOW work; marked dev dependent"
+  ],
+  "clientConfirm": "",
+  "suggestedNext": [
+    "Framework team to handle resolve-open-questions capability at subtask level"
+  ],
+  "evidenceNames": [],
+  "footnote": "Marked as dev dependent in SOW findings portal.",
+  "generatedAt": "2026-07-31T10:54:00.000Z"
+}

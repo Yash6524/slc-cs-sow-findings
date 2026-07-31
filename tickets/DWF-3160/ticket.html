@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DWF-3160 / DWTASK-177 Findings</title>
+  <link rel="stylesheet" href="../../assets/styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <p class="crumb no-print"><a href="../../index.html">← All tickets</a></p>
+    <header class="site">
+      <h1>DWF-3160 / DWTASK-177</h1>
+      <div class="meta">
+        <span class="badge badge-enhancement">enhancement</span>
+        <span class="badge badge-dev-dependent">Dev dependent</span>
+        · <a href="https://brians.atlassian.net/browse/DWF-3160" target="_blank" rel="noopener">Jira</a>
+      </div>
+    </header>
+    <div class="toolbar no-print">
+      <button class="btn btn-primary" type="button" onclick="window.print()">Print / Save as PDF</button>
+      <a class="btn" href="../../admin/add-ticket.html?edit=DWF-3160">Edit findings</a>
+    </div>
+    <div class="card">
+      <h2>Ticket summary</h2>
+      <dl class="kv">
+        <dt>Jira summary</dt>
+        <dd>Formatting in the Description field to be kept from the UI when sent via email and PDF (now PDF-focused)</dd>
+        <dt>Jira status</dt>
+        <dd>To Do</dd>
+        <dt>Our status</dt>
+        <dd>Dev dependent — not handled in SLC_CS config</dd>
+      </dl>
+      <h3>Finding</h3>
+      <p>
+        Description formatting preservation in PDF requires <strong>framework / PDF generation changes</strong>,
+        not SLC_CS Lua config. Marked as <strong>dev dependent</strong>.
+      </p>
+      <div class="callout">
+        <strong>Note</strong>
+        Out of scope for config-only SOW work. Tracked for visibility; delivery depends on framework team.
+      </div>
+    </div>
+  </div>
+</body>
+</html>

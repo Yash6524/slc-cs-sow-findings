@@ -5,26 +5,27 @@
     "url": "https://brians.atlassian.net/browse/DWF-9481"
   },
   "started": "2026-07-22",
-  "updated": "2026-07-27",
-  "reviewOrder": "Bugs first (by SP), then Enhancements (by SP). Skip DWF-8273 & DWF-8251.",
+  "updated": "2026-07-31",
+  "reviewOrder": "Bugs first (by SP), then Enhancements. Dev-dependent tickets = framework, not config.",
   "tickets": [
     {
       "key": "DWF-8273",
       "dwtask": "839",
       "sp": "1/2",
       "type": "bug",
-      "status": "skipped",
-      "summary": "Skipped — already handled / no need to check",
-      "page": null
+      "status": "dev-dependent",
+      "summary": "Dev dependent — framework change required (not config)",
+      "page": "tickets/DWF-8273/ticket.html"
     },
     {
       "key": "DWF-8251",
       "dwtask": "836",
       "sp": "1/2",
       "type": "bug",
-      "status": "skipped",
-      "summary": "Skipped — already handled / no need to check",
-      "page": null
+      "status": "done",
+      "summary": "Added condition on last routes to prevent unnecessary workflow changes",
+      "page": "tickets/DWF-8251/ticket.html",
+      "prodTaskId": "mnmyl8zz14o7g"
     },
     {
       "key": "DWF-8270",
@@ -79,9 +80,9 @@
       "dwtask": "177",
       "sp": "1/2",
       "type": "enhancement",
-      "status": "pending",
-      "summary": "",
-      "page": null
+      "status": "dev-dependent",
+      "summary": "Dev dependent — PDF description formatting requires framework change",
+      "page": "tickets/DWF-3160/ticket.html"
     },
     {
       "key": "DWF-9478",
@@ -97,9 +98,9 @@
       "dwtask": "370",
       "sp": "3/4",
       "type": "enhancement",
-      "status": "pending",
-      "summary": "",
-      "page": null
+      "status": "dev-dependent",
+      "summary": "Dev dependent — Q&A admin reassign/answer-on-behalf requires framework change",
+      "page": "tickets/DWF-9474/ticket.html"
     },
     {
       "key": "DWF-9477",

@@ -1,0 +1,26 @@
+{
+  "key": "DWF-8251",
+  "dwtask": "836",
+  "sp": "1/2",
+  "type": "bug",
+  "status": "done",
+  "summary": "Added condition on last routes to prevent unnecessary workflow changes when SLC already completed",
+  "checklistSummary": "Added condition on last routes to prevent unnecessary workflow changes when SLC already completed",
+  "page": "tickets/DWF-8251/ticket.html",
+  "prodTaskId": "mnmyl8zz14o7g",
+  "jiraSummary": "Special case — SLC was completed, but IO approver reopened it",
+  "jiraStatus": "Done",
+  "ourStatusText": "Completed in config",
+  "whatWasDone": [
+    "Added condition on last routes to prevent unnecessary workflow changes when SLC is already completed",
+    "Prevents IO Director Thank You / Complete Task resubmit from re-releasing subtasks on a closed SLC"
+  ],
+  "findings": [
+    "Config fix applied — condition on last routes blocks unnecessary workflow changes after completion"
+  ],
+  "clientConfirm": "",
+  "suggestedNext": [],
+  "evidenceNames": [],
+  "footnote": "Completed via SLC_CS config change.",
+  "generatedAt": "2026-07-31T10:54:00.000Z"
+}

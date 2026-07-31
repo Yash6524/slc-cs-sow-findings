@@ -1,0 +1,26 @@
+{
+  "key": "DWF-9474",
+  "dwtask": "370",
+  "sp": "3/4",
+  "type": "enhancement",
+  "status": "dev-dependent",
+  "summary": "Dev dependent — Q&A admin reassign/answer-on-behalf requires framework change",
+  "checklistSummary": "Dev dependent — Q&A admin reassign/answer-on-behalf requires framework change",
+  "page": "tickets/DWF-9474/ticket.html",
+  "jiraSummary": "Question and Answer enhancements",
+  "jiraStatus": "To Do",
+  "ourStatusText": "Dev dependent — not handled in SLC_CS config",
+  "whatWasDone": [
+    "Reviewed scope — Admin reassign / answer on behalf of SPOC needs framework/portal work"
+  ],
+  "findings": [
+    "Out of scope for config-only SOW work; marked dev dependent"
+  ],
+  "clientConfirm": "",
+  "suggestedNext": [
+    "Framework team to implement Admin Q&A reassign and answer-on-behalf flows"
+  ],
+  "evidenceNames": [],
+  "footnote": "Marked as dev dependent in SOW findings portal.",
+  "generatedAt": "2026-07-31T10:54:00.000Z"
+}

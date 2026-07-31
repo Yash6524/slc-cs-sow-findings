@@ -1,0 +1,26 @@
+{
+  "key": "DWF-3160",
+  "dwtask": "177",
+  "sp": "1/2",
+  "type": "enhancement",
+  "status": "dev-dependent",
+  "summary": "Dev dependent — PDF description formatting requires framework change",
+  "checklistSummary": "Dev dependent — PDF description formatting requires framework change",
+  "page": "tickets/DWF-3160/ticket.html",
+  "jiraSummary": "Formatting in the Description field to be kept from the UI when sent via email and PDF",
+  "jiraStatus": "To Do",
+  "ourStatusText": "Dev dependent — not handled in SLC_CS config",
+  "whatWasDone": [
+    "Reviewed scope — PDF formatting preservation needs framework/PDF pipeline changes"
+  ],
+  "findings": [
+    "Out of scope for config-only SOW work; marked dev dependent"
+  ],
+  "clientConfirm": "",
+  "suggestedNext": [
+    "Framework team to preserve Description line breaks/paragraph spacing in PDF generation"
+  ],
+  "evidenceNames": [],
+  "footnote": "Marked as dev dependent in SOW findings portal.",
+  "generatedAt": "2026-07-31T10:54:00.000Z"
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DWF-8251 / DWTASK-836 Findings</title>
+  <link rel="stylesheet" href="../../assets/styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <p class="crumb no-print"><a href="../../index.html">← All tickets</a></p>
+    <header class="site">
+      <h1>DWF-8251 / DWTASK-836</h1>
+      <div class="meta">
+        <span class="badge badge-bug">bug</span>
+        <span class="badge badge-done">Done</span>
+        · <a href="https://brians.atlassian.net/browse/DWF-8251" target="_blank" rel="noopener">Jira</a>
+        · Prod/staging task <code>mnmyl8zz14o7g</code>
+      </div>
+    </header>
+    <div class="toolbar no-print">
+      <button class="btn btn-primary" type="button" onclick="window.print()">Print / Save as PDF</button>
+      <a class="btn" href="../../admin/add-ticket.html?edit=DWF-8251">Edit findings</a>
+    </div>
+    <div class="card">
+      <h2>Ticket summary</h2>
+      <dl class="kv">
+        <dt>Jira summary</dt>
+        <dd>Special case — SLC was completed, but IO approver reopened it (Thank You / Complete Task resubmit released subtasks)</dd>
+        <dt>Jira status</dt>
+        <dd>Done</dd>
+        <dt>Our status</dt>
+        <dd>Completed in config</dd>
+      </dl>
+      <h3>What was done</h3>
+      <ul class="tight">
+        <li>Added condition on last routes to prevent unnecessary workflow changes when SLC is already completed</li>
+        <li>Prevents IO Director Thank You / Complete Task resubmit from re-releasing subtasks on a closed SLC</li>
+      </ul>
+      <div class="callout" style="border-left-color: var(--ok); background: #ecfdf3;">
+        <strong>Conclusion</strong>
+        Config fix applied — ticket completed.
+      </div>
+    </div>
+  </div>
+</body>
+</html>

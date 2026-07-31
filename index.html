@@ -13,19 +13,21 @@
       <div class="meta">
         Parent story:
         <a href="https://brians.atlassian.net/browse/DWF-9481" target="_blank" rel="noopener">DWF-9481</a>
-        · Started 2026-07-22 · Updated 2026-07-27
+        · Started 2026-07-22 · Updated 2026-07-31
       </div>
       <div class="meta" style="margin-top:4px">
-        Review order: Bugs first (by SP), then Enhancements. DWF-8273 &amp; DWF-8251 skipped.
+        Review order: Bugs first (by SP), then Enhancements.
+        Dev-dependent tickets handled via framework (not config).
       </div>
     </header>
 
     <div class="toolbar no-print">
       <button class="btn btn-primary" type="button" onclick="window.print()">Print / Save as PDF</button>
       <a class="btn btn-primary" href="admin/add-ticket.html">Add / Edit findings</a>
-      <a class="btn" href="tickets/DWF-8270/ticket.html">Open DWF-8270 findings</a>
-      <a class="btn" href="tickets/DWF-9475/ticket.html">Open DWF-9475 findings</a>
-      <a class="btn" href="tickets/DWF-9476/ticket.html">Open DWF-9476 findings</a>
+      <a class="btn" href="tickets/DWF-8251/ticket.html">DWF-8251</a>
+      <a class="btn" href="tickets/DWF-8270/ticket.html">DWF-8270</a>
+      <a class="btn" href="tickets/DWF-9475/ticket.html">DWF-9475</a>
+      <a class="btn" href="tickets/DWF-9476/ticket.html">DWF-9476</a>
     </div>
 
     <h2 class="section-title">Bugs / Defects</h2>
@@ -43,19 +45,19 @@
       <tbody>
         <tr>
           <td>—</td>
-          <td><a href="https://brians.atlassian.net/browse/DWF-8273" target="_blank" rel="noopener"><strong>DWF-8273</strong></a></td>
+          <td><a href="tickets/DWF-8273/ticket.html"><strong>DWF-8273</strong></a></td>
           <td class="code">839</td>
           <td>1/2</td>
-          <td><span class="badge badge-skipped">Skipped</span></td>
-          <td>Already handled / no need to check</td>
+          <td><span class="badge badge-dev-dependent">Dev dependent</span></td>
+          <td>Framework change — resolve open questions at subtask level (not config)</td>
         </tr>
         <tr>
           <td>—</td>
-          <td><a href="https://brians.atlassian.net/browse/DWF-8251" target="_blank" rel="noopener"><strong>DWF-8251</strong></a></td>
+          <td><a href="tickets/DWF-8251/ticket.html"><strong>DWF-8251</strong></a></td>
           <td class="code">836</td>
           <td>1/2</td>
-          <td><span class="badge badge-skipped">Skipped</span></td>
-          <td>Already handled / no need to check</td>
+          <td><span class="badge badge-done">Done</span></td>
+          <td>Condition on last routes to prevent unnecessary workflow changes</td>
         </tr>
         <tr>
           <td>1</td>
@@ -115,11 +117,11 @@
         </tr>
         <tr>
           <td>2</td>
-          <td><a href="https://brians.atlassian.net/browse/DWF-3160" target="_blank" rel="noopener"><strong>DWF-3160</strong></a></td>
+          <td><a href="tickets/DWF-3160/ticket.html"><strong>DWF-3160</strong></a></td>
           <td class="code">177</td>
           <td>1/2</td>
-          <td><span class="badge badge-pending">Pending</span></td>
-          <td>—</td>
+          <td><span class="badge badge-dev-dependent">Dev dependent</span></td>
+          <td>Framework — PDF description formatting preservation (not config)</td>
         </tr>
         <tr>
           <td>3</td>
@@ -131,11 +133,11 @@
         </tr>
         <tr>
           <td>4</td>
-          <td><a href="https://brians.atlassian.net/browse/DWF-9474" target="_blank" rel="noopener"><strong>DWF-9474</strong></a></td>
+          <td><a href="tickets/DWF-9474/ticket.html"><strong>DWF-9474</strong></a></td>
           <td class="code">370</td>
           <td>3/4</td>
-          <td><span class="badge badge-pending">Pending</span></td>
-          <td>—</td>
+          <td><span class="badge badge-dev-dependent">Dev dependent</span></td>
+          <td>Framework — Q&amp;A admin reassign / answer on behalf (not config)</td>
         </tr>
         <tr>
           <td>5</td>
@@ -173,6 +175,33 @@
     </table>
 
     <h2 class="section-title">Ticket detail pages</h2>
+
+    <div class="card">
+      <h2><a href="tickets/DWF-8251/ticket.html">DWF-8251</a> / DWTASK-836</h2>
+      <div class="sub">
+        <span class="badge badge-bug">bug</span>
+        <span class="badge badge-done">Done</span>
+      </div>
+      <p>Added condition on last routes to prevent unnecessary workflow changes when SLC already completed.</p>
+      <p>
+        <a href="tickets/DWF-8251/ticket.html">Open full findings →</a>
+        · <a href="https://brians.atlassian.net/browse/DWF-8251" target="_blank" rel="noopener">Jira</a>
+      </p>
+    </div>
+
+    <div class="card">
+      <h2><a href="tickets/DWF-8273/ticket.html">DWF-8273</a> / DWTASK-839</h2>
+      <div class="sub">
+        <span class="badge badge-bug">bug</span>
+        <span class="badge badge-dev-dependent">Dev dependent</span>
+      </div>
+      <p>Open questions at subtask level — requires framework change, not config.</p>
+      <p>
+        <a href="tickets/DWF-8273/ticket.html">Open full findings →</a>
+        · <a href="https://brians.atlassian.net/browse/DWF-8273" target="_blank" rel="noopener">Jira</a>
+      </p>
+    </div>
+
     <div class="card">
       <h2><a href="tickets/DWF-8270/ticket.html">DWF-8270</a> / DWTASK-843</h2>
       <div class="sub">
@@ -212,6 +241,32 @@
       <p>
         <a href="tickets/DWF-9476/ticket.html">Open full findings →</a>
         · <a href="https://brians.atlassian.net/browse/DWF-9476" target="_blank" rel="noopener">Jira</a>
+      </p>
+    </div>
+
+    <div class="card">
+      <h2><a href="tickets/DWF-3160/ticket.html">DWF-3160</a> / DWTASK-177</h2>
+      <div class="sub">
+        <span class="badge badge-enhancement">enhancement</span>
+        <span class="badge badge-dev-dependent">Dev dependent</span>
+      </div>
+      <p>PDF description formatting — requires framework/PDF pipeline change, not config.</p>
+      <p>
+        <a href="tickets/DWF-3160/ticket.html">Open full findings →</a>
+        · <a href="https://brians.atlassian.net/browse/DWF-3160" target="_blank" rel="noopener">Jira</a>
+      </p>
+    </div>
+
+    <div class="card">
+      <h2><a href="tickets/DWF-9474/ticket.html">DWF-9474</a> / DWTASK-370</h2>
+      <div class="sub">
+        <span class="badge badge-enhancement">enhancement</span>
+        <span class="badge badge-dev-dependent">Dev dependent</span>
+      </div>
+      <p>Q&amp;A admin reassign / answer on behalf — requires framework change, not config.</p>
+      <p>
+        <a href="tickets/DWF-9474/ticket.html">Open full findings →</a>
+        · <a href="https://brians.atlassian.net/browse/DWF-9474" target="_blank" rel="noopener">Jira</a>
       </p>
     </div>
 
