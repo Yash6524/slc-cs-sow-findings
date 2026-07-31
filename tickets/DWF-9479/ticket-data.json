@@ -1,0 +1,31 @@
+{
+  "key": "DWF-9479",
+  "dwtask": "838",
+  "sp": "3/4",
+  "type": "bug",
+  "status": "covered",
+  "summary": "Covered by ministry suite (DWF-9471/9472/9473) — no separate fix; auto/parent-resolved when those complete",
+  "checklistSummary": "Covered by ministry suite (DWF-9471/9472/9473) — auto/parent-resolved when those complete",
+  "page": "tickets/DWF-9479/ticket.html",
+  "prodTaskId": "mn678v58ykyh",
+  "jiraSummary": "Ministry Approval tab is blank in SLC mn678v58ykyh",
+  "jiraStatus": "Won't Fix",
+  "ourStatusText": "No separate config fix — auto/parent-resolved when ministry enhancement work completes",
+  "whatWasDone": [
+    "Reviewed blank Ministry tab on mn678v58ykyh (ASK changed No→Yes without collecting ministry details)",
+    "Confirmed permanent solution is covered by ministry enhancement tickets DWF-9471 / DWF-9472 / DWF-9473"
+  ],
+  "findings": [
+    "ASK No→Yes does not re-prompt ministry details — tab stays blank",
+    "Client: prevent Ministry Approval Required edits without restart, OR covered by DWF-9472/9473",
+    "Won't Fix on Jira — ignore as standalone; resolves with ministry suite completion"
+  ],
+  "clientConfirm": "",
+  "suggestedNext": [
+    "Complete ministry enhancement suite DWF-9471, DWF-9472, DWF-9473",
+    "Re-verify blank Ministry tab scenario after those land"
+  ],
+  "evidenceNames": [],
+  "footnote": "Linked ministry work: DWF-9471, DWF-9472, DWF-9473.",
+  "generatedAt": "2026-07-31T11:08:00.000Z"
+}

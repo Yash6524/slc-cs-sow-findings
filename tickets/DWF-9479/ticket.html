@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DWF-9479 / DWTASK-838 Findings</title>
+  <link rel="stylesheet" href="../../assets/styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <p class="crumb no-print"><a href="../../index.html">← All tickets</a></p>
+    <header class="site">
+      <h1>DWF-9479 / DWTASK-838</h1>
+      <div class="meta">
+        <span class="badge badge-bug">bug</span>
+        <span class="badge badge-covered">Covered by ministry suite</span>
+        · <a href="https://brians.atlassian.net/browse/DWF-9479" target="_blank" rel="noopener">Jira</a>
+        · Prod task <code>mn678v58ykyh</code>
+      </div>
+    </header>
+    <div class="toolbar no-print">
+      <button class="btn btn-primary" type="button" onclick="window.print()">Print / Save as PDF</button>
+      <a class="btn" href="../../admin/add-ticket.html?edit=DWF-9479">Edit findings</a>
+    </div>
+    <div class="card">
+      <h2>Ticket summary</h2>
+      <dl class="kv">
+        <dt>Jira summary</dt>
+        <dd>Ministry Approval tab is blank in SLC mn678v58ykyh</dd>
+        <dt>Jira status</dt>
+        <dd>Won't Fix</dd>
+        <dt>Our status</dt>
+        <dd>No separate config fix — auto/parent-resolved when ministry enhancement work completes</dd>
+      </dl>
+
+      <h3>What was done</h3>
+      <ul class="tight">
+        <li>Reviewed ticket description and temporary workaround for <code>mn678v58ykyh</code></li>
+        <li>Confirmed permanent intent ties to ministry manage/edit enhancements</li>
+        <li>Aligned with SOW ministry suite:
+          <a href="https://brians.atlassian.net/browse/DWF-9471">DWF-9471</a>,
+          <a href="https://brians.atlassian.net/browse/DWF-9472">DWF-9472</a>,
+          <a href="https://brians.atlassian.net/browse/DWF-9473">DWF-9473</a>
+        </li>
+      </ul>
+
+      <h3>Findings</h3>
+      <ol>
+        <li>
+          SLC was created with Ministry Approval Required = <strong>No</strong>, so ministry details were never collected.
+        </li>
+        <li>
+          Later via ASK, answer changed <strong>No → Yes</strong>, but ASK does not re-prompt for ministry approver details —
+          so answer is Yes while Ministry Approval tab stays blank.
+        </li>
+        <li>
+          Temporary fix: manually add ministry details; IO Director must not approve until details are present.
+        </li>
+        <li>
+          Client permanent direction: prevent updating “Ministry Approval Required” without restarting the SLC —
+          <em>or</em> covered if ministry edit/manage work lands (<a href="https://brians.atlassian.net/browse/DWF-9472">DWF-9472</a> /
+          <a href="https://brians.atlassian.net/browse/DWF-9473">DWF-9473</a>).
+        </li>
+        <li>
+          Jaival (2026-07-28): per latest list, ignore this ticket → Jira set to <strong>Won't Fix</strong>.
+        </li>
+      </ol>
+
+      <div class="callout">
+        <strong>Conclusion</strong>
+        No standalone config work on DWF-9479. Issue is expected to be
+        <strong>automatically / parent-resolved</strong> once ministry enhancement work
+        (<strong>DWF-9471 / DWF-9472 / DWF-9473</strong> is complete.
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -124,6 +124,7 @@ table.checklist td.code { font-family: var(--mono); font-size: 0.85rem; }
 .badge-pending-client { background: #fffaeb; color: var(--client); }
 .badge-done { background: #ecfdf3; color: var(--ok); }
 .badge-dev-dependent { background: #eef4ff; color: #3538cd; }
+.badge-covered { background: #f4ebff; color: #6941c6; }
 .badge-in-progress { background: #eff8ff; color: var(--accent); }
 .badge-bug { background: #fef3f2; color: var(--bug); }
 .badge-enhancement { background: #ecfdf3; color: var(--enh); }

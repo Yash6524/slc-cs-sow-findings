@@ -1,0 +1,33 @@
+{
+  "key": "DWF-9470",
+  "dwtask": "170",
+  "sp": "1/2",
+  "type": "enhancement",
+  "status": "pending-client",
+  "summary": "Seasonal months implemented on DEV; reopened — awaiting confirm if decimals allowed vs whole numbers only",
+  "checklistSummary": "Implemented on DEV; reopened for decimal months confirmation (DWTASK-1070 allows decimals)",
+  "page": "tickets/DWF-9470/ticket.html",
+  "prodTaskId": "ms8mebfqlk52",
+  "jiraSummary": "Add the ability to indicate Seasonal dates for a service",
+  "jiraStatus": "Reopen",
+  "ourStatusText": "Implemented on DEV — reopened for decimal months clarification",
+  "whatWasDone": [
+    "Implemented Seasonal checkbox + # of months on Service Details and Quote multiplier on DEV",
+    "Seasonal/months reflected on email/PDF",
+    "QA passed seasonal enable/disable and PDF scenarios on ms8mebfqlk52"
+  ],
+  "findings": [
+    "Core seasonal feature works on DEV",
+    "QA: Number of months should not be decimal — conflict with DWTASK-1070 AC (allows decimals e.g. 6.5)",
+    "Awaiting Jaival/client confirm: decimals OK vs whole numbers only — ticket Reopen"
+  ],
+  "clientConfirm": "Confirm Number of Months: any decimal (max 12) per DWTASK-1070, or whole numbers only per QA feedback?",
+  "suggestedNext": [
+    "Get Jaival/client confirmation on decimal vs integer months",
+    "If whole numbers only: add validation and re-test",
+    "If decimals OK: reply to QA with AC reference and close reopen"
+  ],
+  "evidenceNames": [],
+  "footnote": "Source: DWF-9470 comments (Yash, Lipi, Jaival / DWTASK-1070-1071).",
+  "generatedAt": "2026-07-31T11:08:00.000Z"
+}

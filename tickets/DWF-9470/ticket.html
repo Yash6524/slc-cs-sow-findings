@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DWF-9470 / DWTASK-170 Findings</title>
+  <link rel="stylesheet" href="../../assets/styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <p class="crumb no-print"><a href="../../index.html">← All tickets</a></p>
+    <header class="site">
+      <h1>DWF-9470 / DWTASK-170</h1>
+      <div class="meta">
+        <span class="badge badge-enhancement">enhancement</span>
+        <span class="badge badge-pending-client">Pending confirm</span>
+        · <a href="https://brians.atlassian.net/browse/DWF-9470" target="_blank" rel="noopener">Jira</a>
+        · Dev task tested: <code>ms8mebfqlk52</code>
+      </div>
+    </header>
+    <div class="toolbar no-print">
+      <button class="btn btn-primary" type="button" onclick="window.print()">Print / Save as PDF</button>
+      <a class="btn" href="../../admin/add-ticket.html?edit=DWF-9470">Edit findings</a>
+    </div>
+    <div class="card">
+      <h2>Ticket summary</h2>
+      <dl class="kv">
+        <dt>Jira summary</dt>
+        <dd>Add the ability to indicate Seasonal dates for a service</dd>
+        <dt>Jira status</dt>
+        <dd>Reopen</dd>
+        <dt>Our status</dt>
+        <dd>Implemented on DEV — reopened for decimal months clarification</dd>
+      </dl>
+
+      <h3>What was done</h3>
+      <ul class="tight">
+        <li>Implemented Seasonal checkbox + # of months on Service Details (Add action)</li>
+        <li>Quote tab: Monthly default + Number of Months multiplier; Full Year cost = Quote × months</li>
+        <li>Seasonal / months shown on email/PDF</li>
+        <li>Deployed and verified on DEV portal (screenshots in Jira)</li>
+        <li>QA (Lipi) regression on task <code>ms8mebfqlk52</code> — seasonal enable/disable, PDF visibility: PASS</li>
+      </ul>
+
+      <h3>Findings</h3>
+      <ol>
+        <li>
+          <strong>Core feature is on DEV.</strong> Seasonal service flow works for Yes/No, Quote defaults, and PDF.
+        </li>
+        <li>
+          <strong>Reopened due to decimal months query.</strong> QA (Lipi, 2026-07-31):
+          “Number of months should not in decimal.”
+        </li>
+        <li>
+          <strong>Written requirement allows decimals.</strong> DWTASK-1070 / AC: field accepts any decimal
+          up to max 12 (example <code>6.5</code> → $100 × 6.5 = $650). DWTASK-1071 also says 1–12 including decimals.
+        </li>
+        <li>
+          Implementation currently allows decimals and calculation updates correctly — matches written AC.
+        </li>
+        <li>
+          Yash asked Jaival (2026-07-31) to confirm: keep any decimal (per AC), or restrict to whole numbers only.
+          <strong>Awaiting requirement confirmation</strong> before changing validation.
+        </li>
+      </ol>
+
+      <div class="callout">
+        <strong>Conclusion — not closed</strong>
+        Feature implemented on DEV and largely QA-passed, but ticket is <strong>Reopen</strong> pending
+        clarification on whether Number of Months may be decimal. Do not treat as Done until Jaival/client
+        confirms decimal vs whole-number rule and any follow-up validation is applied.
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -62,18 +62,20 @@
       "dwtask": "838",
       "sp": "3/4",
       "type": "bug",
-      "status": "pending",
-      "summary": "",
-      "page": null
+      "status": "covered",
+      "summary": "Covered by ministry suite (DWF-9471/9472/9473) — auto/parent-resolved when those complete",
+      "page": "tickets/DWF-9479/ticket.html",
+      "prodTaskId": "mn678v58ykyh"
     },
     {
       "key": "DWF-9470",
       "dwtask": "170",
       "sp": "1/2",
       "type": "enhancement",
-      "status": "pending",
-      "summary": "",
-      "page": null
+      "status": "pending-client",
+      "summary": "Seasonal months on DEV; reopened — awaiting decimal vs whole-number confirmation",
+      "page": "tickets/DWF-9470/ticket.html",
+      "prodTaskId": "ms8mebfqlk52"
     },
     {
       "key": "DWF-3160",
