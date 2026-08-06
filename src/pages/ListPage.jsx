@@ -100,20 +100,16 @@ export default function ListPage() {
 
       {error ? (
         <div className="callout">
-          <strong>Could not load live data</strong>
-          {error}
-          <div style={{ marginTop: 8 }}>
-            Check Firebase Realtime Database rules and that{" "}
-            <code>VITE_FIREBASE_DATABASE_URL</code> is set.
-          </div>
+          <strong>Could not load data</strong>
+          Please try refreshing the page. If it keeps failing, contact the site editor.
         </div>
       ) : null}
 
       {empty && !error ? (
         <div className="callout">
-          <strong>Database is empty</strong>
-          Open <Link to="/admin">Admin</Link>, sign in, then click{" "}
-          <strong>Import seed into Firebase</strong> once to load existing tickets.
+          <strong>No tickets yet</strong>
+          Open <Link to="/admin">Add / Edit findings</Link>, sign in, then choose{" "}
+          <strong>Load initial tickets</strong> once.
         </div>
       ) : null}
 
@@ -124,8 +120,7 @@ export default function ListPage() {
       <ChecklistTable rows={enhancements} />
 
       <p className="footnote">
-        Live data from Firebase Realtime Database (Spark free). Evidence files under{" "}
-        <code>/tickets/&lt;KEY&gt;/evidence/</code>. Content edits do not require redeploy.
+        Parent story checklist for SLC_CS SOW review. Use Print / Save as PDF when needed.
       </p>
     </div>
   );

@@ -97,7 +97,7 @@ export default function AdminPage() {
     setMessage("");
     try {
       await saveTicket(payload);
-      setMessage(`Saved ${payload.key} to Firebase. Teammates see it on refresh — no redeploy.`);
+      setMessage(`Saved ${payload.key}. Changes are visible to the team right away.`);
       navigate(`/ticket/${payload.key}`);
     } catch (err) {
       setMessage(err.message || "Save failed");
@@ -125,7 +125,7 @@ export default function AdminPage() {
   async function handleHardDelete() {
     const key = String(form.key || editKey).toUpperCase();
     if (!key) return;
-    if (!window.confirm(`Permanently delete ${key} from Firebase?`)) return;
+    if (!window.confirm(`Permanently delete ${key}?`)) return;
     setBusy(true);
     try {
       await deleteTicket(key);
@@ -144,7 +144,7 @@ export default function AdminPage() {
     if (
       !empty &&
       !window.confirm(
-        "Database already has data. Overwrite everything with bundled seed.json?"
+        "Tickets already exist. Replace all of them with the initial set?"
       )
     ) {
       return;
@@ -155,7 +155,7 @@ export default function AdminPage() {
       const seed = await loadBundledSeed();
       await seedDatabase(seed);
       setMessage(
-        `Imported ${Object.keys(seed.tickets || {}).length} tickets into Firebase.`
+        `Loaded ${Object.keys(seed.tickets || {}).length} tickets.`
       );
     } catch (err) {
       setMessage(err.message || "Seed failed");
@@ -181,16 +181,15 @@ export default function AdminPage() {
       <header className="site">
         <h1>Add / Edit ticket findings</h1>
         <div className="meta">
-          Save writes live JSON to Firebase. Teammates see updates without git or Netlify redeploy.
+          Sign in to add or update tickets. Changes show for everyone after you save.
         </div>
       </header>
 
       {!isEditor ? (
         <form className="card form-grid no-print" onSubmit={handleLogin}>
-          <h2>Editor sign-in</h2>
+          <h2>Sign in to edit</h2>
           <p className="hint">
-            Use the Email/Password user from Firebase Authentication → Users. Viewers do not need
-            this.
+            Only editors need to sign in. Everyone else can view the checklist without signing in.
           </p>
           <div className="form-row two">
             {field("Email", {
@@ -232,11 +231,11 @@ export default function AdminPage() {
               Sign out
             </button>
             <button className="btn" type="button" disabled={busy} onClick={handleSeed}>
-              Import seed into Firebase
+              Load initial tickets
             </button>
           </div>
           <p className="hint" style={{ marginTop: 8 }}>
-            First time only: import seed loads the existing SOW tickets into the live DB.
+            Use once if the checklist is empty.
           </p>
         </div>
       )}
@@ -402,7 +401,7 @@ export default function AdminPage() {
             value: asLines(form.evidenceNames),
             onChange: (e) => setField("evidenceNames", e.target.value)
           },
-          "Files must already exist under public/tickets/<KEY>/evidence/ (rare deploy)"
+          "File names only — one per line"
         )}
         {field("Image caption", {
           id: "imgCaption",
