@@ -1,9 +1,12 @@
-# Static HTML site — no build step
 [build]
-  publish = "."
-  command = ""
+  command = "npm run build"
+  publish = "dist"
 
-# Optional: friendly headers for static assets
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
 [[headers]]
   for = "/*"
   [headers.values]

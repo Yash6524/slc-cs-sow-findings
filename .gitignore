@@ -1,2 +1,16 @@
-# Local Netlify CLI folder (created after `netlify link`)
+# Local Netlify CLI folder
 .netlify
+
+# Dependencies / build
+node_modules
+dist
+dist-ssr
+*.local
+
+# Env (keep .env.example)
+.env
+.env.*.local
+
+# Editor / OS
+.DS_Store
+Thumbs.db

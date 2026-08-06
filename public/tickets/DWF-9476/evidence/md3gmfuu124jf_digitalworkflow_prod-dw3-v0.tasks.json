@@ -1,0 +1,774 @@
+[{
+  "_id": {
+    "$oid": "687551bb7d2744233752d1c2"
+  },
+  "updated_dt": "2026-02-02T16:19:36.531-05:00",
+  "updated_by": "lisa.weller@bgis.com",
+  "auser": "",
+  "awg": "BGIS :: SLC",
+  "create_by": "terah.santos@bgis.com",
+  "create_dt": "2025-07-14T14:51:39.837-04:00",
+  "create_ip": "163.116.130.120:62140",
+  "doc": [
+    {
+      "fid": "details.type",
+      "val": "Change in Service",
+      "tid": 1
+    },
+    {
+      "fid": "details.request_id",
+      "val": "Request - 2025 Change in Service",
+      "tid": 1
+    },
+    {
+      "fid": "details.client_name",
+      "val": 151,
+      "tid": 4
+    },
+    {
+      "fid": "details.start_date",
+      "val": "2025-09-01T00:00:00.000-04:00",
+      "tid": 5
+    },
+    {
+      "fid": "details.description",
+      "val": "<p>provide waste removal services -  6 yard garbage dumpster and 4 yard carbaord dumpster to be emptied weekly&nbsp;</p>\n",
+      "tid": 1
+    },
+    {
+      "fid": "details.sub_type",
+      "val": "Initiated by Business Unit (Ministry/Dept/Tenant) - additional recurring services",
+      "tid": 1
+    },
+    {
+      "fid": "details.requested_part_of_asset",
+      "val": 0,
+      "tid": 4
+    },
+    {
+      "fid": "details.change_in_service_for",
+      "val": "Single Location",
+      "tid": 1
+    },
+    {
+      "fid": "details.tier_change",
+      "val": 0,
+      "tid": 4
+    },
+    {
+      "fid": "details.ministry_impact",
+      "val": "Single Tenant: single tenant benefit (CFA adjustment)",
+      "tid": 1
+    },
+    {
+      "fid": "details.rcc_in_scope_for_new_location",
+      "val": 0,
+      "tid": 4
+    },
+    {
+      "fid": "details.janitorial_services_in_scope",
+      "val": 0,
+      "tid": 4
+    },
+    {
+      "fid": "details.clearsite_app_in_scope",
+      "val": 0,
+      "tid": 4
+    },
+    {
+      "fid": "details.building_have_bsrm",
+      "val": 1,
+      "tid": 4
+    },
+    {
+      "fid": "details.bsrm_updated",
+      "val": 1,
+      "tid": 4
+    },
+    {
+      "fid": "details.new_bsrm_require",
+      "val": 0,
+      "tid": 4
+    },
+    {
+      "fid": "details.ministry_approvers.0.approving_ministry",
+      "val": "MIN OF NATURAL RESOURCES",
+      "tid": 1
+    },
+    {
+      "fid": "details.ministry_approvers.0.approver_name",
+      "val": "Brad Glover",
+      "tid": 1
+    },
+    {
+      "fid": "details.ministry_approvers.0.approver_email",
+      "val": "brad.glover@ontario.ca",
+      "tid": 1
+    },
+    {
+      "fid": "details.change_in_service_for_original",
+      "val": "Single Location",
+      "tid": 1
+    },
+    {
+      "fid": "real_property.building_id",
+      "val": "INO08645",
+      "tid": 1
+    },
+    {
+      "fid": "client_code",
+      "val": "B30171",
+      "tid": 1
+    },
+    {
+      "fid": "address",
+      "val": "173 25TH SIDEROAD",
+      "tid": 1
+    },
+    {
+      "fid": "city",
+      "val": "ROSSLYN",
+      "tid": 1
+    },
+    {
+      "fid": "state",
+      "val": "ON",
+      "tid": 1
+    },
+    {
+      "fid": "postal",
+      "val": "P7K 0B9",
+      "tid": 1
+    },
+    {
+      "fid": "installation_number",
+      "val": "N30171",
+      "tid": 1
+    },
+    {
+      "fid": "fmz",
+      "val": "THUNDER BAY",
+      "tid": 1
+    },
+    {
+      "fid": "country",
+      "val": "CAN",
+      "tid": 1
+    },
+    {
+      "fid": "region",
+      "val": "NORTH",
+      "tid": 1
+    },
+    {
+      "fid": "prem_name",
+      "val": "ANDREW COTTER",
+      "tid": 1
+    },
+    {
+      "fid": "facility_manager",
+      "val": "TERAH SANTOS",
+      "tid": 1
+    },
+    {
+      "fid": "facility_manager_email",
+      "val": "Terah.Santos@bgis.com",
+      "tid": 1
+    },
+    {
+      "fid": "ownership",
+      "val": "Owned",
+      "tid": 1
+    },
+    {
+      "fid": "tier",
+      "val": "T2",
+      "tid": 1
+    },
+    {
+      "fid": "labor_code",
+      "val": "TERAH SANTOS",
+      "tid": 1
+    },
+    {
+      "fid": "real_maintenance.schedule_update_require",
+      "val": 0,
+      "tid": 4
+    },
+    {
+      "fid": "reminder_mail_sent_by",
+      "val": "",
+      "tid": 1
+    },
+    {
+      "fid": "expired_mail_sent_by",
+      "val": "",
+      "tid": 1
+    },
+    {
+      "fid": "prem_approvers.0.name",
+      "val": "ANDREW COTTER",
+      "tid": 1
+    },
+    {
+      "fid": "prem_approvers.0.email",
+      "val": "ANDREW.COTTER@infrastructureontario.ca",
+      "tid": 1
+    },
+    {
+      "fid": "prem_approvers.0.building_ids",
+      "val": "INO08645",
+      "tid": 1
+    },
+    {
+      "fid": "temp_services.0.temp_site_action",
+      "val": "Add",
+      "tid": 1
+    },
+    {
+      "fid": "services.0.current_year_budget",
+      "val": 0,
+      "tid": 4
+    },
+    {
+      "fid": "temp_services.0.temp_wbs_code_single",
+      "val": "C50 - WASTE REMOVAL",
+      "tid": 1
+    },
+    {
+      "fid": "services.0.service_category",
+      "val": "RECYCLING/GARBAGE - REMOVAL",
+      "tid": 1
+    },
+    {
+      "fid": "services.0.scope",
+      "val": "provide 6 yard garbage and 4 yard cardboard bin and service them weekly",
+      "tid": 1
+    },
+    {
+      "fid": "services.0.site_action",
+      "val": "Add",
+      "tid": 1
+    },
+    {
+      "fid": "services.0.wbs_code_single",
+      "val": "C50 - WASTE REMOVAL",
+      "tid": 1
+    },
+    {
+      "fid": "sum_cost",
+      "val": 4988.4,
+      "tid": 4
+    },
+    {
+      "fid": "attachments",
+      "val": "mdis2xlntk98",
+      "tid": 1
+    },
+    {
+      "fid": "services.0.vendor_name",
+      "val": "WASTE MANAGEMENT",
+      "tid": 1
+    },
+    {
+      "fid": "services.0.price",
+      "val": 280.6,
+      "tid": 4
+    },
+    {
+      "fid": "services.0.current_slc_cost",
+      "val": 1964.2,
+      "tid": 4
+    },
+    {
+      "fid": "services.0.billing_frequency",
+      "val": "Monthly",
+      "tid": 1
+    },
+    {
+      "fid": "services.0.annual_slc_cost",
+      "val": 3367.2,
+      "tid": 4
+    },
+    {
+      "fid": "services.0.total_new_annual_slc_cost",
+      "val": 3367.2,
+      "tid": 4
+    },
+    {
+      "fid": "temp_services.1.temp_site_action",
+      "val": "Add",
+      "tid": 1
+    },
+    {
+      "fid": "temp_services.1.temp_wbs_code_single",
+      "val": "C51 - RECYCLING",
+      "tid": 1
+    },
+    {
+      "fid": "services.1.service_category",
+      "val": "RECYCLING/GARBAGE - REMOVAL",
+      "tid": 1
+    },
+    {
+      "fid": "services.1.scope",
+      "val": "provide 4 yard cardbaord bin",
+      "tid": 1
+    },
+    {
+      "fid": "services.1.current_year_budget",
+      "val": 0,
+      "tid": 4
+    },
+    {
+      "fid": "services.1.site_action",
+      "val": "Add",
+      "tid": 1
+    },
+    {
+      "fid": "services.1.wbs_code_single",
+      "val": "C51 - RECYCLING",
+      "tid": 1
+    },
+    {
+      "fid": "services.1.price",
+      "val": 135.1,
+      "tid": 4
+    },
+    {
+      "fid": "services.1.vendor_name",
+      "val": "WASTE MANAGEMENT",
+      "tid": 1
+    },
+    {
+      "fid": "services.1.billing_frequency",
+      "val": "Monthly",
+      "tid": 1
+    },
+    {
+      "fid": "services.1.current_slc_cost",
+      "val": 945.7,
+      "tid": 4
+    },
+    {
+      "fid": "services.1.annual_slc_cost",
+      "val": 1621.2,
+      "tid": 4
+    },
+    {
+      "fid": "services.1.total_new_annual_slc_cost",
+      "val": 1621.2,
+      "tid": 4
+    },
+    {
+      "fid": "logs.0.email_sent_date",
+      "val": "2025-07-28T15:50:24.741-04:00",
+      "tid": 5
+    },
+    {
+      "fid": "logs.0.approver_type",
+      "val": "FM Approver",
+      "tid": 1
+    },
+    {
+      "fid": "logs.0.approver_name",
+      "val": "Terah Santos",
+      "tid": 1
+    },
+    {
+      "fid": "logs.0.approver_email",
+      "val": "terah.santos@bgis.com",
+      "tid": 1
+    },
+    {
+      "fid": "logs.0.status_change_date",
+      "val": "2025-07-29T09:30:07.980-04:00",
+      "tid": 5
+    },
+    {
+      "fid": "logs.0.approver_status",
+      "val": "Approved",
+      "tid": 1
+    },
+    {
+      "fid": "logs.1.email_sent_date",
+      "val": "2025-07-29T09:30:08.113-04:00",
+      "tid": 5
+    },
+    {
+      "fid": "logs.1.approver_type",
+      "val": "Finance Approver",
+      "tid": 1
+    },
+    {
+      "fid": "logs.1.approver_name",
+      "val": "Abigail Buenaobra",
+      "tid": 1
+    },
+    {
+      "fid": "logs.1.approver_email",
+      "val": "abigail.buenaobra@bgis.com",
+      "tid": 1
+    },
+    {
+      "fid": "logs.1.status_change_date",
+      "val": "2025-07-29T15:38:50.673-04:00",
+      "tid": 5
+    },
+    {
+      "fid": "logs.1.approver_status",
+      "val": "Approved",
+      "tid": 1
+    },
+    {
+      "fid": "logs.2.email_sent_date",
+      "val": "2025-07-29T15:38:50.799-04:00",
+      "tid": 5
+    },
+    {
+      "fid": "logs.2.approver_type",
+      "val": "Prem Approver",
+      "tid": 1
+    },
+    {
+      "fid": "logs.2.approver_name",
+      "val": "Andrew Cotter",
+      "tid": 1
+    },
+    {
+      "fid": "logs.2.approver_email",
+      "val": "andrew.cotter@infrastructureontario.ca",
+      "tid": 1
+    },
+    {
+      "fid": "logs.2.status_change_date",
+      "val": "2025-08-05T11:49:47.744-04:00",
+      "tid": 5
+    },
+    {
+      "fid": "logs.2.approver_status",
+      "val": "Approved",
+      "tid": 1
+    },
+    {
+      "fid": "logs.3.email_sent_date",
+      "val": "2025-08-05T11:49:47.898-04:00",
+      "tid": 5
+    },
+    {
+      "fid": "logs.3.approver_type",
+      "val": "North-SouthWest Approver",
+      "tid": 1
+    },
+    {
+      "fid": "logs.3.approver_name",
+      "val": "Fid Leonard",
+      "tid": 1
+    },
+    {
+      "fid": "logs.3.approver_email",
+      "val": "fid.leonard@infrastructureontario.ca",
+      "tid": 1
+    },
+    {
+      "fid": "logs.3.status_change_date",
+      "val": "2025-08-10T06:50:38.957-04:00",
+      "tid": 5
+    },
+    {
+      "fid": "logs.3.approver_status",
+      "val": "Approved",
+      "tid": 1
+    },
+    {
+      "fid": "logs.4.approving_ministry",
+      "val": "MIN OF NATURAL RESOURCES",
+      "tid": 1
+    },
+    {
+      "fid": "logs.4.approver_name",
+      "val": "Brad Glover",
+      "tid": 1
+    },
+    {
+      "fid": "logs.4.approver_email",
+      "val": "brad.glover@ontario.ca",
+      "tid": 1
+    },
+    {
+      "fid": "logs.4.email_sent_date",
+      "val": "2025-08-10T06:50:39.033-04:00",
+      "tid": 5
+    },
+    {
+      "fid": "logs.4.approver_type",
+      "val": "Ministry Approver",
+      "tid": 1
+    },
+    {
+      "fid": "details.ministry_approvers.0.email_sent_dt",
+      "val": "2025-08-10T06:50:39.052-04:00",
+      "tid": 5
+    }
+  ],
+  "project_id": "slc_cs",
+  "type_id": "m0aiw0l0wbwc",
+  "title": "Change in Service - B30171 - INO08645 - NORTHWEST - 2025 - md3gmfuu124jf",
+  "workflow_id": "complete",
+  "is_locked": false,
+  "is_closed": true,
+  "priority": 50,
+  "task_status": 900,
+  "module_id": "m0aivihgxfez",
+  "eff_perm": [
+    {
+      "id": "BGIS :: SLC :: Users",
+      "perm": 200
+    },
+    {
+      "id": "BGIS :: SLC :: Users :: SPOC",
+      "perm": 200
+    },
+    {
+      "id": "BGIS",
+      "perm": 300
+    },
+    {
+      "id": "BGIS :: SLC",
+      "perm": 300
+    },
+    {
+      "id": "BGIS :: SLC :: Manager",
+      "perm": 300
+    }
+  ],
+  "id": "md3gmfuu124jf",
+  "user_id": "terah.santos@bgis.com",
+  "_deleted": false,
+  "is_busy": "",
+  "env": "prod",
+  "queries": [
+    {
+      "qid": "md3gmfuu124jf_xd2197xk",
+      "fid": "details.start_date",
+      "message": "Please change date to 09/01/2025, contract change needs to be on the first of a month with 30 days notice",
+      "user_id": "meagan.held@bgis.com",
+      "query_status": 1,
+      "query_dt": "2025-07-25T08:13:02.314-04:00"
+    },
+    {
+      "qid": "md3gmfuu124jf_xd21bh4t",
+      "fid": "services.0.wbs_code_single",
+      "message": "Should this be two services? Waste C50 and Recycling C51",
+      "user_id": "meagan.held@bgis.com",
+      "query_status": 3,
+      "query_dt": "2025-07-25T08:14:31.505-04:00"
+    },
+    {
+      "qid": "md3gmfuu124jf_xd25hnlu",
+      "fid": "details.start_date",
+      "message": "date has been changed",
+      "user_id": "terah.santos@bgis.com",
+      "query_status": 2,
+      "query_dt": "2025-07-25T09:47:40.188-04:00"
+    }
+  ],
+  "audit": [
+    {
+      "aid": "md3gmfuu124jf_xcfm6fka",
+      "message": "Workflow State Changed from m0aiwm6d14prn to service_details: Request has been moved to Add Services workflowstate",
+      "atype": 97,
+      "user_id": "terah.santos@bgis.com",
+      "audit_dt": "2025-07-14T14:56:32.350-04:00"
+    },
+    {
+      "aid": "md3gmfuu124jf_xcfm6fke",
+      "message": "Task status changed from 100 to 1: Task is in progress",
+      "atype": 0,
+      "user_id": "terah.santos@bgis.com",
+      "audit_dt": "2025-07-14T14:56:32.354-04:00"
+    },
+    {
+      "aid": "md3gmfuu124jf_xcfm80dt",
+      "message": "Task assigned from terah.santos@bgis.com to  Submit Form for Attachment workflowstate updated with nobody yet assigned",
+      "atype": 0,
+      "user_id": "terah.santos@bgis.com",
+      "audit_dt": "2025-07-14T14:57:33.399-04:00"
+    },
+    {
+      "aid": "md3gmfuu124jf_xcfm80fk",
+      "message": "Workflow State Changed from service_details to obtain_quotes_sd: Request has been moved to Obtain Quotes SD workflowstate",
+      "atype": 97,
+      "user_id": "terah.santos@bgis.com",
+      "audit_dt": "2025-07-14T14:57:33.458-04:00"
+    },
+    {
+      "aid": "md3gmfuu124jf_xcfmfwbv",
+      "message": "Task assigned from  to meagan.held@bgis.com (Manually) Reassign task",
+      "atype": 0,
+      "user_id": "lori.bedford@bgis.com",
+      "audit_dt": "2025-07-14T15:02:45.453-04:00"
+    },
+    {
+      "aid": "md3gmfuu124jf_xd269icg",
+      "message": "Workflow State Changed from obtain_quotes_sd to service_details: Reassign task",
+      "atype": 97,
+      "user_id": "lisa.weller@bgis.com",
+      "audit_dt": "2025-07-25T10:04:35.992-04:00"
+    },
+    {
+      "aid": "md3gmfuu124jf_xd269idi",
+      "message": "Task assigned from meagan.held@bgis.com to terah.santos@bgis.com Reassign task",
+      "atype": 0,
+      "user_id": "lisa.weller@bgis.com",
+      "audit_dt": "2025-07-25T10:04:36.028-04:00"
+    },
+    {
+      "aid": "md3gmfuu124jf_xd28omiw",
+      "message": "Task assigned from terah.santos@bgis.com to  Submit Form for Attachment workflowstate updated with nobody yet assigned",
+      "atype": 0,
+      "user_id": "terah.santos@bgis.com",
+      "audit_dt": "2025-07-25T10:59:03.068-04:00"
+    },
+    {
+      "aid": "md3gmfuu124jf_xd28omla",
+      "message": "Workflow State Changed from service_details to obtain_quotes_vm: Request has been moved to Obtain Quotes VM workflowstate",
+      "atype": 97,
+      "user_id": "terah.santos@bgis.com",
+      "audit_dt": "2025-07-25T10:59:03.148-04:00"
+    },
+    {
+      "aid": "md3gmfuu124jf_xd2almt2",
+      "message": "Task assigned from  to meagan.held@bgis.com (Manually) Reassign task",
+      "atype": 0,
+      "user_id": "lori.bedford@bgis.com",
+      "audit_dt": "2025-07-25T11:41:38.172-04:00"
+    },
+    {
+      "aid": "md3gmfuu124jf_xd8bq77n",
+      "message": "Workflow State Changed from obtain_quotes_vm to fm_approval: Task has been submitted obtain quote",
+      "atype": 97,
+      "user_id": "meagan.held@bgis.com",
+      "audit_dt": "2025-07-28T15:50:25.505-04:00"
+    },
+    {
+      "aid": "md3gmfuu124jf_xd8bq77x",
+      "message": "Task assigned from meagan.held@bgis.com to Terah.Santos@bgis.com Submitted for FM review with default assigned",
+      "atype": 0,
+      "user_id": "meagan.held@bgis.com",
+      "audit_dt": "2025-07-28T15:50:25.515-04:00"
+    },
+    {
+      "aid": "md3gmfuu124jf_xd9pbwsb",
+      "message": "Workflow State Changed from fm_approval to finance_approval: Task has been approved by FM",
+      "atype": 97,
+      "user_id": "terah.santos@bgis.com",
+      "audit_dt": "2025-07-29T09:30:09.675-04:00"
+    },
+    {
+      "aid": "md3gmfuu124jf_xd9pbwsx",
+      "message": "Task assigned from terah.santos@bgis.com to  Submitted for finance review with nobody yet assigned",
+      "atype": 0,
+      "user_id": "terah.santos@bgis.com",
+      "audit_dt": "2025-07-29T09:30:09.697-04:00"
+    },
+    {
+      "aid": "md3gmfuu124jf_xda7ukx0",
+      "message": "Task assigned from  to abigail.buenaobra@bgis.com Acknowledged Task",
+      "atype": 0,
+      "user_id": "abigail.buenaobra@bgis.com",
+      "audit_dt": "2025-07-29T15:38:44.114-04:00"
+    },
+    {
+      "aid": "md3gmfuu124jf_xda7ur2r",
+      "message": "Workflow State Changed from finance_approval to prem_approval: Task has been approved by Finance",
+      "atype": 97,
+      "user_id": "abigail.buenaobra@bgis.com",
+      "audit_dt": "2025-07-29T15:38:51.179-04:00"
+    },
+    {
+      "aid": "md3gmfuu124jf_xda7ur30",
+      "message": "Task assigned from abigail.buenaobra@bgis.com to ANDREW.COTTER@infrastructureontario.ca Submitted for prem review with nobody yet assigned",
+      "atype": 0,
+      "user_id": "abigail.buenaobra@bgis.com",
+      "audit_dt": "2025-07-29T15:38:51.186-04:00"
+    },
+    {
+      "aid": "md3gmfuu124jf_xdbnutte",
+      "message": "Task assigned from andrew.cotter@infrastructureontario.ca to fid.leonard@infrastructureontario.ca Reassign task",
+      "atype": 0,
+      "user_id": "lisa.weller@bgis.com",
+      "audit_dt": "2025-07-30T10:12:31.196-04:00"
+    },
+    {
+      "aid": "md3gmfuu124jf_xdn86uvm",
+      "message": "Task assigned from fid.leonard@infrastructureontario.ca to  Submitted for IO director review with nobody yet assigned",
+      "atype": 0,
+      "user_id": "andrew.cotter@infrastructureontario.ca",
+      "audit_dt": "2025-08-05T11:49:49.180-04:00"
+    },
+    {
+      "aid": "md3gmfuu124jf_xdwc1b2f",
+      "message": "Task assigned from none to fid.leonard@infrastructureontario.ca Acknowledged Task",
+      "atype": 0,
+      "user_id": "fid.leonard@infrastructureontario.ca",
+      "audit_dt": "2025-08-10T06:50:33.863-04:00"
+    },
+    {
+      "aid": "md3gmfuu124jf_xdwc1fte",
+      "message": "Task assigned from fid.leonard@infrastructureontario.ca to  Submitted for minitry review",
+      "atype": 0,
+      "user_id": "fid.leonard@infrastructureontario.ca",
+      "audit_dt": "2025-08-10T06:50:39.404-04:00"
+    },
+    {
+      "aid": "md3gmfuu124jf_xl4aomom",
+      "message": "Task status changed from 1 (InProgress) to 5000 (Reviewed) : Reassign task",
+      "atype": 0,
+      "user_id": "lisa.weller@bgis.com",
+      "audit_dt": "2025-12-16T12:52:02.110-05:00"
+    },
+    {
+      "aid": "md3gmfuu124jf_xl4aqdg4",
+      "message": "Task assigned from none to lisa.weller@bgis.com Reassign task",
+      "atype": 0,
+      "user_id": "lisa.weller@bgis.com",
+      "audit_dt": "2025-12-16T12:53:10.024-05:00"
+    },
+    {
+      "aid": "md3gmfuu124jf_xnrtfhlt",
+      "message": "Task status changed from 5000 (Reviewed) to 900 (Closed)",
+      "atype": 0,
+      "user_id": "lisa.weller@bgis.com",
+      "audit_dt": "2026-02-02T16:19:36.467-05:00"
+    },
+    {
+      "aid": "md3gmfuu124jf_xnrtfhnn",
+      "message": "Workflow State Changed from bgis_internal_task to complete: Reassign task",
+      "atype": 97,
+      "user_id": "lisa.weller@bgis.com",
+      "audit_dt": "2026-02-02T16:19:36.529-05:00"
+    },
+    {
+      "aid": "md3gmfuu124jf_xnrtfhno",
+      "message": "Task reassigned from lisa.weller@bgis.com to ",
+      "atype": 0,
+      "user_id": "lisa.weller@bgis.com",
+      "audit_dt": "2026-02-02T16:19:36.530-05:00"
+    }
+  ],
+  "open_query_count": 1,
+  "sla_time_total": 0,
+  "key": "slc_io",
+  "workflow_start_dt": "2026-02-02T16:19:36.509-05:00",
+  "__id": "687551bb7d2744233752d1c2",
+  "all_tasks": [],
+  "close_dt": "2026-02-02T16:19:36.467-05:00",
+  "close_by": "lisa.weller@bgis.com",
+  "updated_dt_r": 1770067176531,
+  "_meta": {
+    "lwt": 1770067178757.02
+  },
+  "_attachments": {},
+  "_rev": "368-jwvhvbyddp"
+}]

@@ -1,0 +1,541 @@
+[{
+  "_id": {
+    "$oid": "69b2e3327c9e69ba50946356"
+  },
+  "id": "mmnnn1uduj25",
+  "_deleted": false,
+  "audit": [
+    {
+      "aid": "mmnnn1uduj25_mmno4vyg_9ncx",
+      "message": "Workflow State changed from NewRequest to service_details: Request has been moved to Add Services workflowstate",
+      "atype": 97,
+      "user_id": "kaiser.kraft@bgis.com",
+      "audit_dt": "2026-03-12T12:14:42.376-04:00"
+    },
+    {
+      "aid": "mmnnn1uduj25_mmno4w07_o066",
+      "message": "Task status changed from 100 (Created) to 1 (InProgress): Task is in progress",
+      "atype": 0,
+      "user_id": "kaiser.kraft@bgis.com",
+      "audit_dt": "2026-03-12T12:14:42.439-04:00"
+    },
+    {
+      "aid": "mmnnn1uduj25_mmnoa57l_dyia",
+      "message": "Task assigned from kaiser.kraft@bgis.com to Nobody: Submit Form for Attachment workflowstate updated with nobody yet assigned",
+      "atype": 0,
+      "user_id": "kaiser.kraft@bgis.com",
+      "audit_dt": "2026-03-12T12:18:47.649-04:00"
+    },
+    {
+      "aid": "mmnnn1uduj25_mmnoa59r_zskl",
+      "message": "Workflow State changed from service_details to obtain_quotes_sd: Request has been moved to Obtain Quotes SD workflowstate",
+      "atype": 97,
+      "user_id": "kaiser.kraft@bgis.com",
+      "audit_dt": "2026-03-12T12:18:47.727-04:00"
+    },
+    {
+      "aid": "mmnnn1uduj25_mmnogymp_vnqm",
+      "message": "Task assigned from none to lori.bedford@bgis.com: Reassigned Task",
+      "atype": 0,
+      "user_id": "natalie.kelloway@bgis.com",
+      "audit_dt": "2026-03-12T12:24:05.713-04:00"
+    },
+    {
+      "aid": "mmnnn1uduj25_mnd65uks_s6ac",
+      "message": "Workflow State changed from obtain_quotes_sd to fm_approval: Task has been submitted obtain quote",
+      "atype": 97,
+      "user_id": "lori.bedford@bgis.com",
+      "audit_dt": "2026-03-30T08:33:34.732-04:00"
+    },
+    {
+      "aid": "mmnnn1uduj25_mnd65ulu_qu5l",
+      "message": "Task assigned from lori.bedford@bgis.com to kaiser.kraft@bgis.com: Submitted for FM review with default assigned",
+      "atype": 0,
+      "user_id": "lori.bedford@bgis.com",
+      "audit_dt": "2026-03-30T08:33:34.770-04:00"
+    },
+    {
+      "aid": "mmnnn1uduj25_mnd776of_o18g",
+      "message": "Workflow State changed from fm_approval to finance_approval: Task has been approved by FM",
+      "atype": 97,
+      "user_id": "kaiser.kraft@bgis.com",
+      "audit_dt": "2026-03-30T09:02:36.687-04:00"
+    },
+    {
+      "aid": "mmnnn1uduj25_mnddlhgp_8826",
+      "message": "Task assigned from kaiser.kraft@bgis.com to abigail.buenaobra@bgis.com: Reassigned Task",
+      "atype": 0,
+      "user_id": "lisa.weller@bgis.com",
+      "audit_dt": "2026-03-30T12:01:41.545-04:00"
+    },
+    {
+      "aid": "mmnnn1uduj25_mnn9lq5h_o1w5",
+      "message": "Question mmnnn1uduj25_xrb39pnr asked by abigail.buenaobra@bgis.com: Please update to $0, as there's no budget for M49. Thanks,",
+      "atype": 850,
+      "user_id": "abigail.buenaobra@bgis.com",
+      "audit_dt": "2026-04-06T10:07:36.101-04:00"
+    },
+    {
+      "aid": "mmnnn1uduj25_mnoun4sy_o49l",
+      "message": "Question mmnnn1uduj25_xrd6x8vc answered by kaiser.kraft@bgis.com: amount has been updated",
+      "atype": 850,
+      "user_id": "kaiser.kraft@bgis.com",
+      "audit_dt": "2026-04-07T12:44:19.858-04:00"
+    },
+    {
+      "aid": "mmnnn1uduj25_mnqln2sz_twi9",
+      "message": "Task assigned from abigail.buenaobra@bgis.com to kaiser.kraft@bgis.com: Submitted for prem review with nobody yet      assigned in main task",
+      "atype": 0,
+      "user_id": "abigail.buenaobra@bgis.com",
+      "audit_dt": "2026-04-08T18:07:53.075-04:00"
+    },
+    {
+      "aid": "mmnnn1uduj25_mnqln2u6_pa0g",
+      "message": "Task status changed from 1 (InProgress) to 5000 (Reviewed): Task is approved",
+      "atype": 0,
+      "user_id": "abigail.buenaobra@bgis.com",
+      "audit_dt": "2026-04-08T18:07:53.118-04:00"
+    },
+    {
+      "aid": "mmnnn1uduj25_mnqln2wr_1dmg",
+      "message": "Workflow State changed from finance_approval to waiting_for_prem_approval: Task has been approved by Finance and waiting for PREM",
+      "atype": 97,
+      "user_id": "abigail.buenaobra@bgis.com",
+      "audit_dt": "2026-04-08T18:07:53.211-04:00"
+    },
+    {
+      "aid": "mmnnn1uduj25_moah8k3d_rma6",
+      "message": "Task status changed from 5000 (Reviewed) to 6000 (Cancelled): Task Cancelled",
+      "atype": 0,
+      "user_id": "lisa.weller@bgis.com",
+      "audit_dt": "2026-04-22T16:00:00.697-04:00"
+    }
+  ],
+  "auser": "kaiser.kraft@bgis.com",
+  "awg": "BGIS :: SLC",
+  "create_by": "kaiser.kraft@bgis.com",
+  "create_dt": "2026-03-12T12:00:50.168-04:00",
+  "create_ip": "162.10.22.27:20708",
+  "doc": [
+    {
+      "fid": "details.type",
+      "val": "Change in Service",
+      "tid": 1
+    },
+    {
+      "fid": "details.request_id",
+      "val": "Request - 2026 Change in Service",
+      "tid": 1
+    },
+    {
+      "fid": "details.client_name",
+      "val": 151,
+      "tid": 4
+    },
+    {
+      "fid": "details.start_date",
+      "val": "2026-02-24T00:00:00.000-05:00",
+      "tid": 5
+    },
+    {
+      "fid": "details.end_date",
+      "val": "2026-08-31T00:00:00.000-04:00",
+      "tid": 5
+    },
+    {
+      "fid": "details.description",
+      "val": "<p><a href=\"mailto:BrendonEKerekes@eaton.com\" target=\"_self\"><span style=\"font-size: 11pt;font-family: Calibri, sans-serif;\">BrendonEKerekes@eaton.com</span></a></p>\n<p>This Service Agreement for the specified equipment in Attachment A will begin on 2/24/2026 and end 8/31/2026.<br>SERVICE: Customer hereby contracts for the following services to be furnished on the Power Module of the UPS listed below pursuant <br>to this Agreement:<br>PM PLUS SERVICE includes:<br>• Labour and travel for preventive maintenance service*<br>• Remedial service calls, parts, travel and expenses billable at contract rates<br>• Service 24 hours a day, 7 days a week with 4Hrs response time* and “Best Efforts” basis for End-of-Life equipment<br>• One major preventive maintenance inspection<br>• Two minor preventive maintenance inspection (product 20kVA &amp; greater only) performed during regular business hours&nbsp;</p>\n",
+      "tid": 1
+    },
+    {
+      "fid": "details.sub_type",
+      "val": "Initiated by Business Unit (Ministry/Dept/Tenant) - additional recurring services",
+      "tid": 1
+    },
+    {
+      "fid": "details.requested_part_of_asset",
+      "val": 0,
+      "tid": 4
+    },
+    {
+      "fid": "details.change_in_service_for",
+      "val": "Single Location",
+      "tid": 1
+    },
+    {
+      "fid": "details.tier_change",
+      "val": 0,
+      "tid": 4
+    },
+    {
+      "fid": "details.ministry_impact",
+      "val": "Single Tenant: single tenant benefit (CFA adjustment)",
+      "tid": 1
+    },
+    {
+      "fid": "details.rcc_in_scope_for_new_location",
+      "val": 0,
+      "tid": 4
+    },
+    {
+      "fid": "details.janitorial_services_in_scope",
+      "val": 0,
+      "tid": 4
+    },
+    {
+      "fid": "details.clearsite_app_in_scope",
+      "val": 0,
+      "tid": 4
+    },
+    {
+      "fid": "details.building_have_bsrm",
+      "val": 0,
+      "tid": 4
+    },
+    {
+      "fid": "details.bsrm_updated",
+      "val": 0,
+      "tid": 4
+    },
+    {
+      "fid": "details.new_bsrm_require",
+      "val": 0,
+      "tid": 4
+    },
+    {
+      "fid": "details.ministry_approval_required",
+      "val": 1,
+      "tid": 4
+    },
+    {
+      "fid": "details.priority",
+      "val": "Routine",
+      "tid": 1
+    },
+    {
+      "fid": "details.ministry_approvers.0.approving_ministry",
+      "val": "ORM-MIN OF PUB & BIS SERV DELV & PROCURE",
+      "tid": 1
+    },
+    {
+      "fid": "details.ministry_approvers.0.approver_name",
+      "val": "Ken Collins",
+      "tid": 1
+    },
+    {
+      "fid": "details.ministry_approvers.0.approver_email",
+      "val": "ken.collins@ontario.ca",
+      "tid": 1
+    },
+    {
+      "fid": "details.change_in_service_for_original",
+      "val": "Single Location",
+      "tid": 1
+    },
+    {
+      "fid": "real_property.building_id",
+      "val": "INO03288",
+      "tid": 1
+    },
+    {
+      "fid": "client_code",
+      "val": "B70003",
+      "tid": 1
+    },
+    {
+      "fid": "address",
+      "val": "444 YONGE ST",
+      "tid": 1
+    },
+    {
+      "fid": "city",
+      "val": "TORONTO",
+      "tid": 1
+    },
+    {
+      "fid": "state",
+      "val": "ON",
+      "tid": 1
+    },
+    {
+      "fid": "postal",
+      "val": "M5B 2H4",
+      "tid": 1
+    },
+    {
+      "fid": "installation_number",
+      "val": "N06869",
+      "tid": 1
+    },
+    {
+      "fid": "fmz",
+      "val": "MOI 5",
+      "tid": 1
+    },
+    {
+      "fid": "country",
+      "val": "CAN",
+      "tid": 1
+    },
+    {
+      "fid": "region",
+      "val": "CENTRAL",
+      "tid": 1
+    },
+    {
+      "fid": "prem_name",
+      "val": "BRENT WALKER",
+      "tid": 1
+    },
+    {
+      "fid": "facility_manager",
+      "val": "KAISER KRAFT",
+      "tid": 1
+    },
+    {
+      "fid": "facility_manager_email",
+      "val": "Kaiser.Kraft@bgis.com",
+      "tid": 1
+    },
+    {
+      "fid": "ownership",
+      "val": "Leased",
+      "tid": 1
+    },
+    {
+      "fid": "tier",
+      "val": "T2",
+      "tid": 1
+    },
+    {
+      "fid": "labor_code",
+      "val": "KAISER KRAFT",
+      "tid": 1
+    },
+    {
+      "fid": "real_maintenance.schedule_update_require",
+      "val": 1,
+      "tid": 4
+    },
+    {
+      "fid": "real_maintenance.services",
+      "val": "UPS MAINTENANCE",
+      "tid": 1
+    },
+    {
+      "fid": "real_maintenance.provider_name_pay_site",
+      "val": "123025 - EATON INDUSTRIES (CANADA)COMPANY - IOG-OM-TO-PB110",
+      "tid": 1
+    },
+    {
+      "fid": "attachments",
+      "val": "mmno4go4pw3p,mmno6hkgypyq",
+      "tid": 1
+    },
+    {
+      "fid": "attachments_url",
+      "val": "https://dw-translate.bgis.com/api/file-management/tmp/static/file/slc_cs/mmno4go4pw3p.msg,https://dw-translate.bgis.com/api/file-management/tmp/static/file/slc_cs/mmno6hkgypyq.pdf",
+      "tid": 1
+    },
+    {
+      "fid": "temp.0.temp_site_action",
+      "val": "Add",
+      "tid": 1
+    },
+    {
+      "fid": "temp.0.temp_wbs_code_single",
+      "val": "Select an expense type",
+      "tid": 1
+    },
+    {
+      "fid": "temp.1.temp_site_action",
+      "val": "Add",
+      "tid": 1
+    },
+    {
+      "fid": "temp.1.temp_wbs_code_single",
+      "val": "M49 - UPS REPAIRS & MAINTENANCE",
+      "tid": 1
+    },
+    {
+      "fid": "services.0.service_category",
+      "val": "TENANT - ELECTRICAL - UPS BACKUP",
+      "tid": 1
+    },
+    {
+      "fid": "services.0.scope",
+      "val": "This Service Agreement for the specified equipment in Attachment A will begin on 2/24/2026 and end 8/31/2026. SERVICE: Customer hereby contracts for the following services to be furnished on the Power Module of the UPS listed below pursuant  to this Agreement: PM PLUS SERVICE includes: • Labour and travel for preventive maintenance service* • Remedial service calls, parts, travel and expenses billable at contract rates • Service 24 hours a day, 7 days a week with 4Hrs response time* and “Best Efforts” basis for End-of-Life equipment • One major preventive maintenance inspection • Two minor preventive maintenance inspection (product 20kVA & greater only) performed during regular business hours",
+      "tid": 1
+    },
+    {
+      "fid": "services.0.current_year_budget",
+      "val": 0,
+      "tid": 4
+    },
+    {
+      "fid": "services.0.site_action",
+      "val": "Add",
+      "tid": 1
+    },
+    {
+      "fid": "services.0.wbs_code_single",
+      "val": "M49 - UPS REPAIRS & MAINTENANCE",
+      "tid": 1
+    },
+    {
+      "fid": "sum_cost",
+      "val": 3184.58,
+      "tid": 4
+    },
+    {
+      "fid": "services.0.price",
+      "val": 1592.29,
+      "tid": 4
+    },
+    {
+      "fid": "services.0.vendor_name",
+      "val": "EATON INDUSTRIES (CANADA)COMPANY",
+      "tid": 1
+    },
+    {
+      "fid": "services.0.billing_frequency",
+      "val": "Semi Annually",
+      "tid": 1
+    },
+    {
+      "fid": "services.0.current_slc_cost",
+      "val": 1592.29,
+      "tid": 4
+    },
+    {
+      "fid": "services.0.annual_slc_cost",
+      "val": 3184.58,
+      "tid": 4
+    },
+    {
+      "fid": "services.0.total_new_annual_slc_cost",
+      "val": 3184.58,
+      "tid": 4
+    },
+    {
+      "fid": "logs.0.email_sent_date",
+      "val": "2026-03-30T08:33:34.317-04:00",
+      "tid": 5
+    },
+    {
+      "fid": "logs.0.approver_type",
+      "val": "FM Approver",
+      "tid": 1
+    },
+    {
+      "fid": "logs.0.approver_name",
+      "val": "Kaiser Kraft",
+      "tid": 1
+    },
+    {
+      "fid": "logs.0.approver_email",
+      "val": "kaiser.kraft@bgis.com",
+      "tid": 1
+    },
+    {
+      "fid": "logs.0.status_change_date",
+      "val": "2026-03-30T09:02:32.493-04:00",
+      "tid": 5
+    },
+    {
+      "fid": "logs.0.approver_status",
+      "val": "Approved",
+      "tid": 1
+    },
+    {
+      "fid": "logs.1.email_sent_date",
+      "val": "2026-03-30T09:02:32.615-04:00",
+      "tid": 5
+    },
+    {
+      "fid": "logs.1.approver_type",
+      "val": "Finance Approver",
+      "tid": 1
+    },
+    {
+      "fid": "logs.1.approver_name",
+      "val": "Abigail Buenaobra",
+      "tid": 1
+    },
+    {
+      "fid": "logs.1.approver_email",
+      "val": "abigail.buenaobra@bgis.com",
+      "tid": 1
+    },
+    {
+      "fid": "logs.1.status_change_date",
+      "val": "2026-04-08T18:07:52.815-04:00",
+      "tid": 5
+    },
+    {
+      "fid": "logs.1.approver_status",
+      "val": "Approved",
+      "tid": 1
+    }
+  ],
+  "eff_perm": [
+    {
+      "id": "BGIS :: SLC :: Prem",
+      "perm": 200
+    },
+    {
+      "id": "BGIS :: SLC :: Prem :: Approver",
+      "perm": 200
+    },
+    {
+      "id": "BGIS",
+      "perm": 300
+    },
+    {
+      "id": "BGIS :: SLC",
+      "perm": 300
+    },
+    {
+      "id": "BGIS :: SLC :: Manager",
+      "perm": 300
+    }
+  ],
+  "env": "prod",
+  "is_busy": "",
+  "is_closed": false,
+  "is_locked": false,
+  "module_id": "m0aivihgxfez",
+  "open_query_count": 0,
+  "priority": 50,
+  "project_id": "slc_cs",
+  "queries": [
+    {
+      "qid": "mmnnn1uduj25_xrb39pnr",
+      "fid": "services.0.current_year_budget",
+      "message": "Please update to $0, as there's no budget for M49. Thanks,",
+      "user_id": "abigail.buenaobra@bgis.com",
+      "query_status": 1,
+      "query_dt": "2026-04-06T10:07:36.101-04:00"
+    },
+    {
+      "qid": "mmnnn1uduj25_xrd6x8vc",
+      "fid": "services.0.current_year_budget",
+      "message": "amount has been updated",
+      "user_id": "kaiser.kraft@bgis.com",
+      "query_status": 2,
+      "query_dt": "2026-04-07T12:44:19.858-04:00"
+    }
+  ],
+  "sla_time_total": 0,
+  "task_status": 6000,
+  "title": "Change in Service - B70003 - INO03288 - MOI - 2026 - mmnnn1uduj25",
+  "type_id": "m0aiw0l0wbwc",
+  "updated_by": "lisa.weller@bgis.com",
+  "updated_dt": "2026-04-22T16:00:00.719-04:00",
+  "updated_dt_r": 1776888000719,
+  "user_id": "kaiser.kraft@bgis.com",
+  "workflow_id": "waiting_for_prem_approval",
+  "key": "slc_io",
+  "workflow_start_dt": "2026-04-08T18:07:53.189-04:00",
+  "all_tasks": []
+}]

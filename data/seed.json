@@ -1,0 +1,449 @@
+{
+  "meta": {
+    "title": "SLC_CS SOW Ticket Findings",
+    "parentKey": "DWF-9481",
+    "parentUrl": "https://brians.atlassian.net/browse/DWF-9481",
+    "started": "2026-07-22",
+    "updated": "2026-07-31",
+    "reviewOrder": "Bugs first (by SP), then Enhancements. Dev-dependent tickets = framework, not config."
+  },
+  "tickets": {
+    "DWF-8273": {
+      "key": "DWF-8273",
+      "dwtask": "839",
+      "sp": "1/2",
+      "type": "bug",
+      "status": "dev-dependent",
+      "summary": "Dev dependent — framework change required (not config)",
+      "checklistSummary": "Dev dependent — framework change required (not config)",
+      "page": "tickets/DWF-8273/ticket.html",
+      "jiraSummary": "Resolve all open questions for the following SLCs",
+      "jiraStatus": "To Do",
+      "ourStatusText": "Dev dependent — not handled in SLC_CS config",
+      "whatWasDone": [
+        "Reviewed scope — ticket requires framework/platform changes, not Lua config"
+      ],
+      "findings": [
+        "Out of scope for config-only SOW work; marked dev dependent"
+      ],
+      "clientConfirm": "",
+      "suggestedNext": [
+        "Framework team to handle resolve-open-questions capability at subtask level"
+      ],
+      "evidenceNames": [],
+      "footnote": "Marked as dev dependent in SOW findings portal.",
+      "generatedAt": "2026-07-31T10:54:00.000Z"
+    },
+    "DWF-8251": {
+      "key": "DWF-8251",
+      "dwtask": "836",
+      "sp": "1/2",
+      "type": "bug",
+      "status": "done",
+      "summary": "Added condition on last routes to prevent unnecessary workflow changes",
+      "checklistSummary": "Added condition on last routes to prevent unnecessary workflow changes",
+      "page": "tickets/DWF-8251/ticket.html",
+      "prodTaskId": "mnmyl8zz14o7g",
+      "jiraSummary": "Special case — SLC was completed, but IO approver reopened it",
+      "jiraStatus": "Done",
+      "ourStatusText": "Completed in config",
+      "whatWasDone": [
+        "Added condition on last routes to prevent unnecessary workflow changes when SLC is already completed",
+        "Prevents IO Director Thank You / Complete Task resubmit from re-releasing subtasks on a closed SLC"
+      ],
+      "findings": [
+        "Config fix applied — condition on last routes blocks unnecessary workflow changes after completion"
+      ],
+      "clientConfirm": "",
+      "suggestedNext": [],
+      "evidenceNames": [],
+      "footnote": "Completed via SLC_CS config change.",
+      "generatedAt": "2026-07-31T10:54:00.000Z"
+    },
+    "DWF-8270": {
+      "key": "DWF-8270",
+      "dwtask": "843",
+      "sp": "1/2",
+      "type": "bug",
+      "status": "pending-client",
+      "summary": "Waiting for prem approval vs BGIS Internal tasks — FieldSet not saved; task later Cancelled",
+      "checklistSummary": "Waiting for prem approval vs BGIS Internal tasks — FieldSet not saved; task later Cancelled",
+      "page": "tickets/DWF-8270/ticket.html",
+      "prodTaskId": "mmnnn1uduj25",
+      "jiraSummary": "SLC is in Waiting for prem approval stage but when you click in, it says BGIS Internal tasks",
+      "jiraStatus": "In Progress",
+      "ourStatusText": "Debugged — awaiting client confirmation whether further work is needed",
+      "whatWasDone": [
+        "Debugged prod task JSON (<code>mmnnn1uduj25</code>)",
+        "Compared route <code>submit_slc_attachment</code> in <code>01-NewRequest.lua</code> against audit trail",
+        "Confirmed mails did send; workflow/status updates left audit entries"
+      ],
+      "findings": [
+        "FieldSet values not persisted in DB for: <code>reminder_mail_sent_by</code>, <code>expired_mail_sent_by</code>, and <code>prem_approvers[...]</code> from LogPremApprovers (missing in DOC)",
+        "Later lines ran successfully: TaskUpdateWorkflow(service_details) and TaskUpdateStatus(InProgress) — user kaiser.kraft@bgis.com",
+        "Mails were sent properly (despite FieldSet persistence concern)",
+        "Open debug question: How did later workflow/status lines execute while earlier FormBegin/FieldSet/FormEnd appear skipped / not saved?",
+        "Task later Cancelled by lisa.weller@bgis.com on 2026-04-22 — task_status 6000"
+      ],
+      "clientConfirm": "Task was cancelled by lisa.weller@bgis.com. Do we still need to: (1) Manually fix this SLC, and/or (2) Continue root-cause fix for FieldSet / prem_approvers not saving? Or close/defer because Cancelled?",
+      "suggestedNext": [
+        "Trace FormBegin(\"slc_io\") + FieldSet persistence vs TaskUpdate*",
+        "Confirm whether LogPremApprovers FormBegin failed the same way",
+        "Reproduce on a non-cancelled test task if permanent fix is still required"
+      ],
+      "imgCaption": "Red: FieldSet blocks that did not persist. Green: TaskUpdateWorkflow / TaskUpdateStatus that appear in audit JSON. Light green: mails sent successfully.",
+      "evidenceNames": [
+        "mmnnn1uduj25digitalworkflow_prod-dw3-v0.tasks.json",
+        "mmnnn1uduj25digitalworkflow_prod-dw3-v0.notes.json",
+        "debug-annotation.png"
+      ],
+      "auditExcerpt1Title": "Workflow + status updates after submit_slc_attachment (Mar 12)",
+      "auditExcerpt1": "{\n  \"aid\": \"mmnnn1uduj25_mmno4vyg_9ncx\",\n  \"message\": \"Workflow State changed from NewRequest to service_details: Request has been moved to Add Services workflowstate\",\n  \"atype\": 97,\n  \"user_id\": \"kaiser.kraft@bgis.com\",\n  \"audit_dt\": \"2026-03-12T12:14:42.376-04:00\"\n},\n{\n  \"aid\": \"mmnnn1uduj25_mmno4w07_o066\",\n  \"message\": \"Task status changed from 100 (Created) to 1 (InProgress): Task is in progress\",\n  \"atype\": 0,\n  \"user_id\": \"kaiser.kraft@bgis.com\",\n  \"audit_dt\": \"2026-03-12T12:14:42.439-04:00\"\n}",
+      "auditExcerpt2Title": "Moved to waiting_for_prem_approval, then Cancelled (Apr 8 / Apr 22)",
+      "auditExcerpt2": "{\n  \"aid\": \"mmnnn1uduj25_mnqln2wr_1dmg\",\n  \"message\": \"Workflow State changed from finance_approval to waiting_for_prem_approval: Task has been approved by Finance and waiting for PREM\",\n  \"atype\": 97,\n  \"user_id\": \"abigail.buenaobra@bgis.com\",\n  \"audit_dt\": \"2026-04-08T18:07:53.211-04:00\"\n},\n{\n  \"aid\": \"mmnnn1uduj25_moah8k3d_rma6\",\n  \"message\": \"Task status changed from 5000 (Reviewed) to 6000 (Cancelled): Task Cancelled\",\n  \"atype\": 0,\n  \"user_id\": \"lisa.weller@bgis.com\",\n  \"audit_dt\": \"2026-04-22T16:00:00.697-04:00\"\n}",
+      "footnote": "Full JSON files are in evidence/. Reminder: prem_approvers, reminder_mail_sent_by, and expired_mail_sent_by were not found in the task DOC array.",
+      "generatedAt": "2026-07-22T00:00:00.000Z"
+    },
+    "DWF-9475": {
+      "key": "DWF-9475",
+      "dwtask": "676",
+      "sp": "1/2",
+      "type": "bug",
+      "status": "done",
+      "summary": "FM note ran; remaining fm_approve_complete flow interrupted; later recovered; task complete — no further work",
+      "checklistSummary": "FM note ran; remaining fm_approve_complete flow interrupted; later recovered; task complete — no further work",
+      "page": "tickets/DWF-9475/ticket.html",
+      "prodTaskId": "mi60ms3pybhz",
+      "jiraSummary": "FM Approved but SLC was still in FM Approval step - mi60ms3pybhz",
+      "jiraStatus": "In Progress",
+      "ourStatusText": "Done — no further work required; task already corrected and completed",
+      "whatWasDone": [
+        "Debugged prod task <code>mi60ms3pybhz</code> (tasks.json + notes.json)",
+        "Compared <code>fm_approve_complete</code> / <code>fm_approve_complete_final</code> in <code>03-FmApproval.lua</code> against notes and approval logs",
+        "Confirmed current task state: <code>workflow_id = complete_final</code>, <code>task_status = 900</code> (closed/completed)"
+      ],
+      "findings": [
+        "When greg.mulholland@bgis.com approved FM the first time (Confirm Complete), TaskNote in fm_approve_complete ran successfully. Note at 2025-11-24T11:28:13.847-05:00 — route had started.",
+        "Remaining lines in that flow did not complete (log update / Finance insert / message / redirect to fm_approve_complete_final where TaskUpdateWorkflow(finance_approval) runs). Likely user left/closed the page before finish.",
+        "Result: FM approval note existed, but task did not move to Finance Approval on first attempt.",
+        "Later ~2025-11-28T15:01:48–15:01:50 the task was corrected into Finance Approval (FM status_change_date + Finance email_sent_date).",
+        "Audit history does not show who fixed the task or how.",
+        "Root cause: incomplete page/route execution after Confirm Complete — not a workflow/config defect."
+      ],
+      "clientConfirm": "",
+      "suggestedNext": [],
+      "imgCaption": "Green: TaskNote executed (Nov 24) and later recovery / completed state. Red: remaining fm_approve_complete workflow/log lines did not run on first attempt.",
+      "evidenceNames": [
+        "mi60ms3pybhz_digitalworkflow_prod-dw3-v0.tasks.json",
+        "mi60ms3pybhz_digitalworkflow_prod-dw3-v0.notes.json",
+        "debug-annotation.png"
+      ],
+      "auditExcerpt1Title": "FM approval note (Nov 24) — route started",
+      "auditExcerpt1": "{\n  \"create_by\": \"greg.mulholland@bgis.com\",\n  \"create_dt\": \"2025-11-24T11:28:13.847-05:00\",\n  \"note_text\": \"FM has approved the SLC request.\",\n  \"ref_id\": \"mi60ms3pybhz\"\n}",
+      "auditExcerpt2Title": "Current task state — already complete",
+      "auditExcerpt2": "{\n  \"workflow_id\": \"complete_final\",\n  \"is_closed\": true,\n  \"task_status\": 900\n}",
+      "footnote": "Route reference: 03-FmApproval.lua — fm_approve_complete (TaskNote + logs + RedirectReload) → fm_approve_complete_final (TaskUpdateWorkflow finance_approval). Conclusion: no further work required.",
+      "generatedAt": "2026-07-22T12:40:00.000Z"
+    },
+    "DWF-9476": {
+      "key": "DWF-9476",
+      "dwtask": "677",
+      "sp": "3/4",
+      "type": "bug",
+      "status": "pending-client",
+      "summary": "Ministry route incomplete — 5 tasks debugged; recovery steps provided; tasks not yet corrected",
+      "checklistSummary": "Ministry route incomplete — 5 tasks debugged; recovery steps provided; tasks not yet corrected",
+      "page": "tickets/DWF-9476/ticket.html",
+      "prodTaskId": "mddit41avpx9, md3gmfuu124jf, mcte9fg7r50q, maybbm42oem2, m8yl4448yc3w",
+      "jiraSummary": "Ministry approved for several SLCs but SLCs are still waiting for approval",
+      "jiraStatus": "In Progress",
+      "ourStatusText": "Debugged — root cause identified; recovery steps provided per task; tasks not yet corrected",
+      "whatWasDone": [
+        "Reviewed task logs and audit history for all 5 affected production tasks (JSON archived)",
+        "Compared Ministry approval route execution vs expected workflow progression",
+        "Discussed with Jaival Wadhvana on DWLite / IndexedDB caching behaviour",
+        "Attempted reproduction on DEV (partial UI issues reproduced; exact prod corruption not reproduced)",
+        "Documented per-task findings and proposed recovery steps in Jira comments"
+      ],
+      "findings": [
+        "All 5 tasks currently workflow_id complete / task_status 900 — manually closed without proper Ministry approval",
+        "mddit41avpx9 & md3gmfuu124jf: Logs stop at IO approval; no Ministry route logs; Lisa manually completed",
+        "mcte9fg7r50q: Corrupted doc — only _unholdroute + logs.4.status_change_date from Ministry route",
+        "maybbm42oem2 & m8yl4448yc3w: Workflow revert did not fix; no Ministry logs; manually completed",
+        "Root cause likely DWLite IndexedDB conflict when multiple Ministry approval URLs open in same browser",
+        "Recovery steps provided per task — awaiting client action; ticket NOT complete"
+      ],
+      "clientConfirm": "Client to execute per-task recovery: restore Ministry approval state and re-use Approve/Reject URL in fresh browser session (one URL at a time).",
+      "suggestedNext": [
+        "Client executes recovery steps for each of the 5 tasks",
+        "Use Incognito/Private window; one Ministry approval URL at a time",
+        "Confirm each task progresses through Ministry approval correctly after recovery"
+      ],
+      "imgCaption": "",
+      "evidenceNames": [
+        "mddit41avpx9_digitalworkflow_prod-dw3-v0.tasks.json",
+        "mddit41avpx9_digitalworkflow_prod-dw3-v0.notes.json",
+        "md3gmfuu124jf_digitalworkflow_prod-dw3-v0.tasks.json",
+        "md3gmfuu124jf_digitalworkflow_prod-dw3-v0.notes.json",
+        "mcte9fg7r50q_digitalworkflow_prod-dw3-v0.tasks.json",
+        "mcte9fg7r50q_digitalworkflow_prod-dw3-v0.notes.json",
+        "maybbm42oem2_digitalworkflow_prod-dw3-v0.tasks.json",
+        "maybbm42oem2_digitalworkflow_prod-dw3-v0.notes.json",
+        "m8yl4448yc3w_digitalworkflow_prod-dw3-v0.tasks.json",
+        "m8yl4448yc3w_digitalworkflow_prod-dw3-v0.notes.json"
+      ],
+      "auditExcerpt1Title": "Partial Ministry route — mcte9fg7r50q doc corruption",
+      "auditExcerpt1": "{\n  \"fid\": \"_unholdroute\",\n  \"fid\": \"logs.4.status_change_date\",\n  \"workflow_id\": \"complete\",\n  \"task_status\": 900,\n  \"note\": \"Other expected Ministry approval fields missing from doc array\"\n}",
+      "auditExcerpt2Title": "",
+      "auditExcerpt2": "",
+      "footnote": "Investigation complete; recovery pending client action. Source: DWF-9476 Jira comments.",
+      "generatedAt": "2026-07-27T12:55:00.000Z"
+    },
+    "DWF-9479": {
+      "key": "DWF-9479",
+      "dwtask": "838",
+      "sp": "3/4",
+      "type": "bug",
+      "status": "covered",
+      "summary": "Covered by ministry suite (DWF-9471/9472/9473) — auto/parent-resolved when those complete",
+      "checklistSummary": "Covered by ministry suite (DWF-9471/9472/9473) — auto/parent-resolved when those complete",
+      "page": "tickets/DWF-9479/ticket.html",
+      "prodTaskId": "mn678v58ykyh",
+      "jiraSummary": "Ministry Approval tab is blank in SLC mn678v58ykyh",
+      "jiraStatus": "Won't Fix",
+      "ourStatusText": "No separate config fix — auto/parent-resolved when ministry enhancement work completes",
+      "whatWasDone": [
+        "Reviewed blank Ministry tab on mn678v58ykyh (ASK changed No→Yes without collecting ministry details)",
+        "Confirmed permanent solution is covered by ministry enhancement tickets DWF-9471 / DWF-9472 / DWF-9473"
+      ],
+      "findings": [
+        "ASK No→Yes does not re-prompt ministry details — tab stays blank",
+        "Client: prevent Ministry Approval Required edits without restart, OR covered by DWF-9472/9473",
+        "Won't Fix on Jira — ignore as standalone; resolves with ministry suite completion"
+      ],
+      "clientConfirm": "",
+      "suggestedNext": [
+        "Complete ministry enhancement suite DWF-9471, DWF-9472, DWF-9473",
+        "Re-verify blank Ministry tab scenario after those land"
+      ],
+      "evidenceNames": [],
+      "footnote": "Linked ministry work: DWF-9471, DWF-9472, DWF-9473.",
+      "generatedAt": "2026-07-31T11:08:00.000Z"
+    },
+    "DWF-9470": {
+      "key": "DWF-9470",
+      "dwtask": "170",
+      "sp": "1/2",
+      "type": "enhancement",
+      "status": "pending-client",
+      "summary": "Seasonal months on DEV; reopened — awaiting decimal vs whole-number confirmation",
+      "checklistSummary": "Seasonal months on DEV; reopened — awaiting decimal vs whole-number confirmation",
+      "page": "tickets/DWF-9470/ticket.html",
+      "prodTaskId": "ms8mebfqlk52",
+      "jiraSummary": "Add the ability to indicate Seasonal dates for a service",
+      "jiraStatus": "Reopen",
+      "ourStatusText": "Implemented on DEV — reopened for decimal months clarification",
+      "whatWasDone": [
+        "Implemented Seasonal checkbox + # of months on Service Details and Quote multiplier on DEV",
+        "Seasonal/months reflected on email/PDF",
+        "QA passed seasonal enable/disable and PDF scenarios on ms8mebfqlk52"
+      ],
+      "findings": [
+        "Core seasonal feature works on DEV",
+        "QA: Number of months should not be decimal — conflict with DWTASK-1070 AC (allows decimals e.g. 6.5)",
+        "Awaiting Jaival/client confirm: decimals OK vs whole numbers only — ticket Reopen"
+      ],
+      "clientConfirm": "Confirm Number of Months: any decimal (max 12) per DWTASK-1070, or whole numbers only per QA feedback?",
+      "suggestedNext": [
+        "Get Jaival/client confirmation on decimal vs integer months",
+        "If whole numbers only: add validation and re-test",
+        "If decimals OK: reply to QA with AC reference and close reopen"
+      ],
+      "evidenceNames": [],
+      "footnote": "Source: DWF-9470 comments (Yash, Lipi, Jaival / DWTASK-1070-1071).",
+      "generatedAt": "2026-07-31T11:08:00.000Z"
+    },
+    "DWF-3160": {
+      "key": "DWF-3160",
+      "dwtask": "177",
+      "sp": "1/2",
+      "type": "enhancement",
+      "status": "dev-dependent",
+      "summary": "Dev dependent — PDF description formatting requires framework change",
+      "checklistSummary": "Dev dependent — PDF description formatting requires framework change",
+      "page": "tickets/DWF-3160/ticket.html",
+      "jiraSummary": "Formatting in the Description field to be kept from the UI when sent via email and PDF",
+      "jiraStatus": "To Do",
+      "ourStatusText": "Dev dependent — not handled in SLC_CS config",
+      "whatWasDone": [
+        "Reviewed scope — PDF formatting preservation needs framework/PDF pipeline changes"
+      ],
+      "findings": [
+        "Out of scope for config-only SOW work; marked dev dependent"
+      ],
+      "clientConfirm": "",
+      "suggestedNext": [
+        "Framework team to preserve Description line breaks/paragraph spacing in PDF generation"
+      ],
+      "evidenceNames": [],
+      "footnote": "Marked as dev dependent in SOW findings portal.",
+      "generatedAt": "2026-07-31T10:54:00.000Z"
+    },
+    "DWF-9478": {
+      "key": "DWF-9478",
+      "dwtask": "873",
+      "sp": "1/2",
+      "type": "enhancement",
+      "status": "pending",
+      "summary": "",
+      "checklistSummary": "",
+      "page": null,
+      "prodTaskId": null,
+      "jiraSummary": "",
+      "jiraStatus": "",
+      "ourStatusText": "",
+      "whatWasDone": [],
+      "findings": [],
+      "clientConfirm": "",
+      "suggestedNext": [],
+      "imgCaption": "",
+      "evidenceNames": [],
+      "auditExcerpt1Title": "",
+      "auditExcerpt1": "",
+      "auditExcerpt2Title": "",
+      "auditExcerpt2": "",
+      "footnote": "",
+      "generatedAt": null
+    },
+    "DWF-9474": {
+      "key": "DWF-9474",
+      "dwtask": "370",
+      "sp": "3/4",
+      "type": "enhancement",
+      "status": "dev-dependent",
+      "summary": "Dev dependent — Q&A admin reassign/answer-on-behalf requires framework change",
+      "checklistSummary": "Dev dependent — Q&A admin reassign/answer-on-behalf requires framework change",
+      "page": "tickets/DWF-9474/ticket.html",
+      "jiraSummary": "Question and Answer enhancements",
+      "jiraStatus": "To Do",
+      "ourStatusText": "Dev dependent — not handled in SLC_CS config",
+      "whatWasDone": [
+        "Reviewed scope — Admin reassign / answer on behalf of SPOC needs framework/portal work"
+      ],
+      "findings": [
+        "Out of scope for config-only SOW work; marked dev dependent"
+      ],
+      "clientConfirm": "",
+      "suggestedNext": [
+        "Framework team to implement Admin Q&A reassign and answer-on-behalf flows"
+      ],
+      "evidenceNames": [],
+      "footnote": "Marked as dev dependent in SOW findings portal.",
+      "generatedAt": "2026-07-31T10:54:00.000Z"
+    },
+    "DWF-9477": {
+      "key": "DWF-9477",
+      "dwtask": "698",
+      "sp": "3/4",
+      "type": "enhancement",
+      "status": "pending",
+      "summary": "",
+      "checklistSummary": "",
+      "page": null,
+      "prodTaskId": null,
+      "jiraSummary": "",
+      "jiraStatus": "",
+      "ourStatusText": "",
+      "whatWasDone": [],
+      "findings": [],
+      "clientConfirm": "",
+      "suggestedNext": [],
+      "imgCaption": "",
+      "evidenceNames": [],
+      "auditExcerpt1Title": "",
+      "auditExcerpt1": "",
+      "auditExcerpt2Title": "",
+      "auditExcerpt2": "",
+      "footnote": "",
+      "generatedAt": null
+    },
+    "DWF-9471": {
+      "key": "DWF-9471",
+      "dwtask": "856",
+      "sp": "3 (+story)",
+      "type": "enhancement",
+      "status": "pending",
+      "summary": "Ministry approval suite",
+      "checklistSummary": "Ministry approval suite",
+      "page": null,
+      "prodTaskId": null,
+      "jiraSummary": "Ministry approval suite",
+      "jiraStatus": "",
+      "ourStatusText": "",
+      "whatWasDone": [],
+      "findings": [],
+      "clientConfirm": "",
+      "suggestedNext": [],
+      "imgCaption": "",
+      "evidenceNames": [],
+      "auditExcerpt1Title": "",
+      "auditExcerpt1": "",
+      "auditExcerpt2Title": "",
+      "auditExcerpt2": "",
+      "footnote": "",
+      "generatedAt": null
+    },
+    "DWF-9472": {
+      "key": "DWF-9472",
+      "dwtask": "857",
+      "sp": "5",
+      "type": "enhancement",
+      "status": "pending",
+      "summary": "Ministry approval suite",
+      "checklistSummary": "Ministry approval suite",
+      "page": null,
+      "prodTaskId": null,
+      "jiraSummary": "Ministry approval suite",
+      "jiraStatus": "",
+      "ourStatusText": "",
+      "whatWasDone": [],
+      "findings": [],
+      "clientConfirm": "",
+      "suggestedNext": [],
+      "imgCaption": "",
+      "evidenceNames": [],
+      "auditExcerpt1Title": "",
+      "auditExcerpt1": "",
+      "auditExcerpt2Title": "",
+      "auditExcerpt2": "",
+      "footnote": "",
+      "generatedAt": null
+    },
+    "DWF-9473": {
+      "key": "DWF-9473",
+      "dwtask": "858",
+      "sp": "5",
+      "type": "enhancement",
+      "status": "pending",
+      "summary": "Ministry approval suite",
+      "checklistSummary": "Ministry approval suite",
+      "page": null,
+      "prodTaskId": null,
+      "jiraSummary": "Ministry approval suite",
+      "jiraStatus": "",
+      "ourStatusText": "",
+      "whatWasDone": [],
+      "findings": [],
+      "clientConfirm": "",
+      "suggestedNext": [],
+      "imgCaption": "",
+      "evidenceNames": [],
+      "auditExcerpt1Title": "",
+      "auditExcerpt1": "",
+      "auditExcerpt2Title": "",
+      "auditExcerpt2": "",
+      "footnote": "",
+      "generatedAt": null
+    }
+  }
+}

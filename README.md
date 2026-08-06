@@ -1,46 +1,87 @@
-# SLC_CS SOW Findings (HTML pack)
+# SLC_CS SOW Findings (React + Firebase)
 
-**Open:** [`index.html`](index.html) in a browser · **Print → Save as PDF** when done.
+Live checklist and ticket findings. **Content edits save to Firebase** — no git push / Netlify redeploy for day-to-day updates.
 
-## Layout
+| Piece | Host | Redeploy needed? |
+| --- | --- | --- |
+| React UI | Netlify (free) | Only for UI/code changes |
+| Ticket JSON | Firebase Realtime Database (Spark free) | Never for content |
+| Evidence files | Netlify `public/tickets/.../evidence/` | Only when adding new dumps |
 
+## Branches
+
+| Branch | Purpose |
+| --- | --- |
+| `main` | Previous static HTML site (also mirrored as backup) |
+| `backup/static-html-v1` | Frozen backup of the static HTML pack (same commit as `main` at cutover) |
+| `feat/react-firebase-spa` | React + Firebase SPA (active development) |
+
+Restore static site anytime: `git checkout backup/static-html-v1`
+
+A copy of the static files also lives under `legacy-static/` on the feature branch.
+
+## Local run
+
+1. Project on **Spark** (no billing).
+2. Web app registered.
+3. **Realtime Database** created; rules:
+
+```json
+{
+  "rules": {
+    ".read": true,
+    ".write": "auth != null"
+  }
+}
 ```
-slc-cs-sow-findings/
-  index.html                 ← checklist + links
-  assets/styles.css
-  data/tracker.json          ← status source of truth
-  tickets/
-    DWF-8270/
-      ticket.html            ← findings + image + JSON excerpts
-      evidence/              ← png + full json dumps
+
+4. **Authentication** → Email/Password enabled + at least one Users entry (editor login for Admin only).
+
+## Local run
+
+```bash
+cd slc-cs-sow-findings
+cp .env.example .env   # already filled if you have .env
+npm install
+npm run dev
 ```
 
-## Workflow
+Open the URL Vite prints (usually `http://localhost:5173`).
 
-1. Share ticket findings + any image/JSON paths in chat.
-2. I append a `tickets/<KEY>/` page, archive evidence, update `index.html` + `tracker.json`.
-3. At the end: open `index.html` → Print → Save as PDF.
+### First load (empty DB)
 
-`FINDINGS.md` is retired; use the HTML pack.
+1. Open **Add / Edit findings**
+2. Sign in with the Firebase Auth user
+3. Click **Import seed into Firebase** once
+4. Home checklist should fill with existing tickets
 
-## Add / Edit findings via form
+## Env vars
 
-Open **[admin/add-ticket.html](admin/add-ticket.html)** (or **Add / Edit findings** on the live site).
+Copy from Firebase web config into `.env` (and Netlify site env for branch/prod deploys):
 
-**New:** fill fields → Generate & download → place under `tickets/<KEY>/` → push.
+- `VITE_FIREBASE_API_KEY`
+- `VITE_FIREBASE_AUTH_DOMAIN`
+- `VITE_FIREBASE_DATABASE_URL`
+- `VITE_FIREBASE_PROJECT_ID`
+- `VITE_FIREBASE_STORAGE_BUCKET`
+- `VITE_FIREBASE_MESSAGING_SENDER_ID`
+- `VITE_FIREBASE_APP_ID`
 
-**Edit:** select existing ticket (or open `?edit=DWF-8270`) → Load into form → change fields → Update & download → overwrite files → push.
+Web `apiKey` is public by design; security is Auth + DB rules. Do **not** put the editor password in env or git.
 
-Requires `tickets/<KEY>/ticket-data.json` for each editable ticket (auto-downloaded by the form).
+## Scripts
 
-## Netlify hosting
+- `npm run dev` — local SPA
+- `npm run build` — output to `dist/` (Netlify publish)
+- `npm run preview` — preview production build
 
-1. Push latest to GitHub (`Yash6524/slc-cs-sow-findings`).
-2. [Netlify](https://app.netlify.com) → **Add new site** → **Import an existing project** → **GitHub**.
-3. Authorize **Yash6524** and select `slc-cs-sow-findings`.
-4. Deploy settings (auto-detected from `netlify.toml`):
-   - Build command: *(empty)*
-   - Publish directory: `.`
-5. **Deploy site** → live URL like `https://random-name.netlify.app`
+## Legacy static HTML
 
-Each `git push` to `main` redeploys automatically.
+Previous static pack is under `legacy-static/` for reference. Evidence used by the SPA lives in `public/tickets/<KEY>/evidence/`.
+
+## Netlify (later)
+
+1. Deploy branch `feat/react-firebase-spa` (or merge to main when ready).
+2. Build command: `npm run build` · Publish: `dist` (see `netlify.toml`).
+3. Add the same `VITE_FIREBASE_*` variables in Netlify → Site settings → Environment variables.
+4. Optional: use this branch as a free Netlify Deploy Preview / branch deploy for staging.

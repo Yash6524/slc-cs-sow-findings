@@ -1,0 +1,144 @@
+{
+  "title": "SLC_CS SOW Ticket Findings",
+  "parent": {
+    "key": "DWF-9481",
+    "url": "https://brians.atlassian.net/browse/DWF-9481"
+  },
+  "started": "2026-07-22",
+  "updated": "2026-07-31",
+  "reviewOrder": "Bugs first (by SP), then Enhancements. Dev-dependent tickets = framework, not config.",
+  "tickets": [
+    {
+      "key": "DWF-8273",
+      "dwtask": "839",
+      "sp": "1/2",
+      "type": "bug",
+      "status": "dev-dependent",
+      "summary": "Dev dependent — framework change required (not config)",
+      "page": "tickets/DWF-8273/ticket.html"
+    },
+    {
+      "key": "DWF-8251",
+      "dwtask": "836",
+      "sp": "1/2",
+      "type": "bug",
+      "status": "done",
+      "summary": "Added condition on last routes to prevent unnecessary workflow changes",
+      "page": "tickets/DWF-8251/ticket.html",
+      "prodTaskId": "mnmyl8zz14o7g"
+    },
+    {
+      "key": "DWF-8270",
+      "dwtask": "843",
+      "sp": "1/2",
+      "type": "bug",
+      "status": "pending-client",
+      "summary": "Waiting for prem approval vs BGIS Internal tasks — FieldSet not saved; task later Cancelled",
+      "page": "tickets/DWF-8270/ticket.html",
+      "prodTaskId": "mmnnn1uduj25"
+    },
+    {
+      "key": "DWF-9475",
+      "dwtask": "676",
+      "sp": "1/2",
+      "type": "bug",
+      "status": "done",
+      "summary": "FM note ran; remaining fm_approve_complete flow interrupted; later recovered; task complete — no further work",
+      "page": "tickets/DWF-9475/ticket.html",
+      "prodTaskId": "mi60ms3pybhz"
+    },
+    {
+      "key": "DWF-9476",
+      "dwtask": "677",
+      "sp": "3/4",
+      "type": "bug",
+      "status": "pending-client",
+      "summary": "Ministry route incomplete — 5 tasks debugged; recovery steps provided; tasks not yet corrected",
+      "page": "tickets/DWF-9476/ticket.html",
+      "prodTaskId": "mddit41avpx9, md3gmfuu124jf, mcte9fg7r50q, maybbm42oem2, m8yl4448yc3w"
+    },
+    {
+      "key": "DWF-9479",
+      "dwtask": "838",
+      "sp": "3/4",
+      "type": "bug",
+      "status": "covered",
+      "summary": "Covered by ministry suite (DWF-9471/9472/9473) — auto/parent-resolved when those complete",
+      "page": "tickets/DWF-9479/ticket.html",
+      "prodTaskId": "mn678v58ykyh"
+    },
+    {
+      "key": "DWF-9470",
+      "dwtask": "170",
+      "sp": "1/2",
+      "type": "enhancement",
+      "status": "pending-client",
+      "summary": "Seasonal months on DEV; reopened — awaiting decimal vs whole-number confirmation",
+      "page": "tickets/DWF-9470/ticket.html",
+      "prodTaskId": "ms8mebfqlk52"
+    },
+    {
+      "key": "DWF-3160",
+      "dwtask": "177",
+      "sp": "1/2",
+      "type": "enhancement",
+      "status": "dev-dependent",
+      "summary": "Dev dependent — PDF description formatting requires framework change",
+      "page": "tickets/DWF-3160/ticket.html"
+    },
+    {
+      "key": "DWF-9478",
+      "dwtask": "873",
+      "sp": "1/2",
+      "type": "enhancement",
+      "status": "pending",
+      "summary": "",
+      "page": null
+    },
+    {
+      "key": "DWF-9474",
+      "dwtask": "370",
+      "sp": "3/4",
+      "type": "enhancement",
+      "status": "dev-dependent",
+      "summary": "Dev dependent — Q&A admin reassign/answer-on-behalf requires framework change",
+      "page": "tickets/DWF-9474/ticket.html"
+    },
+    {
+      "key": "DWF-9477",
+      "dwtask": "698",
+      "sp": "3/4",
+      "type": "enhancement",
+      "status": "pending",
+      "summary": "",
+      "page": null
+    },
+    {
+      "key": "DWF-9471",
+      "dwtask": "856",
+      "sp": "3 (+story)",
+      "type": "enhancement",
+      "status": "pending",
+      "summary": "Ministry approval suite",
+      "page": null
+    },
+    {
+      "key": "DWF-9472",
+      "dwtask": "857",
+      "sp": "5",
+      "type": "enhancement",
+      "status": "pending",
+      "summary": "Ministry approval suite",
+      "page": null
+    },
+    {
+      "key": "DWF-9473",
+      "dwtask": "858",
+      "sp": "5",
+      "type": "enhancement",
+      "status": "pending",
+      "summary": "Ministry approval suite",
+      "page": null
+    }
+  ]
+}

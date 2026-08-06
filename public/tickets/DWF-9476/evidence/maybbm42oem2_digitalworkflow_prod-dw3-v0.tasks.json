@@ -1,0 +1,1092 @@
+[{
+  "_id": {
+    "$oid": "682e23ddd34fefd10d66c284"
+  },
+  "updated_dt": "2026-02-03T14:09:33.564-05:00",
+  "updated_by": "lisa.weller@bgis.com",
+  "auser": "",
+  "awg": "BGIS :: SLC",
+  "create_by": "sahil.vora@bgis.com",
+  "create_dt": "2025-05-21T15:05:01.106-04:00",
+  "create_ip": "163.116.130.105:40616",
+  "doc": [
+    {
+      "fid": "details.type",
+      "val": "Change in Service",
+      "tid": 1
+    },
+    {
+      "fid": "details.request_id",
+      "val": "Request - 2025 Change in Service",
+      "tid": 1
+    },
+    {
+      "fid": "details.client_name",
+      "val": 151,
+      "tid": 4
+    },
+    {
+      "fid": "details.start_date",
+      "val": "2025-07-01T00:00:00.000-04:00",
+      "tid": 5
+    },
+    {
+      "fid": "details.description",
+      "val": "<p>Cleaning in additional enforcement space:</p>\n<p><strong>Current Price:</strong> $1,486.69</p>\n<p><strong>Additional Space Cost:</strong> $812.50</p>\n<p><strong>Updated Total Price:</strong> $2,299.19&nbsp;</p>\n",
+      "tid": 1
+    },
+    {
+      "fid": "details.sub_type",
+      "val": "Initiated by Client - additional recurring services",
+      "tid": 1
+    },
+    {
+      "fid": "details.requested_part_of_asset",
+      "val": 0,
+      "tid": 4
+    },
+    {
+      "fid": "details.change_in_service_for",
+      "val": "Single Location",
+      "tid": 1
+    },
+    {
+      "fid": "details.tier_change",
+      "val": 0,
+      "tid": 4
+    },
+    {
+      "fid": "details.ministry_impact",
+      "val": "Single Tenant: single tenant benefit (CFA adjustment)",
+      "tid": 1
+    },
+    {
+      "fid": "details.ministry_approval_required",
+      "val": 1,
+      "tid": 4
+    },
+    {
+      "fid": "details.rcc_in_scope_for_new_location",
+      "val": 0,
+      "tid": 4
+    },
+    {
+      "fid": "details.janitorial_services_in_scope",
+      "val": 1,
+      "tid": 4
+    },
+    {
+      "fid": "details.clearsite_app_in_scope",
+      "val": 0,
+      "tid": 4
+    },
+    {
+      "fid": "details.building_have_bsrm",
+      "val": 1,
+      "tid": 4
+    },
+    {
+      "fid": "details.bsrm_updated",
+      "val": 0,
+      "tid": 4
+    },
+    {
+      "fid": "details.new_bsrm_require",
+      "val": 0,
+      "tid": 4
+    },
+    {
+      "fid": "details.adhoc_notification_recipients",
+      "val": "sahil.vora@bgis.com",
+      "tid": 1
+    },
+    {
+      "fid": "details.ministry_approvers.0.approver_name",
+      "val": "Brad Glover",
+      "tid": 1
+    },
+    {
+      "fid": "details.ministry_approvers.0.approving_ministry",
+      "val": "MIN OF NATURAL RESOURCES",
+      "tid": 1
+    },
+    {
+      "fid": "details.ministry_approvers.0.approver_email",
+      "val": "Brad.glover@ontario.ca",
+      "tid": 1
+    },
+    {
+      "fid": "details.change_in_service_for_original",
+      "val": "Single Location",
+      "tid": 1
+    },
+    {
+      "fid": "real_property.building_id",
+      "val": "INO00644",
+      "tid": 1
+    },
+    {
+      "fid": "client_code",
+      "val": "B14220",
+      "tid": 1
+    },
+    {
+      "fid": "address",
+      "val": "1350 HIGH FALLS RD",
+      "tid": 1
+    },
+    {
+      "fid": "city",
+      "val": "BRACEBRIDGE",
+      "tid": 1
+    },
+    {
+      "fid": "state",
+      "val": "ON",
+      "tid": 1
+    },
+    {
+      "fid": "postal",
+      "val": "P1L 1W9",
+      "tid": 1
+    },
+    {
+      "fid": "installation_number",
+      "val": "N00434",
+      "tid": 1
+    },
+    {
+      "fid": "fmz",
+      "val": "SIMCOE",
+      "tid": 1
+    },
+    {
+      "fid": "country",
+      "val": "CAN",
+      "tid": 1
+    },
+    {
+      "fid": "region",
+      "val": "SOUTHWEST",
+      "tid": 1
+    },
+    {
+      "fid": "prem_name",
+      "val": "CHAD JACULAK",
+      "tid": 1
+    },
+    {
+      "fid": "facility_manager",
+      "val": "SAHIL VORA",
+      "tid": 1
+    },
+    {
+      "fid": "facility_manager_email",
+      "val": "Sahil.Vora@bgis.com",
+      "tid": 1
+    },
+    {
+      "fid": "ownership",
+      "val": "Owned",
+      "tid": 1
+    },
+    {
+      "fid": "tier",
+      "val": "T1",
+      "tid": 1
+    },
+    {
+      "fid": "labor_code",
+      "val": "RENATO TESI",
+      "tid": 1
+    },
+    {
+      "fid": "real_maintenance.schedule_update_require",
+      "val": 0,
+      "tid": 4
+    },
+    {
+      "fid": "reminder_mail_sent_by",
+      "val": "",
+      "tid": 1
+    },
+    {
+      "fid": "expired_mail_sent_by",
+      "val": "",
+      "tid": 1
+    },
+    {
+      "fid": "prem_approvers.0.name",
+      "val": "CHAD JACULAK",
+      "tid": 1
+    },
+    {
+      "fid": "prem_approvers.0.email",
+      "val": "CHAD.JACULAK@infrastructureontario.ca",
+      "tid": 1
+    },
+    {
+      "fid": "prem_approvers.0.building_ids",
+      "val": "INO00644",
+      "tid": 1
+    },
+    {
+      "fid": "temp_services.0.temp_site_action",
+      "val": "Add",
+      "tid": 1
+    },
+    {
+      "fid": "services.0.current_year_budget",
+      "val": 18300,
+      "tid": 4
+    },
+    {
+      "fid": "temp_services.0.temp_wbs_code_single",
+      "val": "C12 - CLEANING",
+      "tid": 1
+    },
+    {
+      "fid": "services.0.service_category",
+      "val": "CLEANING - PLANNED",
+      "tid": 1
+    },
+    {
+      "fid": "services.0.scope",
+      "val": "Base Cleaning $813 • Cleaning of additional enforcement space • Scope to mirror that of current space that’s being cleaned",
+      "tid": 1
+    },
+    {
+      "fid": "services.0.site_action",
+      "val": "Add",
+      "tid": 1
+    },
+    {
+      "fid": "services.0.wbs_code_single",
+      "val": "C12 - CLEANING",
+      "tid": 1
+    },
+    {
+      "fid": "sum_cost",
+      "val": 22822.559999999998,
+      "tid": 4
+    },
+    {
+      "fid": "attachments",
+      "val": "mb6m7ciey3ac,md3exh2ryd7b",
+      "tid": 1
+    },
+    {
+      "fid": "services.0.price",
+      "val": 376.88,
+      "tid": 4
+    },
+    {
+      "fid": "services.0.vendor_name",
+      "val": "BGIS SUSTAINABLE CLEANING SOLUTIONS",
+      "tid": 1
+    },
+    {
+      "fid": "services.0.billing_frequency",
+      "val": "Monthly",
+      "tid": 1
+    },
+    {
+      "fid": "services.0.current_slc_cost",
+      "val": 3391.92,
+      "tid": 4
+    },
+    {
+      "fid": "services.0.annual_slc_cost",
+      "val": 4522.56,
+      "tid": 4
+    },
+    {
+      "fid": "services.0.total_new_annual_slc_cost",
+      "val": 22822.56,
+      "tid": 4
+    },
+    {
+      "fid": "logs.0.email_sent_date",
+      "val": "2025-05-27T10:37:07.268-04:00",
+      "tid": 5
+    },
+    {
+      "fid": "logs.0.approver_type",
+      "val": "FM Approver",
+      "tid": 1
+    },
+    {
+      "fid": "logs.0.approver_name",
+      "val": "Sahil Vora",
+      "tid": 1
+    },
+    {
+      "fid": "logs.0.approver_email",
+      "val": "sahil.vora@bgis.com",
+      "tid": 1
+    },
+    {
+      "fid": "logs.0.status_change_date",
+      "val": "2025-07-14T16:19:26.064-04:00",
+      "tid": 5
+    },
+    {
+      "fid": "logs.0.approver_status",
+      "val": "Approved",
+      "tid": 1
+    },
+    {
+      "fid": "logs.1.email_sent_date",
+      "val": "2025-05-27T14:47:08.129-04:00",
+      "tid": 5
+    },
+    {
+      "fid": "logs.1.approver_type",
+      "val": "Finance Approver",
+      "tid": 1
+    },
+    {
+      "fid": "logs.1.approver_name",
+      "val": "Abigail Buenaobra",
+      "tid": 1
+    },
+    {
+      "fid": "logs.1.approver_email",
+      "val": "abigail.buenaobra@bgis.com",
+      "tid": 1
+    },
+    {
+      "fid": "logs.1.status_change_date",
+      "val": "2025-07-15T11:20:54.146-04:00",
+      "tid": 5
+    },
+    {
+      "fid": "logs.1.approver_status",
+      "val": "Approved",
+      "tid": 1
+    },
+    {
+      "fid": "logs.2.email_sent_date",
+      "val": "2025-05-28T12:39:05.535-04:00",
+      "tid": 5
+    },
+    {
+      "fid": "logs.2.approver_type",
+      "val": "Senior Management Approver",
+      "tid": 1
+    },
+    {
+      "fid": "logs.2.approver_name",
+      "val": "Juan Garcia",
+      "tid": 1
+    },
+    {
+      "fid": "logs.2.approver_email",
+      "val": "juan.garcia@bgis.com",
+      "tid": 1
+    },
+    {
+      "fid": "logs.2.status_change_date",
+      "val": "2025-05-28T18:40:56.800-04:00",
+      "tid": 5
+    },
+    {
+      "fid": "logs.2.approver_status",
+      "val": "Approved",
+      "tid": 1
+    },
+    {
+      "fid": "logs.3.email_sent_date",
+      "val": "2025-05-28T18:40:56.888-04:00",
+      "tid": 5
+    },
+    {
+      "fid": "logs.3.approver_type",
+      "val": "Prem Approver",
+      "tid": 1
+    },
+    {
+      "fid": "logs.3.approver_name",
+      "val": "CHAD JACULAK",
+      "tid": 1
+    },
+    {
+      "fid": "logs.3.approver_email",
+      "val": "chad.jaculak@infrastructureontario.ca",
+      "tid": 1
+    },
+    {
+      "fid": "logs.3.status_change_date",
+      "val": "2025-07-21T08:53:33.543-04:00",
+      "tid": 5
+    },
+    {
+      "fid": "logs.3.approver_status",
+      "val": "Approved",
+      "tid": 1
+    },
+    {
+      "fid": "logs.4.email_sent_date",
+      "val": "2025-06-03T16:43:20.242-04:00",
+      "tid": 5
+    },
+    {
+      "fid": "logs.4.approver_type",
+      "val": "North-SouthWest Approver",
+      "tid": 1
+    },
+    {
+      "fid": "logs.4.approver_name",
+      "val": "Fid Leonard",
+      "tid": 1
+    },
+    {
+      "fid": "logs.4.approver_email",
+      "val": "fid.leonard@infrastructureontario.ca",
+      "tid": 1
+    },
+    {
+      "fid": "logs.4.status_change_date",
+      "val": "2025-07-22T05:27:10.664-04:00",
+      "tid": 5
+    },
+    {
+      "fid": "logs.4.approver_status",
+      "val": "Approved",
+      "tid": 1
+    },
+    {
+      "fid": "logs.5.approving_ministry",
+      "val": "MIN OF NATURAL RESOURCES",
+      "tid": 1
+    },
+    {
+      "fid": "logs.5.approver_name",
+      "val": "Brad Glover",
+      "tid": 1
+    },
+    {
+      "fid": "logs.5.approver_email",
+      "val": "Brad.glover@ontario.ca",
+      "tid": 1
+    },
+    {
+      "fid": "logs.5.email_sent_date",
+      "val": "2025-07-22T05:27:10.813-04:00",
+      "tid": 5
+    },
+    {
+      "fid": "logs.5.approver_type",
+      "val": "Ministry Approver",
+      "tid": 1
+    },
+    {
+      "fid": "details.ministry_approvers.0.email_sent_dt",
+      "val": "2025-07-22T05:27:10.832-04:00",
+      "tid": 5
+    },
+    {
+      "fid": "logs.6.email_sent_date",
+      "val": "2025-07-14T14:23:50.759-04:00",
+      "tid": 5
+    },
+    {
+      "fid": "logs.6.approver_type",
+      "val": "FM Approver",
+      "tid": 1
+    },
+    {
+      "fid": "logs.6.approver_name",
+      "val": "Sahil Vora",
+      "tid": 1
+    },
+    {
+      "fid": "logs.6.approver_email",
+      "val": "sahil.vora@bgis.com",
+      "tid": 1
+    },
+    {
+      "fid": "logs.6.status_change_date",
+      "val": "2025-07-14T16:19:26.191-04:00",
+      "tid": 5
+    },
+    {
+      "fid": "logs.6.approver_status",
+      "val": "Approved",
+      "tid": 1
+    },
+    {
+      "fid": "logs.7.email_sent_date",
+      "val": "2025-07-14T16:19:26.308-04:00",
+      "tid": 5
+    },
+    {
+      "fid": "logs.7.approver_type",
+      "val": "Finance Approver",
+      "tid": 1
+    },
+    {
+      "fid": "logs.7.approver_name",
+      "val": "Abigail Buenaobra",
+      "tid": 1
+    },
+    {
+      "fid": "logs.7.approver_email",
+      "val": "abigail.buenaobra@bgis.com",
+      "tid": 1
+    },
+    {
+      "fid": "logs.7.status_change_date",
+      "val": "2025-07-15T11:20:54.347-04:00",
+      "tid": 5
+    },
+    {
+      "fid": "logs.7.approver_status",
+      "val": "Approved",
+      "tid": 1
+    },
+    {
+      "fid": "logs.8.email_sent_date",
+      "val": "2025-07-15T11:20:54.504-04:00",
+      "tid": 5
+    },
+    {
+      "fid": "logs.8.approver_type",
+      "val": "Prem Approver",
+      "tid": 1
+    },
+    {
+      "fid": "logs.8.approver_name",
+      "val": "CHAD JACULAK",
+      "tid": 1
+    },
+    {
+      "fid": "logs.8.approver_email",
+      "val": "chad.jaculak@infrastructureontario.ca",
+      "tid": 1
+    },
+    {
+      "fid": "logs.8.status_change_date",
+      "val": "2025-07-21T08:53:33.609-04:00",
+      "tid": 5
+    },
+    {
+      "fid": "logs.8.approver_status",
+      "val": "Approved",
+      "tid": 1
+    },
+    {
+      "fid": "logs.9.email_sent_date",
+      "val": "2025-07-21T08:53:33.688-04:00",
+      "tid": 5
+    },
+    {
+      "fid": "logs.9.approver_type",
+      "val": "North-SouthWest Approver",
+      "tid": 1
+    },
+    {
+      "fid": "logs.9.approver_name",
+      "val": "Fid Leonard",
+      "tid": 1
+    },
+    {
+      "fid": "logs.9.approver_email",
+      "val": "fid.leonard@infrastructureontario.ca",
+      "tid": 1
+    },
+    {
+      "fid": "logs.9.status_change_date",
+      "val": "2025-07-22T05:27:10.730-04:00",
+      "tid": 5
+    },
+    {
+      "fid": "logs.9.approver_status",
+      "val": "Approved",
+      "tid": 1
+    }
+  ],
+  "project_id": "slc_cs",
+  "type_id": "m0aiw0l0wbwc",
+  "title": "Change in Service - B14220 - INO00644 - NORTH - 2025 - maybbm42oem2",
+  "workflow_id": "complete",
+  "is_locked": false,
+  "is_closed": true,
+  "priority": 50,
+  "task_status": 900,
+  "module_id": "m0aivihgxfez",
+  "eff_perm": [
+    {
+      "id": "BGIS :: SLC :: Users",
+      "perm": 200
+    },
+    {
+      "id": "BGIS :: SLC :: Users :: SPOC",
+      "perm": 200
+    },
+    {
+      "id": "BGIS",
+      "perm": 300
+    },
+    {
+      "id": "BGIS :: SLC",
+      "perm": 300
+    },
+    {
+      "id": "BGIS :: SLC :: Manager",
+      "perm": 300
+    }
+  ],
+  "id": "maybbm42oem2",
+  "user_id": "sahil.vora@bgis.com",
+  "_deleted": false,
+  "is_busy": "",
+  "env": "prod",
+  "queries": [
+    {
+      "qid": "maybbm42oem2_x9qg41hb",
+      "fid": "services.0.current_year_budget",
+      "message": "Please update with FY25-26 budget $18,300/-. Thanks.",
+      "user_id": "abigail.buenaobra@bgis.com",
+      "query_status": 1,
+      "query_dt": "2025-05-27T16:10:55.857-04:00"
+    },
+    {
+      "qid": "maybbm42oem2_x9s2wun5",
+      "fid": "services.0.current_year_budget",
+      "message": "Done",
+      "user_id": "sahil.vora@bgis.com",
+      "query_status": 2,
+      "query_dt": "2025-05-28T12:32:32.235-04:00"
+    }
+  ],
+  "audit": [
+    {
+      "aid": "maybbm42oem2_x9f0g5wp",
+      "message": "Workflow State Changed from m0aiwm6d14prn to service_details: Request has been moved to Add Services workflowstate",
+      "atype": 97,
+      "user_id": "sahil.vora@bgis.com",
+      "audit_dt": "2025-05-21T15:32:41.613-04:00"
+    },
+    {
+      "aid": "maybbm42oem2_x9f0g5wv",
+      "message": "Task status changed from 100 to 1: Task is in progress",
+      "atype": 0,
+      "user_id": "sahil.vora@bgis.com",
+      "audit_dt": "2025-05-21T15:32:41.619-04:00"
+    },
+    {
+      "aid": "maybbm42oem2_x9px88ct",
+      "message": "Task assigned from sahil.vora@bgis.com to : Submit Form for Attachment workflowstate updated with nobody yet assigned",
+      "atype": 0,
+      "user_id": "sahil.vora@bgis.com",
+      "audit_dt": "2025-05-27T09:55:03.301-04:00"
+    },
+    {
+      "aid": "maybbm42oem2_x9px88gh",
+      "message": "Workflow State Changed from service_details to obtain_quotes_sd: Request has been moved to Obtain Quotes SD workflowstate",
+      "atype": 97,
+      "user_id": "sahil.vora@bgis.com",
+      "audit_dt": "2025-05-27T09:55:03.425-04:00"
+    },
+    {
+      "aid": "maybbm42oem2_x9q0tpog",
+      "message": "Task assigned from  to susan.lammi@bgis.com: Acknowledged Task",
+      "atype": 0,
+      "user_id": "susan.lammi@bgis.com",
+      "audit_dt": "2025-05-27T10:31:25.068-04:00"
+    },
+    {
+      "aid": "maybbm42oem2_x9q14g9b",
+      "message": "Workflow State Changed from obtain_quotes_sd to fm_approval: Task has been submitted obtain quote",
+      "atype": 97,
+      "user_id": "susan.lammi@bgis.com",
+      "audit_dt": "2025-05-27T10:37:07.885-04:00"
+    },
+    {
+      "aid": "maybbm42oem2_x9q14g9h",
+      "message": "Task assigned from susan.lammi@bgis.com to Sahil.Vora@bgis.com: Submitted for FM review with default assigned",
+      "atype": 0,
+      "user_id": "susan.lammi@bgis.com",
+      "audit_dt": "2025-05-27T10:37:07.892-04:00"
+    },
+    {
+      "aid": "maybbm42oem2_x9qcc5de",
+      "message": "Workflow State Changed from fm_approval to finance_approval: Task has been approved by FM",
+      "atype": 97,
+      "user_id": "sahil.vora@bgis.com",
+      "audit_dt": "2025-05-27T14:47:09.436-04:00"
+    },
+    {
+      "aid": "maybbm42oem2_x9qcc5dm",
+      "message": "Task assigned from sahil.vora@bgis.com to : Submitted for finance review with nobody yet assigned",
+      "atype": 0,
+      "user_id": "sahil.vora@bgis.com",
+      "audit_dt": "2025-05-27T14:47:09.444-04:00"
+    },
+    {
+      "aid": "maybbm42oem2_x9qg3dt8",
+      "message": "Task assigned from  to abigail.buenaobra@bgis.com: Acknowledged Task",
+      "atype": 0,
+      "user_id": "abigail.buenaobra@bgis.com",
+      "audit_dt": "2025-05-27T16:10:30.830-04:00"
+    },
+    {
+      "aid": "maybbm42oem2_x9s38v94",
+      "message": "Workflow State Changed from finance_approval to senior_management_approval: Task has been approved by Finance",
+      "atype": 97,
+      "user_id": "abigail.buenaobra@bgis.com",
+      "audit_dt": "2025-05-28T12:39:05.954-04:00"
+    },
+    {
+      "aid": "maybbm42oem2_x9s38v9b",
+      "message": "Task assigned from abigail.buenaobra@bgis.com to Juan.garcia@bgis.com: Submitted for senior management review with assigned to approver from function",
+      "atype": 0,
+      "user_id": "abigail.buenaobra@bgis.com",
+      "audit_dt": "2025-05-28T12:39:05.961-04:00"
+    },
+    {
+      "aid": "maybbm42oem2_x9sjhanq",
+      "message": "Workflow State Changed from senior_management_approval to prem_approval: Task has been approved by Senior Management",
+      "atype": 97,
+      "user_id": "juan.garcia@bgis.com",
+      "audit_dt": "2025-05-28T18:40:57.288-04:00"
+    },
+    {
+      "aid": "maybbm42oem2_x9sjhao0",
+      "message": "Task assigned from juan.garcia@bgis.com to CHAD.JACULAK@infrastructureontario.ca: Submitted for prem review with nobody yet assigned",
+      "atype": 0,
+      "user_id": "juan.garcia@bgis.com",
+      "audit_dt": "2025-05-28T18:40:57.296-04:00"
+    },
+    {
+      "aid": "maybbm42oem2_xa5s5a77",
+      "message": "Workflow State Changed from prem_approval to io_north_south_west_approval: Task has been approved by Prem",
+      "atype": 97,
+      "user_id": "chad.jaculak@infrastructureontario.ca",
+      "audit_dt": "2025-06-03T16:43:21.765-04:00"
+    },
+    {
+      "aid": "maybbm42oem2_xa5s5a7m",
+      "message": "Task assigned from chad.jaculak@infrastructureontario.ca to : Submitted for IO director review with nobody yet assigned",
+      "atype": 0,
+      "user_id": "chad.jaculak@infrastructureontario.ca",
+      "audit_dt": "2025-06-03T16:43:21.780-04:00"
+    },
+    {
+      "aid": "maybbm42oem2_xa70xj9u",
+      "message": "Task assigned from  to fid.leonard@infrastructureontario.ca: Acknowledged Task",
+      "atype": 0,
+      "user_id": "fid.leonard@infrastructureontario.ca",
+      "audit_dt": "2025-06-04T07:52:46.212-04:00"
+    },
+    {
+      "aid": "maybbm42oem2_xa70xuoa",
+      "message": "Workflow State Changed from io_north_south_west_approval to ministry_approver: Task has been approved by IO Director",
+      "atype": 97,
+      "user_id": "fid.leonard@infrastructureontario.ca",
+      "audit_dt": "2025-06-04T07:52:59.418-04:00"
+    },
+    {
+      "aid": "maybbm42oem2_xa70xuoi",
+      "message": "Task assigned from fid.leonard@infrastructureontario.ca to : Submitted for minitry review",
+      "atype": 0,
+      "user_id": "fid.leonard@infrastructureontario.ca",
+      "audit_dt": "2025-06-04T07:52:59.426-04:00"
+    },
+    {
+      "aid": "maybbm42oem2_xau323gd",
+      "message": "Workflow State Changed from ministry_approver to NewRequest: Reassign task",
+      "atype": 97,
+      "user_id": "lisa.weller@bgis.com",
+      "audit_dt": "2025-06-16T10:55:53.273-04:00"
+    },
+    {
+      "aid": "maybbm42oem2_xau323i6",
+      "message": "Task assigned from  to sahil.vora@bgis.com Reassign task",
+      "atype": 0,
+      "user_id": "lisa.weller@bgis.com",
+      "audit_dt": "2025-06-16T10:55:53.334-04:00"
+    },
+    {
+      "aid": "maybbm42oem2_xau39ldo",
+      "message": "Workflow State Changed from NewRequest to service_details: Request has been moved to Add Services workflowstate",
+      "atype": 97,
+      "user_id": "sahil.vora@bgis.com",
+      "audit_dt": "2025-06-16T11:00:49.118-04:00"
+    },
+    {
+      "aid": "maybbm42oem2_xau3acw5",
+      "message": "Task assigned from sahil.vora@bgis.com to  Submit Form for Attachment workflowstate updated with nobody yet assigned",
+      "atype": 0,
+      "user_id": "sahil.vora@bgis.com",
+      "audit_dt": "2025-06-16T11:01:18.645-04:00"
+    },
+    {
+      "aid": "maybbm42oem2_xau3ad27",
+      "message": "Workflow State Changed from service_details to obtain_quotes_sd: Request has been moved to Obtain Quotes SD workflowstate",
+      "atype": 97,
+      "user_id": "sahil.vora@bgis.com",
+      "audit_dt": "2025-06-16T11:01:18.784-04:00"
+    },
+    {
+      "aid": "maybbm42oem2_xau3dga5",
+      "message": "Workflow State Changed from obtain_quotes_sd to io_north_south_west_approval: Reassign task",
+      "atype": 97,
+      "user_id": "lisa.weller@bgis.com",
+      "audit_dt": "2025-06-16T11:03:20.433-04:00"
+    },
+    {
+      "aid": "maybbm42oem2_xau3dgb3",
+      "message": "Task assigned from  to fid.leonard@infrastructureontario.ca Reassign task",
+      "atype": 0,
+      "user_id": "lisa.weller@bgis.com",
+      "audit_dt": "2025-06-16T11:03:20.465-04:00"
+    },
+    {
+      "aid": "maybbm42oem2_xau6fog7",
+      "message": "Workflow State Changed from io_north_south_west_approval to ministry_approver: Task has been approved by IO Director",
+      "atype": 97,
+      "user_id": "fid.leonard@infrastructureontario.ca",
+      "audit_dt": "2025-06-16T12:11:37.503-04:00"
+    },
+    {
+      "aid": "maybbm42oem2_xau6fogd",
+      "message": "Task assigned from fid.leonard@infrastructureontario.ca to  Submitted for minitry review",
+      "atype": 0,
+      "user_id": "fid.leonard@infrastructureontario.ca",
+      "audit_dt": "2025-06-16T12:11:37.509-04:00"
+    },
+    {
+      "aid": "maybbm42oem2_xbfhhtdx",
+      "message": "Workflow State Changed from ministry_approver to NewRequest: Reassign task",
+      "atype": 97,
+      "user_id": "lisa.weller@bgis.com",
+      "audit_dt": "2025-06-26T16:05:54.567-04:00"
+    },
+    {
+      "aid": "maybbm42oem2_xbfhhtg7",
+      "message": "Task assigned from  to ryan.alexander@bgis.com Reassign task",
+      "atype": 0,
+      "user_id": "lisa.weller@bgis.com",
+      "audit_dt": "2025-06-26T16:05:54.643-04:00"
+    },
+    {
+      "aid": "maybbm42oem2_xbfhkcv5",
+      "message": "Task assigned from ryan.alexander@bgis.com to sahil.vora@bgis.com Task not assigned to anyone yet.",
+      "atype": 0,
+      "user_id": "ryan.alexander@bgis.com",
+      "audit_dt": "2025-06-26T16:07:33.411-04:00"
+    },
+    {
+      "aid": "maybbm42oem2_xbfhm85a",
+      "message": "Workflow State Changed from NewRequest to service_details: Request has been moved to Add Services workflowstate",
+      "atype": 97,
+      "user_id": "ryan.alexander@bgis.com",
+      "audit_dt": "2025-06-26T16:08:46.516-04:00"
+    },
+    {
+      "aid": "maybbm42oem2_xbfhoaw7",
+      "message": "Task assigned from sahil.vora@bgis.com to  Submit Form for Attachment workflowstate updated with nobody yet assigned",
+      "atype": 0,
+      "user_id": "lisa.weller@bgis.com",
+      "audit_dt": "2025-06-26T16:10:08.351-04:00"
+    },
+    {
+      "aid": "maybbm42oem2_xbfhoblv",
+      "message": "Workflow State Changed from service_details to obtain_quotes_sd: Request has been moved to Obtain Quotes SD workflowstate",
+      "atype": 97,
+      "user_id": "lisa.weller@bgis.com",
+      "audit_dt": "2025-06-26T16:10:09.157-04:00"
+    },
+    {
+      "aid": "maybbm42oem2_xbfhp6hh",
+      "message": "Workflow State Changed from obtain_quotes_sd to io_north_south_west_approval: Reassign task",
+      "atype": 97,
+      "user_id": "lisa.weller@bgis.com",
+      "audit_dt": "2025-06-26T16:10:42.531-04:00"
+    },
+    {
+      "aid": "maybbm42oem2_xbfhp6jm",
+      "message": "Task assigned from  to fid.leonard@infrastructureontario.ca Reassign task",
+      "atype": 0,
+      "user_id": "lisa.weller@bgis.com",
+      "audit_dt": "2025-06-26T16:10:42.604-04:00"
+    },
+    {
+      "aid": "maybbm42oem2_xbfjdx4w",
+      "message": "Workflow State Changed from io_north_south_west_approval to ministry_approver: Task has been approved by IO Director",
+      "atype": 97,
+      "user_id": "fid.leonard@infrastructureontario.ca",
+      "audit_dt": "2025-06-26T16:47:54.340-04:00"
+    },
+    {
+      "aid": "maybbm42oem2_xbfjdx57",
+      "message": "Task assigned from fid.leonard@infrastructureontario.ca to  Submitted for minitry review",
+      "atype": 0,
+      "user_id": "fid.leonard@infrastructureontario.ca",
+      "audit_dt": "2025-06-26T16:47:54.349-04:00"
+    },
+    {
+      "aid": "maybbm42oem2_xcfjrjb4",
+      "message": "Workflow State Changed from ministry_approver to obtain_quotes_sd: Reassign task",
+      "atype": 97,
+      "user_id": "lisa.weller@bgis.com",
+      "audit_dt": "2025-07-14T14:03:33.038-04:00"
+    },
+    {
+      "aid": "maybbm42oem2_xcfjrjc4",
+      "message": "Task assigned from  to susan.lammi@bgis.com Reassign task",
+      "atype": 0,
+      "user_id": "lisa.weller@bgis.com",
+      "audit_dt": "2025-07-14T14:03:33.072-04:00"
+    },
+    {
+      "aid": "maybbm42oem2_xcfkoj8n",
+      "message": "Workflow State Changed from obtain_quotes_sd to fm_approval: Task has been submitted obtain quote",
+      "atype": 97,
+      "user_id": "susan.lammi@bgis.com",
+      "audit_dt": "2025-07-14T14:23:51.379-04:00"
+    },
+    {
+      "aid": "maybbm42oem2_xcfkoj8x",
+      "message": "Task assigned from susan.lammi@bgis.com to Sahil.Vora@bgis.com Submitted for FM review with default assigned",
+      "atype": 0,
+      "user_id": "susan.lammi@bgis.com",
+      "audit_dt": "2025-07-14T14:23:51.389-04:00"
+    },
+    {
+      "aid": "maybbm42oem2_xcfpv1h2",
+      "message": "Workflow State Changed from fm_approval to finance_approval: Task has been approved by FM",
+      "atype": 97,
+      "user_id": "sahil.vora@bgis.com",
+      "audit_dt": "2025-07-14T16:19:27.664-04:00"
+    },
+    {
+      "aid": "maybbm42oem2_xcfpv1hh",
+      "message": "Task assigned from sahil.vora@bgis.com to  Submitted for finance review with nobody yet assigned",
+      "atype": 0,
+      "user_id": "sahil.vora@bgis.com",
+      "audit_dt": "2025-07-14T16:19:27.679-04:00"
+    },
+    {
+      "aid": "maybbm42oem2_xch94v7x",
+      "message": "Task assigned from  to abigail.buenaobra@bgis.com Acknowledged Task",
+      "atype": 0,
+      "user_id": "abigail.buenaobra@bgis.com",
+      "audit_dt": "2025-07-15T11:20:30.299-04:00"
+    },
+    {
+      "aid": "maybbm42oem2_xch95ipo",
+      "message": "Workflow State Changed from finance_approval to prem_approval: Task has been approved by Finance",
+      "atype": 97,
+      "user_id": "abigail.buenaobra@bgis.com",
+      "audit_dt": "2025-07-15T11:20:55.178-04:00"
+    },
+    {
+      "aid": "maybbm42oem2_xch95iq6",
+      "message": "Task assigned from abigail.buenaobra@bgis.com to CHAD.JACULAK@infrastructureontario.ca Submitted for prem review with nobody yet assigned",
+      "atype": 0,
+      "user_id": "abigail.buenaobra@bgis.com",
+      "audit_dt": "2025-07-15T11:20:55.194-04:00"
+    },
+    {
+      "aid": "maybbm42oem2_xcsgg41w",
+      "message": "Workflow State Changed from prem_approval to io_north_south_west_approval: Task has been approved by Prem",
+      "atype": 97,
+      "user_id": "chad.jaculak@infrastructureontario.ca",
+      "audit_dt": "2025-07-21T08:53:34.546-04:00"
+    },
+    {
+      "aid": "maybbm42oem2_xcsgg427",
+      "message": "Task assigned from chad.jaculak@infrastructureontario.ca to  Submitted for IO director review with nobody yet assigned",
+      "atype": 0,
+      "user_id": "chad.jaculak@infrastructureontario.ca",
+      "audit_dt": "2025-07-21T08:53:34.555-04:00"
+    },
+    {
+      "aid": "maybbm42oem2_xcu3t0qs",
+      "message": "Task assigned from  to fid.leonard@infrastructureontario.ca Acknowledged Task",
+      "atype": 0,
+      "user_id": "fid.leonard@infrastructureontario.ca",
+      "audit_dt": "2025-07-22T05:27:00.200-04:00"
+    },
+    {
+      "aid": "maybbm42oem2_xcu3taas",
+      "message": "Workflow State Changed from io_north_south_west_approval to ministry_approver: Task has been approved by IO Director",
+      "atype": 97,
+      "user_id": "fid.leonard@infrastructureontario.ca",
+      "audit_dt": "2025-07-22T05:27:11.216-04:00"
+    },
+    {
+      "aid": "maybbm42oem2_xcu3tab1",
+      "message": "Task assigned from fid.leonard@infrastructureontario.ca to  Submitted for minitry review",
+      "atype": 0,
+      "user_id": "fid.leonard@infrastructureontario.ca",
+      "audit_dt": "2025-07-22T05:27:11.223-04:00"
+    },
+    {
+      "aid": "maybbm42oem2_xl490n9p",
+      "message": "Task status changed from 1 (InProgress) to 900 (Closed) : Reassign task",
+      "atype": 0,
+      "user_id": "lisa.weller@bgis.com",
+      "audit_dt": "2025-12-16T12:14:03.127-05:00"
+    },
+    {
+      "aid": "maybbm42oem2_xl4ar2wq",
+      "message": "Task status changed from 900 (Closed) to 5000 (Reviewed) : Reassign task",
+      "atype": 0,
+      "user_id": "lisa.weller@bgis.com",
+      "audit_dt": "2025-12-16T12:53:37.178-05:00"
+    },
+    {
+      "aid": "maybbm42oem2_xl4ar31g",
+      "message": "Workflow State Changed from complete to bgis_internal_task: Reassign task",
+      "atype": 97,
+      "user_id": "lisa.weller@bgis.com",
+      "audit_dt": "2025-12-16T12:53:37.270-05:00"
+    },
+    {
+      "aid": "maybbm42oem2_xl4ar32a",
+      "message": "Task assigned from none to lisa.weller@bgis.com Reassign task",
+      "atype": 0,
+      "user_id": "lisa.weller@bgis.com",
+      "audit_dt": "2025-12-16T12:53:37.298-05:00"
+    },
+    {
+      "aid": "maybbm42oem2_xntk984u",
+      "message": "Task status changed from 5000 (Reviewed) to 900 (Closed)",
+      "atype": 0,
+      "user_id": "lisa.weller@bgis.com",
+      "audit_dt": "2026-02-03T14:09:33.486-05:00"
+    },
+    {
+      "aid": "maybbm42oem2_xntk9874",
+      "message": "Workflow State Changed from bgis_internal_task to complete: Reassign task",
+      "atype": 97,
+      "user_id": "lisa.weller@bgis.com",
+      "audit_dt": "2026-02-03T14:09:33.562-05:00"
+    },
+    {
+      "aid": "maybbm42oem2_xntk9875",
+      "message": "Task reassigned from lisa.weller@bgis.com to ",
+      "atype": 0,
+      "user_id": "lisa.weller@bgis.com",
+      "audit_dt": "2026-02-03T14:09:33.563-05:00"
+    }
+  ],
+  "open_query_count": 1,
+  "sla_time_total": 0,
+  "key": "slc_io",
+  "workflow_start_dt": "2026-02-03T14:09:33.534-05:00",
+  "__id": "682e23ddd34fefd10d66c284",
+  "close_dt": "2026-02-03T14:09:33.486-05:00",
+  "close_by": "lisa.weller@bgis.com",
+  "all_tasks": [],
+  "updated_dt_r": 1770145773564,
+  "_meta": {
+    "lwt": 1770145775715.01
+  },
+  "_attachments": {},
+  "_rev": "542-jwvhvbyddp"
+}]

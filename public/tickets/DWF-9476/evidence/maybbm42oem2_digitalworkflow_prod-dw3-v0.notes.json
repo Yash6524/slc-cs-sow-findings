@@ -1,0 +1,764 @@
+[{
+  "_id": {
+    "$oid": "6835c437d34fefd10dc4d889"
+  },
+  "id": "mb6kw3xupc9i",
+  "_deleted": false,
+  "create_by": "sahil.vora@bgis.com",
+  "create_dt": "2025-05-27T09:55:03.282-04:00",
+  "create_ip": "163.116.130.24:8220",
+  "env": "prod",
+  "is_busy": "",
+  "note_text": "SPOC has submitted initial details for SLC request.",
+  "note_type": "system",
+  "project_id": "slc_cs",
+  "ref_id": "maybbm42oem2",
+  "ref_type": "task",
+  "updated_by": "sahil.vora@bgis.com",
+  "updated_dt": "2025-05-27T09:55:03.282-04:00",
+  "user_id": "sahil.vora@bgis.com",
+  "__id": "6835c437d34fefd10dc4d889",
+  "updated_dt_r": 1748354103282,
+  "_meta": {
+    "lwt": 1754941298095.01
+  },
+  "_attachments": {},
+  "_rev": "6-jcbtwulxcs"
+},
+{
+  "_id": {
+    "$oid": "6835ce13d34fefd10dc62e27"
+  },
+  "id": "mb6me7emme3d",
+  "_deleted": false,
+  "create_by": "susan.lammi@bgis.com",
+  "create_dt": "2025-05-27T10:37:07.198-04:00",
+  "create_ip": "163.116.130.111:39218",
+  "env": "prod",
+  "is_busy": "",
+  "note_text": "Request has been submitted.",
+  "note_type": "system",
+  "project_id": "slc_cs",
+  "ref_id": "maybbm42oem2",
+  "ref_type": "task",
+  "updated_by": "susan.lammi@bgis.com",
+  "updated_dt": "2025-05-27T10:37:07.198-04:00",
+  "user_id": "susan.lammi@bgis.com",
+  "__id": "6835ce13d34fefd10dc62e27",
+  "updated_dt_r": 1748356627198,
+  "_meta": {
+    "lwt": 1754941298095.01
+  },
+  "_attachments": {},
+  "_rev": "6-jcbtwulxcs"
+},
+{
+  "_id": {
+    "$oid": "683608abd34fefd10dce2ea5"
+  },
+  "id": "mb6vbq1r10nkk",
+  "_deleted": false,
+  "create_by": "sahil.vora@bgis.com",
+  "create_dt": "2025-05-27T14:47:07.935-04:00",
+  "create_ip": "163.116.130.22:51010",
+  "env": "prod",
+  "is_busy": "",
+  "note_text": "FM has approved the SLC request.",
+  "note_type": "system",
+  "project_id": "slc_cs",
+  "ref_id": "maybbm42oem2",
+  "ref_type": "task",
+  "updated_by": "sahil.vora@bgis.com",
+  "updated_dt": "2025-05-27T14:47:07.935-04:00",
+  "user_id": "sahil.vora@bgis.com",
+  "__id": "683608abd34fefd10dce2ea5",
+  "updated_dt_r": 1748371627935,
+  "_meta": {
+    "lwt": 1754941298095.01
+  },
+  "_attachments": {},
+  "_rev": "6-jcbtwulxcs"
+},
+{
+  "_id": {
+    "$oid": "68373c27d34fefd10df45db2"
+  },
+  "id": "mb866vgpq0xm",
+  "_deleted": false,
+  "create_by": "abigail.buenaobra@bgis.com",
+  "create_dt": "2025-05-28T12:39:03.625-04:00",
+  "create_ip": "163.116.130.29:55334",
+  "env": "prod",
+  "is_busy": "",
+  "note_text": "Finance has approved the SLC request.",
+  "note_type": "system",
+  "project_id": "slc_cs",
+  "ref_id": "maybbm42oem2",
+  "ref_type": "task",
+  "updated_by": "abigail.buenaobra@bgis.com",
+  "updated_dt": "2025-05-28T12:39:03.625-04:00",
+  "user_id": "abigail.buenaobra@bgis.com",
+  "__id": "68373c27d34fefd10df45db2",
+  "updated_dt_r": 1748450343625,
+  "_meta": {
+    "lwt": 1754941298095.01
+  },
+  "_attachments": {},
+  "_rev": "6-jcbtwulxcs"
+},
+{
+  "_id": {
+    "$oid": "683790f8d34fefd10dff2573"
+  },
+  "id": "mb8j49dbvyaq",
+  "_deleted": false,
+  "create_by": "juan.garcia@bgis.com",
+  "create_dt": "2025-05-28T18:40:56.687-04:00",
+  "create_ip": "163.116.130.39:11184",
+  "env": "prod",
+  "is_busy": "",
+  "note_text": "Senior Management has approved the SLC request.",
+  "note_type": "system",
+  "project_id": "slc_cs",
+  "ref_id": "maybbm42oem2",
+  "ref_type": "task",
+  "updated_by": "juan.garcia@bgis.com",
+  "updated_dt": "2025-05-28T18:40:56.687-04:00",
+  "user_id": "juan.garcia@bgis.com",
+  "__id": "683790f8d34fefd10dff2573",
+  "updated_dt_r": 1748472056687,
+  "_meta": {
+    "lwt": 1754941298095.01
+  },
+  "_attachments": {},
+  "_rev": "6-jcbtwulxcs"
+},
+{
+  "_id": {
+    "$oid": "683f5e68d34fefd10df0b8ed"
+  },
+  "id": "mbgzk4e8pvz3",
+  "_deleted": false,
+  "create_by": "chad.jaculak@infrastructureontario.ca",
+  "create_dt": "2025-06-03T16:43:20.000-04:00",
+  "create_ip": "142.181.215.201:52055",
+  "env": "prod",
+  "is_busy": "",
+  "note_text": "Prem has approved the SLC request.",
+  "note_type": "system",
+  "project_id": "slc_cs",
+  "ref_id": "maybbm42oem2",
+  "ref_type": "task",
+  "updated_by": "chad.jaculak@infrastructureontario.ca",
+  "updated_dt": "2025-06-03T16:43:20.000-04:00",
+  "user_id": "chad.jaculak@infrastructureontario.ca",
+  "__id": "683f5e68d34fefd10df0b8ed",
+  "updated_dt_r": 1748983400000,
+  "_meta": {
+    "lwt": 1754941298095.01
+  },
+  "_attachments": {},
+  "_rev": "5-jcbtwulxcs"
+},
+{
+  "_id": {
+    "$oid": "6840339cd34fefd10d098d53"
+  },
+  "id": "mbhw1xs7pxrx",
+  "_deleted": false,
+  "create_by": "fid.leonard@infrastructureontario.ca",
+  "create_dt": "2025-06-04T07:52:58.951-04:00",
+  "create_ip": "99.226.40.7:49577",
+  "env": "prod",
+  "is_busy": "",
+  "note_text": "IO Director has approved the SLC request.",
+  "note_type": "system",
+  "project_id": "slc_cs",
+  "ref_id": "maybbm42oem2",
+  "ref_type": "task",
+  "updated_by": "fid.leonard@infrastructureontario.ca",
+  "updated_dt": "2025-06-04T07:52:58.951-04:00",
+  "user_id": "fid.leonard@infrastructureontario.ca",
+  "__id": "6840339cd34fefd10d098d53",
+  "updated_dt_r": 1749037978951,
+  "_meta": {
+    "lwt": 1754941298095.01
+  },
+  "_attachments": {},
+  "_rev": "5-jcbtwulxcs"
+},
+{
+  "_id": {
+    "$oid": "68503079382ff45b0c5c7a8c"
+  },
+  "id": "mbz7vdmou53z",
+  "_deleted": false,
+  "create_by": "lisa.weller@bgis.com",
+  "create_dt": "2025-06-16T10:55:53.280-04:00",
+  "create_ip": "163.116.130.19:23030",
+  "env": "prod",
+  "is_busy": "",
+  "note_text": "The task workflow has been updated to Submit Form",
+  "project_id": "slc_cs",
+  "ref_id": "maybbm42oem2",
+  "ref_type": "related_object",
+  "updated_by": "lisa.weller@bgis.com",
+  "updated_dt": "2025-06-16T10:55:53.280-04:00",
+  "user_id": "lisa.weller@bgis.com",
+  "__id": "68503079382ff45b0c5c7a8c",
+  "updated_dt_r": 1750085753280,
+  "_meta": {
+    "lwt": 1771018510756.01
+  },
+  "_attachments": {},
+  "_rev": "6-hdlmurrxhr"
+},
+{
+  "_id": {
+    "$oid": "6850307a382ff45b0c5c7abc"
+  },
+  "id": "mbz7vdquzr5t",
+  "_deleted": false,
+  "create_by": "lisa.weller@bgis.com",
+  "create_dt": "2025-06-16T10:55:53.430-04:00",
+  "create_ip": "163.116.130.130:24096",
+  "env": "prod",
+  "is_busy": "",
+  "note_text": "The task has been assigned to sahil.vora@bgis.com",
+  "project_id": "slc_cs",
+  "ref_id": "maybbm42oem2",
+  "ref_type": "related_object",
+  "updated_by": "lisa.weller@bgis.com",
+  "updated_dt": "2025-06-16T10:55:53.430-04:00",
+  "user_id": "lisa.weller@bgis.com",
+  "__id": "6850307a382ff45b0c5c7abc",
+  "updated_dt_r": 1750085753430,
+  "_meta": {
+    "lwt": 1771018510756.01
+  },
+  "_attachments": {},
+  "_rev": "6-hdlmurrxhr"
+},
+{
+  "_id": {
+    "$oid": "68503244382ff45b0c5cbe0f"
+  },
+  "id": "mbz84ynp13953",
+  "_deleted": false,
+  "create_by": "lisa.weller@bgis.com",
+  "create_dt": "2025-06-16T11:03:20.437-04:00",
+  "create_ip": "163.116.130.19:21822",
+  "env": "prod",
+  "is_busy": "",
+  "note_text": "The task workflow has been updated to IO Director Approval-North/South/West",
+  "project_id": "slc_cs",
+  "ref_id": "maybbm42oem2",
+  "ref_type": "related_object",
+  "updated_by": "lisa.weller@bgis.com",
+  "updated_dt": "2025-06-16T11:03:20.437-04:00",
+  "user_id": "lisa.weller@bgis.com",
+  "__id": "68503244382ff45b0c5cbe0f",
+  "updated_dt_r": 1750086200437,
+  "_meta": {
+    "lwt": 1771018510756.01
+  },
+  "_attachments": {},
+  "_rev": "6-hdlmurrxhr"
+},
+{
+  "_id": {
+    "$oid": "68503248382ff45b0c5cbe82"
+  },
+  "id": "mbz84ypkoasx",
+  "_deleted": false,
+  "create_by": "lisa.weller@bgis.com",
+  "create_dt": "2025-06-16T11:03:20.504-04:00",
+  "create_ip": "163.116.130.130:61572",
+  "env": "prod",
+  "is_busy": "",
+  "note_text": "The task has been assigned to fid.leonard@infrastructureontario.ca",
+  "project_id": "slc_cs",
+  "ref_id": "maybbm42oem2",
+  "ref_type": "related_object",
+  "updated_by": "lisa.weller@bgis.com",
+  "updated_dt": "2025-06-16T11:03:20.504-04:00",
+  "user_id": "lisa.weller@bgis.com",
+  "__id": "68503248382ff45b0c5cbe82",
+  "updated_dt_r": 1750086200504,
+  "_meta": {
+    "lwt": 1771018510756.01
+  },
+  "_attachments": {},
+  "_rev": "6-hdlmurrxhr"
+},
+{
+  "_id": {
+    "$oid": "685da8227dead2d6eba61829"
+  },
+  "id": "mcdtcl6sxchc",
+  "_deleted": false,
+  "create_by": "lisa.weller@bgis.com",
+  "create_dt": "2025-06-26T16:05:54.628-04:00",
+  "create_ip": "163.116.130.27:63186",
+  "env": "prod",
+  "is_busy": "",
+  "note_text": "The task workflow has been updated to Submit Form",
+  "project_id": "slc_cs",
+  "ref_id": "maybbm42oem2",
+  "ref_type": "related_object",
+  "updated_by": "lisa.weller@bgis.com",
+  "updated_dt": "2025-06-26T16:05:54.628-04:00",
+  "user_id": "lisa.weller@bgis.com",
+  "__id": "685da8227dead2d6eba61829",
+  "updated_dt_r": 1750968354628,
+  "_meta": {
+    "lwt": 1771018510756.01
+  },
+  "_attachments": {},
+  "_rev": "9-hdlmurrxhr"
+},
+{
+  "_id": {
+    "$oid": "685da8237dead2d6eba61840"
+  },
+  "id": "mcdtcl9y122n7",
+  "_deleted": false,
+  "create_by": "lisa.weller@bgis.com",
+  "create_dt": "2025-06-26T16:05:54.742-04:00",
+  "create_ip": "163.116.130.27:63188",
+  "env": "prod",
+  "is_busy": "",
+  "note_text": "The task has been assigned to ryan.alexander@bgis.com",
+  "project_id": "slc_cs",
+  "ref_id": "maybbm42oem2",
+  "ref_type": "related_object",
+  "updated_by": "lisa.weller@bgis.com",
+  "updated_dt": "2025-06-26T16:05:54.743-04:00",
+  "user_id": "lisa.weller@bgis.com",
+  "__id": "685da8237dead2d6eba61840",
+  "updated_dt_r": 1750968354743,
+  "_meta": {
+    "lwt": 1771018510756.01
+  },
+  "_attachments": {},
+  "_rev": "9-hdlmurrxhr"
+},
+{
+  "_id": {
+    "$oid": "685da9207dead2d6eba63d4f"
+  },
+  "id": "mcdti0y4129ca",
+  "_deleted": false,
+  "create_by": "lisa.weller@bgis.com",
+  "create_dt": "2025-06-26T16:10:08.332-04:00",
+  "create_ip": "163.116.130.27:46770",
+  "env": "prod",
+  "is_busy": "",
+  "note_text": "SPOC has submitted initial details for SLC request.",
+  "note_type": "system",
+  "project_id": "slc_cs",
+  "ref_id": "maybbm42oem2",
+  "ref_type": "task",
+  "updated_by": "lisa.weller@bgis.com",
+  "updated_dt": "2025-06-26T16:10:08.332-04:00",
+  "user_id": "lisa.weller@bgis.com",
+  "__id": "685da9207dead2d6eba63d4f",
+  "updated_dt_r": 1750968608332,
+  "_meta": {
+    "lwt": 1771018510756.01
+  },
+  "_attachments": {},
+  "_rev": "9-hdlmurrxhr"
+},
+{
+  "_id": {
+    "$oid": "685da9427dead2d6eba64276"
+  },
+  "id": "mcdtirdsm61i",
+  "_deleted": false,
+  "create_by": "lisa.weller@bgis.com",
+  "create_dt": "2025-06-26T16:10:42.592-04:00",
+  "create_ip": "163.116.130.27:46768",
+  "env": "prod",
+  "is_busy": "",
+  "note_text": "The task workflow has been updated to IO Director Approval-North/South/West",
+  "project_id": "slc_cs",
+  "ref_id": "maybbm42oem2",
+  "ref_type": "related_object",
+  "updated_by": "lisa.weller@bgis.com",
+  "updated_dt": "2025-06-26T16:10:42.592-04:00",
+  "user_id": "lisa.weller@bgis.com",
+  "__id": "685da9427dead2d6eba64276",
+  "updated_dt_r": 1750968642592,
+  "_meta": {
+    "lwt": 1771018510756.01
+  },
+  "_attachments": {},
+  "_rev": "9-hdlmurrxhr"
+},
+{
+  "_id": {
+    "$oid": "685da9437dead2d6eba64299"
+  },
+  "id": "mcdtirfop24j",
+  "_deleted": false,
+  "create_by": "lisa.weller@bgis.com",
+  "create_dt": "2025-06-26T16:10:42.660-04:00",
+  "create_ip": "163.116.130.27:46770",
+  "env": "prod",
+  "is_busy": "",
+  "note_text": "The task has been assigned to fid.leonard@infrastructureontario.ca",
+  "project_id": "slc_cs",
+  "ref_id": "maybbm42oem2",
+  "ref_type": "related_object",
+  "updated_by": "lisa.weller@bgis.com",
+  "updated_dt": "2025-06-26T16:10:42.660-04:00",
+  "user_id": "lisa.weller@bgis.com",
+  "__id": "685da9437dead2d6eba64299",
+  "updated_dt_r": 1750968642660,
+  "_meta": {
+    "lwt": 1771018510756.01
+  },
+  "_attachments": {},
+  "_rev": "9-hdlmurrxhr"
+},
+{
+  "_id": {
+    "$oid": "685db1fa7dead2d6eba75692"
+  },
+  "id": "mcduukyzms4x",
+  "_deleted": false,
+  "create_by": "fid.leonard@infrastructureontario.ca",
+  "create_dt": "2025-06-26T16:47:53.771-04:00",
+  "create_ip": "99.226.40.7:50920",
+  "env": "prod",
+  "is_busy": "",
+  "note_text": "IO Director has approved the SLC request.",
+  "note_type": "system",
+  "project_id": "slc_cs",
+  "ref_id": "maybbm42oem2",
+  "ref_type": "task",
+  "updated_by": "fid.leonard@infrastructureontario.ca",
+  "updated_dt": "2025-06-26T16:47:53.771-04:00",
+  "user_id": "fid.leonard@infrastructureontario.ca",
+  "__id": "685db1fa7dead2d6eba75692",
+  "updated_dt_r": 1750970873771,
+  "_meta": {
+    "lwt": 1771018510756.01
+  },
+  "_attachments": {},
+  "_rev": "9-hdlmurrxhr"
+},
+{
+  "_id": {
+    "$oid": "687546757d27442337512839"
+  },
+  "id": "md3ewkefu1ca",
+  "_deleted": false,
+  "create_by": "lisa.weller@bgis.com",
+  "create_dt": "2025-07-14T14:03:33.063-04:00",
+  "create_ip": "163.116.130.27:62090",
+  "env": "prod",
+  "is_busy": "",
+  "note_text": "The task workflow has been updated to Obtain Quotes SD",
+  "project_id": "slc_cs",
+  "ref_id": "maybbm42oem2",
+  "ref_type": "related_object",
+  "updated_by": "lisa.weller@bgis.com",
+  "updated_dt": "2025-07-14T14:03:33.063-04:00",
+  "user_id": "lisa.weller@bgis.com",
+  "__id": "687546757d27442337512839",
+  "updated_dt_r": 1752516213063,
+  "_meta": {
+    "lwt": 1771018518288.01
+  },
+  "_attachments": {},
+  "_rev": "9-hdlmurrxhr"
+},
+{
+  "_id": {
+    "$oid": "687546757d27442337512857"
+  },
+  "id": "md3ewkfgo6cu",
+  "_deleted": false,
+  "create_by": "lisa.weller@bgis.com",
+  "create_dt": "2025-07-14T14:03:33.100-04:00",
+  "create_ip": "163.116.130.27:62622",
+  "env": "prod",
+  "is_busy": "",
+  "note_text": "The task has been assigned to susan.lammi@bgis.com",
+  "project_id": "slc_cs",
+  "ref_id": "maybbm42oem2",
+  "ref_type": "related_object",
+  "updated_by": "lisa.weller@bgis.com",
+  "updated_dt": "2025-07-14T14:03:33.100-04:00",
+  "user_id": "lisa.weller@bgis.com",
+  "__id": "687546757d27442337512857",
+  "updated_dt_r": 1752516213100,
+  "_meta": {
+    "lwt": 1771018518288.01
+  },
+  "_attachments": {},
+  "_rev": "9-hdlmurrxhr"
+},
+{
+  "_id": {
+    "$oid": "6941935d4a3b85d088c10fe3"
+  },
+  "id": "mj8udy66zddl",
+  "_deleted": false,
+  "create_by": "lisa.weller@bgis.com",
+  "create_dt": "2025-12-16T12:14:03.198-05:00",
+  "create_ip": "163.116.130.107:63330",
+  "env": "prod",
+  "is_busy": "",
+  "note_text": "The task status has been updated to TaskClosed",
+  "project_id": "slc_cs",
+  "ref_id": "maybbm42oem2",
+  "ref_type": "related_object",
+  "updated_by": "lisa.weller@bgis.com",
+  "updated_dt": "2025-12-16T12:14:03.198-05:00",
+  "user_id": "lisa.weller@bgis.com",
+  "__id": "6941935d4a3b85d088c10fe3",
+  "updated_dt_r": 1765905243198,
+  "_meta": {
+    "lwt": 1771425546573.01
+  },
+  "_attachments": {},
+  "_rev": "6-ieicywnket"
+},
+{
+  "_id": {
+    "$oid": "6941935e4a3b85d088c10fe4"
+  },
+  "id": "mj8udy8912zf5",
+  "_deleted": false,
+  "create_by": "lisa.weller@bgis.com",
+  "create_dt": "2025-12-16T12:14:03.273-05:00",
+  "create_ip": "163.116.130.107:63330",
+  "env": "prod",
+  "is_busy": "",
+  "note_text": "The task workflow has been updated to Approvals Received",
+  "project_id": "slc_cs",
+  "ref_id": "maybbm42oem2",
+  "ref_type": "related_object",
+  "updated_by": "lisa.weller@bgis.com",
+  "updated_dt": "2025-12-16T12:14:03.274-05:00",
+  "user_id": "lisa.weller@bgis.com",
+  "__id": "6941935e4a3b85d088c10fe4",
+  "updated_dt_r": 1765905243274,
+  "_meta": {
+    "lwt": 1771425546573.01
+  },
+  "_attachments": {},
+  "_rev": "6-ieicywnket"
+},
+{
+  "_id": {
+    "$oid": "69419bbe4a3b85d088c111f1"
+  },
+  "id": "mj8vnz621060g",
+  "_deleted": false,
+  "create_by": "lisa.weller@bgis.com",
+  "create_dt": "2025-12-16T12:49:50.666-05:00",
+  "create_ip": "163.116.130.107:18362",
+  "env": "prod",
+  "is_busy": "",
+  "note_text": "APPROVALS received via email from Brad Glover Tue 12/2/2025 10:15 AM. Due to system bug, changed to approved manually and BGIS Internal Tasks to be tracked manually.",
+  "project_id": "slc_cs",
+  "ref_id": "maybbm42oem2",
+  "ref_type": "related_object",
+  "updated_by": "lisa.weller@bgis.com",
+  "updated_dt": "2025-12-16T12:49:50.666-05:00",
+  "user_id": "lisa.weller@bgis.com",
+  "__id": "69419bbe4a3b85d088c111f1",
+  "updated_dt_r": 1765907390666,
+  "_meta": {
+    "lwt": 1771425546573.01
+  },
+  "_attachments": {},
+  "_rev": "6-ieicywnket"
+},
+{
+  "_id": {
+    "$oid": "69419ca24a3b85d088c11202"
+  },
+  "id": "mj8vstz4q69p",
+  "_deleted": false,
+  "create_by": "lisa.weller@bgis.com",
+  "create_dt": "2025-12-16T12:53:37.216-05:00",
+  "create_ip": "163.116.130.107:33352",
+  "env": "prod",
+  "is_busy": "",
+  "note_text": "The task status has been updated to TaskReviewed",
+  "project_id": "slc_cs",
+  "ref_id": "maybbm42oem2",
+  "ref_type": "related_object",
+  "updated_by": "lisa.weller@bgis.com",
+  "updated_dt": "2025-12-16T12:53:37.216-05:00",
+  "user_id": "lisa.weller@bgis.com",
+  "__id": "69419ca24a3b85d088c11202",
+  "updated_dt_r": 1765907617216,
+  "_meta": {
+    "lwt": 1771425546573.01
+  },
+  "_attachments": {},
+  "_rev": "6-ieicywnket"
+},
+{
+  "_id": {
+    "$oid": "69419ca24a3b85d088c11203"
+  },
+  "id": "mj8vsu0q14h8i",
+  "_deleted": false,
+  "create_by": "lisa.weller@bgis.com",
+  "create_dt": "2025-12-16T12:53:37.274-05:00",
+  "create_ip": "163.116.130.107:18370",
+  "env": "prod",
+  "is_busy": "",
+  "note_text": "The task workflow has been updated to BGIS Internal Tasks",
+  "project_id": "slc_cs",
+  "ref_id": "maybbm42oem2",
+  "ref_type": "related_object",
+  "updated_by": "lisa.weller@bgis.com",
+  "updated_dt": "2025-12-16T12:53:37.274-05:00",
+  "user_id": "lisa.weller@bgis.com",
+  "__id": "69419ca24a3b85d088c11203",
+  "updated_dt_r": 1765907617274,
+  "_meta": {
+    "lwt": 1771425546573.01
+  },
+  "_attachments": {},
+  "_rev": "6-ieicywnket"
+},
+{
+  "_id": {
+    "$oid": "69419ca24a3b85d088c11204"
+  },
+  "id": "mj8vsu2nuu9j",
+  "_deleted": false,
+  "create_by": "lisa.weller@bgis.com",
+  "create_dt": "2025-12-16T12:53:37.343-05:00",
+  "create_ip": "163.116.130.107:18370",
+  "env": "prod",
+  "is_busy": "",
+  "note_text": "The task has been assigned to lisa.weller@bgis.com",
+  "project_id": "slc_cs",
+  "ref_id": "maybbm42oem2",
+  "ref_type": "related_object",
+  "updated_by": "lisa.weller@bgis.com",
+  "updated_dt": "2025-12-16T12:53:37.343-05:00",
+  "user_id": "lisa.weller@bgis.com",
+  "__id": "69419ca24a3b85d088c11204",
+  "updated_dt_r": 1765907617343,
+  "_meta": {
+    "lwt": 1771425546573.01
+  },
+  "_attachments": {},
+  "_rev": "6-ieicywnket"
+},
+{
+  "_id": {
+    "$oid": "698247eeee97df20da9ce456"
+  },
+  "id": "ml6z38aes6xu",
+  "_deleted": false,
+  "create_by": "lisa.weller@bgis.com",
+  "create_dt": "2026-02-03T14:09:33.494-05:00",
+  "create_ip": "162.10.22.29:1416",
+  "env": "prod",
+  "is_busy": "",
+  "note_text": "The Alert has been closed",
+  "note_type": "System",
+  "project_id": "slc_cs",
+  "ref_id": "maybbm42oem2",
+  "ref_type": "task",
+  "updated_by": "lisa.weller@bgis.com",
+  "updated_dt": "2026-02-03T14:09:33.494-05:00",
+  "user_id": "lisa.weller@bgis.com",
+  "__id": "698247eeee97df20da9ce456",
+  "updated_dt_r": 1770145773494,
+  "_meta": {
+    "lwt": 1771425549012.01
+  },
+  "_attachments": {},
+  "_rev": "4-ieicywnket"
+},
+{
+  "_id": {
+    "$oid": "698247efee97df20da9ce457"
+  },
+  "id": "ml6z38csmq3o",
+  "_deleted": false,
+  "create_by": "lisa.weller@bgis.com",
+  "create_dt": "2026-02-03T14:09:33.580-05:00",
+  "create_ip": "162.10.22.29:1440",
+  "env": "prod",
+  "is_busy": "",
+  "note_text": "The task status has been updated to Closed",
+  "project_id": "slc_cs",
+  "ref_id": "maybbm42oem2",
+  "ref_type": "related_object",
+  "updated_by": "lisa.weller@bgis.com",
+  "updated_dt": "2026-02-03T14:09:33.580-05:00",
+  "user_id": "lisa.weller@bgis.com",
+  "__id": "698247efee97df20da9ce457",
+  "updated_dt_r": 1770145773580,
+  "_meta": {
+    "lwt": 1771425549012.01
+  },
+  "_attachments": {},
+  "_rev": "4-ieicywnket"
+},
+{
+  "_id": {
+    "$oid": "698247efee97df20da9ce459"
+  },
+  "id": "ml6z38d4qm1y",
+  "_deleted": false,
+  "create_by": "lisa.weller@bgis.com",
+  "create_dt": "2026-02-03T14:09:33.592-05:00",
+  "create_ip": "162.10.22.29:1440",
+  "env": "prod",
+  "is_busy": "",
+  "note_text": "The task workflow has been updated to complete",
+  "project_id": "slc_cs",
+  "ref_id": "maybbm42oem2",
+  "ref_type": "related_object",
+  "updated_by": "lisa.weller@bgis.com",
+  "updated_dt": "2026-02-03T14:09:33.592-05:00",
+  "user_id": "lisa.weller@bgis.com",
+  "__id": "698247efee97df20da9ce459",
+  "updated_dt_r": 1770145773592,
+  "_meta": {
+    "lwt": 1771425549012.01
+  },
+  "_attachments": {},
+  "_rev": "4-ieicywnket"
+},
+{
+  "_id": {
+    "$oid": "698247efee97df20da9ce458"
+  },
+  "id": "ml6z38dj14fcz",
+  "_deleted": false,
+  "create_by": "lisa.weller@bgis.com",
+  "create_dt": "2026-02-03T14:09:33.607-05:00",
+  "create_ip": "162.10.22.29:1440",
+  "env": "prod",
+  "is_busy": "",
+  "note_text": "The task has been reassigned to",
+  "project_id": "slc_cs",
+  "ref_id": "maybbm42oem2",
+  "ref_type": "related_object",
+  "updated_by": "lisa.weller@bgis.com",
+  "updated_dt": "2026-02-03T14:09:33.607-05:00",
+  "user_id": "lisa.weller@bgis.com",
+  "__id": "698247efee97df20da9ce458",
+  "updated_dt_r": 1770145773607,
+  "_meta": {
+    "lwt": 1771425549012.01
+  },
+  "_attachments": {},
+  "_rev": "4-ieicywnket"
+}]
